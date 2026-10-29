@@ -22,7 +22,11 @@ from concurrent.futures import ThreadPoolExecutor
 TEMPO_LIMITE = 30  # segundos por requisição
 ESPERA_ANTES_DE_REPETIR = 5  # segundos
 ORIGEM_TESTE = "https://example.com"
-USER_AGENT = "apis-publicas-brasil/1.0 (verificacao diaria de disponibilidade)"
+# Formato usado por robôs legítimos: se identifica e informa onde saber mais.
+USER_AGENT = (
+    "Mozilla/5.0 (compatible; apis-publicas-brasil/1.0; "
+    "+https://github.com/LuisGustavoDev/apis-publicas-brasil)"
+)
 
 LIMITE_LEITURA = 512 * 1024  # bytes lidos da resposta para conferir o formato
 
@@ -83,7 +87,7 @@ def requisitar(
 ) -> dict:
     """Faz um GET e devolve o resultado. modo: normal, sem_certificado ou tls_antigo.
 
-    Com aceitar_auth=True (APIs que exigem chave, testadas sem ela), respostas 401 e 403
+    Com aceitar_auth=True (APIs que exigem chave, testadas sem ela), respostas 400, 401 e 403
     contam como "no ar": o servidor respondeu e só recusou por falta da chave.
     """
     pedido = urllib.request.Request(
@@ -121,7 +125,8 @@ def requisitar(
     cors = acao in ("*", ORIGEM_TESTE)
     # 429 significa que a API está no ar, apenas limitou a requisição.
     sucesso = 200 <= codigo < 300
-    ok = sucesso or codigo == 429 or (aceitar_auth and codigo in (401, 403))
+    # Sem a chave, algumas APIs respondem 400 (pedido incompleto) em vez de 401/403.
+    ok = sucesso or codigo == 429 or (aceitar_auth and codigo in (400, 401, 403))
     formato = None
     if sucesso:
         completo = len(corpo) <= LIMITE_LEITURA

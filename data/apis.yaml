@@ -333,13 +333,6 @@ apis:
     teste_sem_chave: https://api.olhovivo.sptrans.com.br/v2.1/Linha/Buscar?termosBusca=8000
 
   # ---------- Saúde ----------
-  - nome: OpenDataSUS
-    categoria: saude
-    descricao: Catálogo de dados abertos do Ministério da Saúde (API CKAN)
-    docs: https://opendatasus.saude.gov.br
-    autenticacao: nenhuma
-    exemplo: https://opendatasus.saude.gov.br/api/3/action/package_list
-    acesso: brasil
 
   # ---------- Comércio e Tributos ----------
   - nome: BrasilAPI NCM
@@ -417,15 +410,6 @@ apis:
     teste: false
     teste_sem_chave: https://www.cepaberto.com/api/v3/cep?cep=01001000
 
-  - nome: Brasil Aberto
-    categoria: cep
-    descricao: CEP, cidades, bairros, ruas, CNPJ e rastreio de encomendas
-    docs: https://docs.brasilaberto.com
-    autenticacao: chave
-    exemplo: https://brasilaberto.com/api/v1/zipcode/01001000
-    teste: false
-    teste_sem_chave: https://brasilaberto.com/api/v1/zipcode/01001000
-
   # ---------- CNPJ e Empresas ----------
   - nome: Minha Receita
     categoria: empresas
@@ -500,20 +484,6 @@ apis:
     docs: https://pncp.gov.br/api/consulta/swagger-ui/index.html
     autenticacao: nenhuma
     exemplo: https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?dataInicial=20260101&dataFinal=20260102&codigoModalidadeContratacao=8&pagina=1
-
-  - nome: Transferegov
-    categoria: governo
-    descricao: Transferências da União, emendas especiais, fundo a fundo e parcerias
-    docs: https://api-publica.transferegov.gestao.gov.br/ted/docs
-    autenticacao: nenhuma
-    exemplo: https://api-publica.transferegov.gestao.gov.br/ted/docs
-
-  - nome: LexML
-    categoria: governo
-    descricao: Busca em leis, decretos, jurisprudência e proposições de todo o país (SRU, XML)
-    docs: https://www12.senado.leg.br/dados-abertos/legislativo/legislacao/acervo-do-portal-lexml
-    autenticacao: nenhuma
-    exemplo: https://www.lexml.gov.br/busca/SRU?operation=searchRetrieve&query=urn+any+lei&maximumRecords=1
 
   - nome: Portal Brasileiro de Dados Abertos
     categoria: governo
@@ -912,20 +882,6 @@ apis:
     autenticacao: nenhuma
     exemplo: https://olinda.bcb.gov.br/olinda/servico/taxaJuros/versao/v2/odata/
 
-  - nome: Tesouro Nacional CUSTOS
-    categoria: economia
-    descricao: Custos do governo federal por órgão, programa e natureza de despesa
-    docs: https://apidatalake.tesouro.gov.br/docs/custos/
-    autenticacao: nenhuma
-    exemplo: https://apidatalake.tesouro.gov.br/docs/custos/
-
-  - nome: Tesouro Nacional SADIPEM
-    categoria: economia
-    descricao: Operações de crédito e dívida pública de estados e municípios
-    docs: https://apidatalake.tesouro.gov.br/docs/sadipem/
-    autenticacao: nenhuma
-    exemplo: https://apidatalake.tesouro.gov.br/docs/sadipem/
-
   - nome: Tesouro Nacional Transferências Constitucionais
     categoria: economia
     descricao: Repasses constitucionais da União a estados e municípios, como FPM e FPE
@@ -996,20 +952,6 @@ apis:
     autenticacao: nenhuma
     exemplo: https://br.openfoodfacts.org/api/v2/product/7891000100103.json
 
-  - nome: SIORG
-    categoria: governo
-    descricao: Estrutura organizacional dos órgãos do governo federal
-    docs: https://estruturaorganizacional.dados.gov.br
-    autenticacao: nenhuma
-    exemplo: https://estruturaorganizacional.dados.gov.br
-
-  - nome: TCU Dados Abertos
-    categoria: governo
-    descricao: Acórdãos, súmulas, jurisprudência e normas do Tribunal de Contas da União
-    docs: https://sites.tcu.gov.br/dados-abertos/
-    autenticacao: nenhuma
-    exemplo: https://sites.tcu.gov.br/dados-abertos/
-
   - nome: TCE-RN Dados Abertos
     categoria: governo
     descricao: Licitações, contratos e órgãos fiscalizados pelo Tribunal de Contas do RN
@@ -1018,27 +960,12 @@ apis:
     exemplo: https://apidadosabertos.tce.rn.gov.br/
     acesso: brasil
 
-  - nome: TCE-PE Dados Abertos
-    categoria: governo
-    descricao: Licitações, contratos, despesas e fornecedores fiscalizados pelo TCE de Pernambuco
-    docs: https://www.tce.pe.gov.br/internet/index.php/dados-abertos
-    autenticacao: nenhuma
-    exemplo: https://www.tce.pe.gov.br/internet/index.php/dados-abertos
-
   - nome: TCM-CE Dados Abertos
     categoria: governo
     descricao: Dados dos municípios cearenses fiscalizados pelo Tribunal de Contas
     docs: https://api.tcm.ce.gov.br/
     autenticacao: nenhuma
     exemplo: https://api.tcm.ce.gov.br/
-    acesso: brasil
-
-  - nome: TCE-MG Dados Abertos
-    categoria: governo
-    descricao: Dados fiscais e de contratações dos municípios de Minas Gerais
-    docs: https://dadosabertos.tce.mg.gov.br/
-    autenticacao: nenhuma
-    exemplo: https://dadosabertos.tce.mg.gov.br/
     acesso: brasil
 
   - nome: Assembleia Legislativa de Minas Gerais
@@ -1231,13 +1158,6 @@ apis:
     autenticacao: nenhuma
     exemplo: https://data.inpe.br/geonetwork/srv/api/site
 
-  - nome: ANA Telemetria
-    categoria: meio-ambiente
-    descricao: Níveis de rios, vazão e chuva das estações telemétricas da Agência Nacional de Águas
-    docs: https://www.snirh.gov.br/hidroweb/
-    autenticacao: nenhuma
-    exemplo: https://telemetriaws1.ana.gov.br/ServiceANA.asmx
-
   - nome: MapBiomas Alerta
     categoria: meio-ambiente
     descricao: Alertas de desmatamento validados, com laudos e imagens de satélite
@@ -1269,13 +1189,6 @@ apis:
     exemplo: https://docs.openaq.org
     teste: false
     teste_sem_chave: https://api.openaq.org/v3/locations?limit=1
-
-  - nome: Tábua de Marés
-    categoria: clima
-    descricao: Previsão de marés dos portos brasileiros com base nas tábuas da Marinha
-    docs: https://tabuamare.devtu.qzz.io/
-    autenticacao: nenhuma
-    exemplo: https://tabuamare.devtu.qzz.io/
 
   - nome: Climatempo Advisor
     categoria: clima
@@ -1501,13 +1414,6 @@ apis:
     teste: false
     teste_sem_chave: https://api.themoviedb.org/3/configuration
 
-  - nome: Mapas Culturais (MinC)
-    categoria: livros
-    descricao: Espaços, agentes, eventos e projetos culturais cadastrados no Ministério da Cultura
-    docs: https://mapas.cultura.gov.br
-    autenticacao: nenhuma
-    exemplo: https://mapas.cultura.gov.br/api/space/find?@select=id,name&@limit=1
-
   - nome: TheSportsDB
     categoria: esportes
     descricao: Times, jogadores e partidas do Brasileirão e de outras ligas
@@ -1622,3 +1528,95 @@ apis:
     autenticacao: nenhuma
     limite: 45 req/min, uso não comercial
     exemplo: http://ip-api.com/json/?lang=pt-BR
+
+  - nome: Wikipédia em Português (busca)
+    categoria: livros
+    descricao: Busca de artigos e conteúdo da Wikipédia lusófona pela API MediaWiki
+    docs: https://www.mediawiki.org/wiki/API:Search
+    autenticacao: nenhuma
+    exemplo: https://pt.wikipedia.org/w/api.php?action=query&list=search&srsearch=Brasil&format=json&srlimit=1
+
+  - nome: Wikcionário em Português
+    categoria: livros
+    descricao: Verbetes do dicionário colaborativo da língua portuguesa
+    docs: https://www.mediawiki.org/wiki/API:Main_page
+    autenticacao: nenhuma
+    exemplo: https://pt.wiktionary.org/w/api.php?action=query&titles=casa&prop=info&format=json
+
+  - nome: Wikivoyage em Português
+    categoria: livros
+    descricao: Guias de viagem colaborativos de cidades e destinos brasileiros
+    docs: https://www.mediawiki.org/wiki/API:Main_page
+    autenticacao: nenhuma
+    exemplo: https://pt.wikivoyage.org/w/api.php?action=query&list=search&srsearch=Salvador&format=json&srlimit=1
+
+  - nome: Wikimedia Commons
+    categoria: livros
+    descricao: Imagens e mídias livres sobre o Brasil, com licença e autoria
+    docs: https://www.mediawiki.org/wiki/API:Search
+    autenticacao: nenhuma
+    exemplo: https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=Brasil&srnamespace=6&format=json&srlimit=1
+
+  - nome: Wikidata SPARQL
+    categoria: internacional
+    descricao: Consultas avançadas ao Wikidata, como capitais, municípios e personalidades brasileiras
+    docs: https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service
+    autenticacao: nenhuma
+    exemplo: https://query.wikidata.org/sparql?query=SELECT%20%3Fx%20WHERE%20%7B%20wd%3AQ155%20wdt%3AP36%20%3Fx%20%7D&format=json
+
+  - nome: iNaturalist
+    categoria: internacional
+    descricao: Observações de fauna e flora feitas por cidadãos no Brasil
+    docs: https://api.inaturalist.org/v1/docs/
+    autenticacao: nenhuma
+    exemplo: https://api.inaturalist.org/v1/places/autocomplete?q=Brasil
+
+  - nome: ROR (Research Organization Registry)
+    categoria: ciencia
+    descricao: Cadastro mundial de instituições de pesquisa, incluindo universidades brasileiras
+    docs: https://ror.readme.io/docs/rest-api
+    autenticacao: nenhuma
+    exemplo: https://api.ror.org/v2/organizations?query=universidade%20de%20sao%20paulo
+
+  - nome: DOAJ
+    categoria: ciencia
+    descricao: Revistas científicas de acesso aberto, com muitos periódicos brasileiros
+    docs: https://doaj.org/api/docs
+    autenticacao: nenhuma
+    exemplo: https://doaj.org/api/search/journals/brasil?pageSize=1
+
+  - nome: Semantic Scholar
+    categoria: ciencia
+    descricao: Artigos científicos, citações e autores, com busca por tema
+    docs: https://api.semanticscholar.org/api-docs/
+    autenticacao: nenhuma
+    limite: Compartilhado entre usuários sem chave
+    exemplo: https://api.semanticscholar.org/graph/v1/paper/search?query=amazonia&limit=1
+
+  - nome: Europe PMC
+    categoria: ciencia
+    descricao: Artigos de saúde e ciências da vida, incluindo pesquisas brasileiras
+    docs: https://europepmc.org/RestfulWebService
+    autenticacao: nenhuma
+    exemplo: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=brasil&format=json&pageSize=1
+
+  - nome: ORCID
+    categoria: ciencia
+    descricao: Identificadores de pesquisadores e suas afiliações, como USP e Unicamp
+    docs: https://info.orcid.org/documentation/api-tutorials/
+    autenticacao: nenhuma
+    exemplo: https://pub.orcid.org/v3.0/expanded-search/?q=affiliation-org-name:%22Universidade%20de%20Sao%20Paulo%22&rows=1
+
+  - nome: NASA EONET
+    categoria: internacional
+    descricao: Eventos naturais em andamento, como queimadas e enchentes, com coordenadas
+    docs: https://eonet.gsfc.nasa.gov/docs/v3
+    autenticacao: nenhuma
+    exemplo: https://eonet.gsfc.nasa.gov/api/v3/events?limit=1
+
+  - nome: Open-Meteo Ensemble
+    categoria: internacional
+    descricao: Previsões por conjunto de modelos, com a incerteza da previsão
+    docs: https://open-meteo.com/en/docs/ensemble-api
+    autenticacao: nenhuma
+    exemplo: https://ensemble-api.open-meteo.com/v1/ensemble?latitude=-23.55&longitude=-46.63&hourly=temperature_2m&models=icon_seamless
