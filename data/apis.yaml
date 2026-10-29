@@ -12,6 +12,8 @@
 #   exemplo       URL de exemplo que funciona de verdade (GET)
 #   acesso        (opcional) brasil quando a API bloqueia acessos de fora do Brasil
 #   teste         (opcional) false para não verificar automaticamente
+#   teste_sem_chave (opcional) URL de uma API que exige chave, testada sem ela:
+#                 respostas 401/403 contam como "no ar" (use junto com teste: false)
 #                 (use quando a API exige chave ou não aceita GET simples)
 
 categorias:
@@ -204,6 +206,7 @@ apis:
     autenticacao: nenhuma
     limite: Recomenda até 60 req/min
     exemplo: https://api.queridodiario.ok.org.br/gazettes?querystring=educacao&size=1
+    acesso: brasil
 
   - nome: Portal da Transparência
     categoria: governo
@@ -212,6 +215,7 @@ apis:
     autenticacao: chave
     exemplo: https://api.portaldatransparencia.gov.br/swagger-ui/index.html
     teste: false
+    teste_sem_chave: https://api.portaldatransparencia.gov.br/api-de-dados/orgaos-siafi?pagina=1
 
   - nome: DataJud
     categoria: governo
@@ -220,6 +224,7 @@ apis:
     autenticacao: chave-publica
     exemplo: https://datajud-wiki.cnj.jus.br/api-publica/
     teste: false
+    teste_sem_chave: https://api-publica.datajud.cnj.jus.br/api_publica_tjsp/_search
 
   # ---------- IBGE e Geografia ----------
   - nome: IBGE Localidades
@@ -300,6 +305,7 @@ apis:
     autenticacao: chave
     exemplo: https://api.hgbrasil.com/weather?woeid=455827&key=SUA_CHAVE
     teste: false
+    teste_sem_chave: https://api.hgbrasil.com/weather
 
   # ---------- Veículos ----------
   - nome: FIPE (Parallelum)
@@ -324,6 +330,7 @@ apis:
     autenticacao: token
     exemplo: https://api.olhovivo.sptrans.com.br/v2.1
     teste: false
+    teste_sem_chave: https://api.olhovivo.sptrans.com.br/v2.1/Linha/Buscar?termosBusca=8000
 
   # ---------- Saúde ----------
   - nome: OpenDataSUS
@@ -332,6 +339,7 @@ apis:
     docs: https://opendatasus.saude.gov.br
     autenticacao: nenhuma
     exemplo: https://opendatasus.saude.gov.br/api/3/action/package_list
+    acesso: brasil
 
   # ---------- Comércio e Tributos ----------
   - nome: BrasilAPI NCM
@@ -379,6 +387,7 @@ apis:
     autenticacao: chave
     exemplo: https://www.api-futebol.com.br
     teste: false
+    teste_sem_chave: https://api.api-futebol.com.br/v1/campeonatos
 
   # =====================================================================
   # Ampliação da lista
@@ -406,6 +415,7 @@ apis:
     autenticacao: chave
     exemplo: https://www.cepaberto.com/api/v3/cep?cep=01001000
     teste: false
+    teste_sem_chave: https://www.cepaberto.com/api/v3/cep?cep=01001000
 
   - nome: Brasil Aberto
     categoria: cep
@@ -414,6 +424,7 @@ apis:
     autenticacao: chave
     exemplo: https://brasilaberto.com/api/v1/zipcode/01001000
     teste: false
+    teste_sem_chave: https://brasilaberto.com/api/v1/zipcode/01001000
 
   # ---------- CNPJ e Empresas ----------
   - nome: Minha Receita
@@ -511,6 +522,7 @@ apis:
     autenticacao: chave
     exemplo: https://dados.gov.br
     teste: false
+    teste_sem_chave: https://dados.gov.br/dados/api/publico/conjuntos-dados?pagina=1
 
   - nome: Brasil.IO
     categoria: governo
@@ -519,6 +531,7 @@ apis:
     autenticacao: chave
     exemplo: https://brasil.io/datasets/
     teste: false
+    teste_sem_chave: https://api.brasil.io/v1/datasets/
 
   # ---------- IBGE e Geografia ----------
   - nome: IBGE SIDRA
@@ -584,6 +597,7 @@ apis:
     autenticacao: chave
     exemplo: https://www.agroapi.cnptia.embrapa.br/portal/
     teste: false
+    teste_sem_chave: https://api.cnptia.embrapa.br/agritec/v1/culturas
 
   # ---------- Segurança Pública ----------
   - nome: Fogo Cruzado
@@ -593,6 +607,7 @@ apis:
     autenticacao: chave
     exemplo: https://api.fogocruzado.org.br
     teste: false
+    teste_sem_chave: https://api-service.fogocruzado.org.br/api/v2/occurrences
 
   # ---------- Comércio e Tributos ----------
   - nome: SI5 Global
@@ -603,6 +618,7 @@ apis:
     limite: 100 consultas/dia no plano gratuito
     exemplo: https://global.si5.com.br/api-em-1-minuto
     teste: false
+    teste_sem_chave: https://global.si5.com.br/api/produtos/7891000100103
 
   - nome: Cosmos Bluesoft
     categoria: comercio
@@ -611,6 +627,7 @@ apis:
     autenticacao: chave
     exemplo: https://cosmos.bluesoft.com.br
     teste: false
+    teste_sem_chave: https://api.cosmos.bluesoft.com.br/gtins/7891000100103.json
 
   # ---------- Livros, Cultura e Língua ----------
   - nome: A Bíblia Digital
@@ -628,6 +645,7 @@ apis:
     autenticacao: chave
     exemplo: https://api.vagalume.com.br/docs/
     teste: false
+    teste_sem_chave: https://api.vagalume.com.br/search.php?art=anitta&mus=envolver
 
   - nome: Dicionário Aberto
     categoria: livros
@@ -682,6 +700,7 @@ apis:
     autenticacao: chave
     exemplo: https://api.invertexto.com
     teste: false
+    teste_sem_chave: https://api.invertexto.com/v1/holidays/2026
 
   # ---------- Portais de Dados Abertos (CKAN) ----------
   - nome: TSE Dados Abertos
@@ -718,6 +737,7 @@ apis:
     docs: https://dados.antt.gov.br
     autenticacao: nenhuma
     exemplo: https://dados.antt.gov.br/api/3/action/status_show
+    acesso: brasil
 
   - nome: Prefeitura de São Paulo Dados Abertos
     categoria: portais
@@ -747,7 +767,6 @@ apis:
     docs: https://dados.fortaleza.ce.gov.br
     autenticacao: nenhuma
     exemplo: https://dados.fortaleza.ce.gov.br/api/3/action/status_show
-
 
   # ---------- Internacionais com Dados do Brasil ----------
   - nome: Open-Meteo
@@ -853,13 +872,14 @@ apis:
     autenticacao: chave
     exemplo: https://www.geonames.org/export/web-services.html
     teste: false
+    teste_sem_chave: http://api.geonames.org/searchJSON?q=Campinas&maxRows=1&username=demo
 
   - nome: IBGE Projeção da População
     categoria: ibge
     descricao: Projeção da população brasileira em tempo real e por estado
     docs: https://servicodados.ibge.gov.br/api/docs/projecoes
     autenticacao: nenhuma
-    exemplo: https://servicodados.ibge.gov.br/api/v1/projecoes/populacao
+    exemplo: https://servicodados.ibge.gov.br/api/v1/projecoes/populacao/BR
     acesso: brasil
 
   - nome: IBGE Pesquisas
@@ -912,6 +932,7 @@ apis:
     docs: https://apiapex.tesouro.gov.br/aria/v1/transferencias_constitucionais/docs
     autenticacao: nenhuma
     exemplo: https://apiapex.tesouro.gov.br/aria/v1/transferencias_constitucionais/docs
+    acesso: brasil
 
   - nome: Foxbit
     categoria: economia
@@ -920,13 +941,6 @@ apis:
     autenticacao: nenhuma
     exemplo: https://api.foxbit.com.br/rest/v3/markets
 
-  - nome: NovaDAX
-    categoria: economia
-    descricao: Cotações de criptomoedas em reais na corretora brasileira NovaDAX
-    docs: https://doc.novadax.com/pt-BR/
-    autenticacao: nenhuma
-    exemplo: https://api.novadax.com/v1/market/tickers
-
   - nome: HG Brasil Finance
     categoria: economia
     descricao: Cotações de moedas, índices da bolsa e taxas como Selic e CDI
@@ -934,6 +948,7 @@ apis:
     autenticacao: chave
     exemplo: https://hgbrasil.com/docs
     teste: false
+    teste_sem_chave: https://api.hgbrasil.com/finance
 
   - nome: Alpha Vantage
     categoria: internacional
@@ -942,6 +957,7 @@ apis:
     autenticacao: chave
     exemplo: https://www.alphavantage.co/documentation/
     teste: false
+    teste_sem_chave: https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=PETR4.SA
 
   - nome: ExchangeRate-API (aberta)
     categoria: internacional
@@ -968,8 +984,10 @@ apis:
     categoria: comercio
     descricao: Categorias, produtos e vendedores do Mercado Livre Brasil
     docs: https://developers.mercadolivre.com.br/pt_br/api-docs-pt-br
-    autenticacao: opcional
+    autenticacao: token
     exemplo: https://api.mercadolibre.com/sites/MLB/categories
+    teste: false
+    teste_sem_chave: https://api.mercadolibre.com/sites/MLB/categories
 
   - nome: Open Food Facts Brasil
     categoria: comercio
@@ -998,6 +1016,7 @@ apis:
     docs: https://apidadosabertos.tce.rn.gov.br/
     autenticacao: nenhuma
     exemplo: https://apidadosabertos.tce.rn.gov.br/
+    acesso: brasil
 
   - nome: TCE-PE Dados Abertos
     categoria: governo
@@ -1012,6 +1031,7 @@ apis:
     docs: https://api.tcm.ce.gov.br/
     autenticacao: nenhuma
     exemplo: https://api.tcm.ce.gov.br/
+    acesso: brasil
 
   - nome: TCE-MG Dados Abertos
     categoria: governo
@@ -1019,6 +1039,7 @@ apis:
     docs: https://dadosabertos.tce.mg.gov.br/
     autenticacao: nenhuma
     exemplo: https://dadosabertos.tce.mg.gov.br/
+    acesso: brasil
 
   - nome: Assembleia Legislativa de Minas Gerais
     categoria: governo
@@ -1047,7 +1068,8 @@ apis:
     descricao: Séries de homicídios, violência por gênero e raça e mortes por arma de fogo
     docs: https://www.ipea.gov.br/atlasviolencia/
     autenticacao: nenhuma
-    exemplo: https://www.ipea.gov.br/atlasviolencia/api/v1/temas
+    exemplo: https://www.ipea.gov.br/atlasviolencia/
+    teste: false
 
   - nome: Fórum Brasileiro de Segurança Pública
     categoria: seguranca
@@ -1055,13 +1077,7 @@ apis:
     docs: https://publicacoes.forumseguranca.org.br
     autenticacao: nenhuma
     exemplo: https://publicacoes.forumseguranca.org.br/server/api
-
-  - nome: MJSP Dados Abertos
-    categoria: portais
-    descricao: Dados do Ministério da Justiça, como SINESP, sistema prisional e Procon
-    docs: https://dados.mj.gov.br
-    autenticacao: nenhuma
-    exemplo: https://dados.mj.gov.br/api/3/action/status_show
+    acesso: brasil
 
   - nome: TCE-RS Dados Abertos
     categoria: portais
@@ -1069,6 +1085,7 @@ apis:
     docs: https://dados.tce.rs.gov.br
     autenticacao: nenhuma
     exemplo: https://dados.tce.rs.gov.br/api/3/action/status_show
+    acesso: brasil
 
   - nome: TRE-PR Dados Abertos
     categoria: portais
@@ -1076,6 +1093,7 @@ apis:
     docs: https://dadosabertos.tre-pr.jus.br
     autenticacao: nenhuma
     exemplo: https://dadosabertos.tre-pr.jus.br/api/3/action/status_show
+    acesso: brasil
 
   - nome: STJ Dados Abertos
     categoria: portais
@@ -1153,6 +1171,7 @@ apis:
     docs: https://dadosabertos.go.gov.br
     autenticacao: nenhuma
     exemplo: https://dadosabertos.go.gov.br/api/3/action/status_show
+    acesso: brasil
 
   - nome: Prefeitura de Belo Horizonte Dados Abertos
     categoria: portais
@@ -1160,13 +1179,6 @@ apis:
     docs: https://dados.pbh.gov.br
     autenticacao: nenhuma
     exemplo: https://dados.pbh.gov.br/api/3/action/status_show
-
-  - nome: Prefeitura de Campinas Dados Abertos
-    categoria: portais
-    descricao: Dados abertos da cidade de Campinas
-    docs: https://dados.campinas.sp.gov.br
-    autenticacao: nenhuma
-    exemplo: https://dados.campinas.sp.gov.br/api/3/action/status_show
 
   - nome: IBAMA Dados Abertos
     categoria: portais
@@ -1202,6 +1214,7 @@ apis:
     docs: https://www.fnde.gov.br/dadosabertos
     autenticacao: nenhuma
     exemplo: https://www.fnde.gov.br/dadosabertos/api/3/action/status_show
+    acesso: brasil
 
   - nome: Alagoas Dados Abertos
     categoria: portais
@@ -1209,13 +1222,7 @@ apis:
     docs: https://dados.al.gov.br
     autenticacao: nenhuma
     exemplo: https://dados.al.gov.br/catalogo/api/3/action/status_show
-
-  - nome: INPE Queimadas
-    categoria: meio-ambiente
-    descricao: Focos de queimadas detectados por satélite e risco de fogo
-    docs: https://queimadas.dgi.inpe.br/queimadas/dados-abertos/
-    autenticacao: nenhuma
-    exemplo: https://queimadas.dgi.inpe.br/queimadas/dados-abertos/
+    acesso: brasil
 
   - nome: INPE Catálogo de Dados (GeoNetwork)
     categoria: meio-ambiente
@@ -1261,6 +1268,7 @@ apis:
     autenticacao: chave
     exemplo: https://docs.openaq.org
     teste: false
+    teste_sem_chave: https://api.openaq.org/v3/locations?limit=1
 
   - nome: Tábua de Marés
     categoria: clima
@@ -1276,6 +1284,7 @@ apis:
     autenticacao: chave
     exemplo: https://advisor.climatempo.com.br
     teste: false
+    teste_sem_chave: http://apiadvisor.climatempo.com.br/api/v1/locale/city?name=Campinas&state=SP
 
   - nome: OpenWeatherMap
     categoria: internacional
@@ -1284,6 +1293,7 @@ apis:
     autenticacao: chave
     exemplo: https://openweathermap.org/api
     teste: false
+    teste_sem_chave: https://api.openweathermap.org/data/2.5/weather?q=Sao%20Paulo,BR
 
   - nome: Open-Meteo Qualidade do Ar
     categoria: internacional
@@ -1350,6 +1360,7 @@ apis:
     autenticacao: chave
     exemplo: https://api-redemet.decea.mil.br/
     teste: false
+    teste_sem_chave: https://api-redemet.decea.mil.br/mensagens/metar/SBGR
 
   - nome: FIPE (site oficial)
     categoria: veiculos
@@ -1364,7 +1375,7 @@ apis:
     descricao: Indicadores de saúde da OMS para o Brasil, como expectativa de vida e mortalidade
     docs: https://www.who.int/data/gho/info/gho-odata-api
     autenticacao: nenhuma
-    exemplo: https://ghoapi.azureedge.net/api/WHOSIS_000001?$filter=SpatialDim%20eq%20%27BRA%27
+    exemplo: https://ghoapi.azureedge.net/api/Dimension
 
   - nome: OpenAlex
     categoria: ciencia
@@ -1400,6 +1411,7 @@ apis:
     docs: https://repositorio.ipea.gov.br
     autenticacao: nenhuma
     exemplo: https://repositorio.ipea.gov.br/server/api
+    acesso: brasil
 
   - nome: ONU Objetivos de Desenvolvimento Sustentável
     categoria: internacional
@@ -1487,6 +1499,7 @@ apis:
     autenticacao: chave
     exemplo: https://developer.themoviedb.org/docs
     teste: false
+    teste_sem_chave: https://api.themoviedb.org/3/configuration
 
   - nome: Mapas Culturais (MinC)
     categoria: livros
@@ -1495,20 +1508,12 @@ apis:
     autenticacao: nenhuma
     exemplo: https://mapas.cultura.gov.br/api/space/find?@select=id,name&@limit=1
 
-  - nome: Loterias Caixa (oficial)
-    categoria: esportes
-    descricao: Resultados oficiais das loterias direto do portal da Caixa
-    docs: https://loterias.caixa.gov.br
-    autenticacao: nenhuma
-    exemplo: https://servicebus2.caixa.gov.br/portaldeloterias/api/megasena
-    acesso: brasil
-
   - nome: TheSportsDB
     categoria: esportes
     descricao: Times, jogadores e partidas do Brasileirão e de outras ligas
     docs: https://www.thesportsdb.com/free_sports_api
     autenticacao: nenhuma
-    exemplo: https://www.thesportsdb.com/api/v1/json/3/lookupleague.php?id=4351
+    exemplo: https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4351
 
   - nome: football-data.org
     categoria: esportes
@@ -1517,6 +1522,7 @@ apis:
     autenticacao: chave
     exemplo: https://www.football-data.org/documentation/quickstart
     teste: false
+    teste_sem_chave: https://api.football-data.org/v4/competitions/BSA
 
   - nome: Jolpica F1 (Ergast)
     categoria: esportes
@@ -1532,6 +1538,7 @@ apis:
     autenticacao: chave
     exemplo: https://newsapi.org/docs
     teste: false
+    teste_sem_chave: https://newsapi.org/v2/top-headlines?country=br
 
   - nome: GNews
     categoria: internet
@@ -1540,6 +1547,7 @@ apis:
     autenticacao: chave
     exemplo: https://gnews.io/docs
     teste: false
+    teste_sem_chave: https://gnews.io/api/v4/top-headlines?country=br&lang=pt
 
   - nome: Calendarific
     categoria: calendario
@@ -1548,6 +1556,7 @@ apis:
     autenticacao: chave
     exemplo: https://calendarific.com/api-documentation
     teste: false
+    teste_sem_chave: https://calendarific.com/api/v2/holidays?country=BR&year=2026
 
   - nome: TimeAPI.io
     categoria: utilidades

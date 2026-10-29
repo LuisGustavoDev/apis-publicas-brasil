@@ -28,8 +28,22 @@ def carregar_dados() -> dict:
 ACESSOS = {"brasil": "só acessível do Brasil"}
 
 
-def deve_testar(api: dict) -> bool:
+def exemplo_testavel(api: dict) -> bool:
+    """O 'exemplo' é uma URL de dados que funciona sem chave (teste diferente de false)."""
     return api.get("teste", True) is not False
+
+
+def testa_sem_chave(api: dict) -> bool:
+    """API que exige chave, mas é testada sem ela: 401/403 contam como 'no ar'."""
+    return not exemplo_testavel(api) and bool(api.get("teste_sem_chave"))
+
+
+def deve_testar(api: dict) -> bool:
+    return exemplo_testavel(api) or testa_sem_chave(api)
+
+
+def url_teste(api: dict) -> str:
+    return api["teste_sem_chave"] if testa_sem_chave(api) else api["exemplo"]
 
 
 def so_do_brasil(api: dict) -> bool:

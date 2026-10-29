@@ -11,7 +11,15 @@ from datetime import datetime
 from pathlib import Path
 from urllib.parse import quote
 
-from common import AUTENTICACOES, RAIZ, carregar_dados, carregar_status, deve_testar, so_do_brasil
+from common import (
+    AUTENTICACOES,
+    RAIZ,
+    carregar_dados,
+    carregar_status,
+    deve_testar,
+    exemplo_testavel,
+    so_do_brasil,
+)
 
 MODELO = Path(__file__).resolve().parent / "README.template.md"
 SAIDA = RAIZ / "README.md"
@@ -30,37 +38,105 @@ def escapar(texto: str) -> str:
     return str(texto).replace("|", "\\|")
 
 
-def celula_status(api: dict, status: dict) -> str:
-    if not deve_testar(api):
-        return "🔑 requer chave"
-    info = status.get(api["nome"])
-    brasil = so_do_brasil(api)
-    if not info:
-        return "🇧🇷 só do Brasil" if brasil else "⚪ aguardando"
-    if not info["ok"]:
-        return "🔴 fora do ar" + ("<br><sub>🇧🇷 só do Brasil</sub>" if brasil else "")
+# Situações possíveis de uma API, na ordem em que aparecem nos resumos:
+# chave: (emoji, nome no singular, nome no plural, o que significa)
+SITUACOES = {
+    "online": ("🟢", "online", "online", "respondeu com dados (JSON, XML ou CSV) na última verificação"),
+    "lenta": ("🟡", "lenta", "lentas", "respondeu, mas levou mais de 3 segundos"),
+    "instavel": ("🟠", "instável", "instáveis", "está no ar, mas falhou em mais de 5% das verificações dos últimos 30 dias"),
+    "fora": ("🔴", "fora do ar", "fora do ar", "não respondeu ou deu erro na última verificação"),
+    "pagina": ("🟣", "não é API", "não são API", "o endereço de exemplo devolveu uma página de site (HTML), não dados"),
+    "chave": ("🔑", "requer chave", "requerem chave", "precisa de chave ou cadastro, por isso não é testada automaticamente"),
+    "brasil": ("🇧🇷", "só do Brasil", "só do Brasil", "bloqueia acessos de fora do país e ainda não foi testada a partir de São Paulo"),
+    "aguardando": ("⚪", "aguardando", "aguardando", "entrou na lista e ainda não passou pela primeira verificação"),
+}
 
+
+def disponibilidade(info: dict) -> int:
     historico = info.get("historico") or [1]
-    disponibilidade = round(100 * sum(historico) / len(historico))
+    return round(100 * sum(historico) / len(historico))
+
+
+def classificar(api: dict, status: dict) -> str:
+    """Devolve a situação da API: uma das chaves de SITUACOES."""
+    if not deve_testar(api):
+        return "chave"
+    info = status.get(api["nome"])
+    if not info:
+        return "brasil" if so_do_brasil(api) else "aguardando"
+    if not info["ok"]:
+        return "fora"
+    if info.get("formato") == "html":
+        return "pagina"
     ms = info.get("ms")
-
     if ms and ms > LIMITE_LENTA_MS:
-        rotulo = "🟡 lenta"
-    elif disponibilidade < LIMITE_INSTAVEL:
-        rotulo = "🟡 instável"
-    else:
-        rotulo = "🟢 online"
+        return "lenta"
+    if disponibilidade(info) < LIMITE_INSTAVEL:
+        return "instavel"
+    return "online"
 
-    detalhes = f"{disponibilidade}%"
+
+def rotulo(situacao: str) -> str:
+    emoji, singular, _, _ = SITUACOES[situacao]
+    return f"{emoji} {singular}"
+
+
+def contar(apis: list[dict], status: dict) -> dict[str, int]:
+    contagem = {chave: 0 for chave in SITUACOES}
+    for api in apis:
+        contagem[classificar(api, status)] += 1
+    return contagem
+
+
+def resumo_curto(contagem: dict[str, int]) -> str:
+    """Ex.: '🟢 6 · 🟡 1 · 🔴 1 · 🔑 2' (só as situações que aparecem)."""
+    return " · ".join(f"{SITUACOES[c][0]} {n}" for c, n in contagem.items() if n)
+
+
+def linha_resumo(contagem: dict[str, int]) -> str:
+    """Ex.: '🟢 136 online · 🔴 30 fora do ar · 🔑 34 requerem chave'."""
+    partes = []
+    for chave, (emoji, singular, plural, _) in SITUACOES.items():
+        n = contagem[chave]
+        if n:
+            partes.append(f"{emoji} **{n}** {singular if n == 1 else plural}")
+    return " · ".join(partes)
+
+
+def tabela_resumo(contagem: dict[str, int], total: int) -> str:
+    linhas = ["| | Situação | APIs | O que significa |", "|:---:|---|:---:|---|"]
+    sempre = ("online", "lenta", "instavel", "fora", "chave")
+    for chave, (emoji, _, plural, significado) in SITUACOES.items():
+        if contagem[chave] or chave in sempre:
+            nome = plural[0].upper() + plural[1:]
+            linhas.append(f"| {emoji} | {nome} | **{contagem[chave]}** | {significado} |")
+    linhas.append(f"| | **Total** | **{total}** | |")
+    return "\n".join(linhas)
+
+
+def celula_status(api: dict, status: dict) -> str:
+    situacao = classificar(api, status)
+    brasil = so_do_brasil(api)
+    if situacao in ("chave", "brasil", "aguardando"):
+        return rotulo(situacao)
+    info = status[api["nome"]]
+    if situacao == "fora":
+        detalhe = "🇧🇷 só do Brasil" if brasil else ""
+        return rotulo(situacao) + (f"<br><sub>{detalhe}</sub>" if detalhe else "")
+
+    ms = info.get("ms")
+    detalhes = f"{disponibilidade(info)}%"
     if ms:
         detalhes += f" · {ms} ms"
     if info.get("aviso") == "certificado SSL inválido ou incompleto":
         detalhes += " · ⚠️ certificado SSL"
     elif info.get("aviso"):
         detalhes += " · ⚠️ TLS antigo"
+    if info.get("sem_chave"):
+        detalhes += " · 🔑 testada sem chave"
     if brasil:
         detalhes += " · 🇧🇷 só do Brasil"
-    return f"{rotulo}<br><sub>{detalhes}</sub>"
+    return f"{rotulo(situacao)}<br><sub>{detalhes}</sub>"
 
 
 def celula_cors(api: dict, status: dict) -> str:
@@ -79,7 +155,7 @@ def celula_api(api: dict) -> str:
 def celula_descricao(api: dict) -> str:
     texto = escapar(api["descricao"])
     extras = []
-    if deve_testar(api):
+    if exemplo_testavel(api):
         extras.append(f"[exemplo]({api['exemplo']})")
     if api.get("limite"):
         extras.append(f"limite: {escapar(api['limite'])}")
@@ -94,7 +170,8 @@ def gerar_tabelas(dados: dict, status: dict) -> tuple[str, str]:
         apis = [a for a in dados["apis"] if a["categoria"] == categoria["id"]]
         apis.sort(key=lambda a: unicodedata.normalize("NFKD", a["nome"].lower()))
         titulo = categoria["nome"]
-        indice.append(f"- [{titulo}](#{ancora(titulo)}) ({len(apis)})")
+        resumo = resumo_curto(contar(apis, status))
+        indice.append(f"- [{titulo}](#{ancora(titulo)}) ({len(apis)}) — {resumo}")
 
         linhas = [
             f"### {titulo}",
@@ -152,6 +229,8 @@ def main() -> None:
         badges_status = [badge("verificação", "aguardando", "lightgrey")]
 
     indice, tabelas = gerar_tabelas(dados, status)
+    contagem_geral = contar(dados["apis"], status)
+    resumo = linha_resumo(contagem_geral) + "\n\n" + tabela_resumo(contagem_geral, total)
     badges = " ".join([badge("APIs", str(total), "009c3b"), *badges_status])
 
     conteudo = MODELO.read_text(encoding="utf-8")
@@ -160,6 +239,7 @@ def main() -> None:
         "{{TOTAL}}": str(total),
         "{{TOTAL_CATEGORIAS}}": str(len(dados["categorias"])),
         "{{VERIFICACAO}}": texto_verificacao,
+        "{{RESUMO}}": resumo,
         "{{INDICE}}": indice,
         "{{TABELAS}}": tabelas,
     }

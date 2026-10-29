@@ -11,7 +11,7 @@ import sys
 from common import ACESSOS, AUTENTICACOES, carregar_dados
 
 CAMPOS_OBRIGATORIOS = ("nome", "categoria", "descricao", "docs", "autenticacao", "exemplo")
-CAMPOS_PERMITIDOS = set(CAMPOS_OBRIGATORIOS) | {"limite", "teste", "acesso"}
+CAMPOS_PERMITIDOS = set(CAMPOS_OBRIGATORIOS) | {"limite", "teste", "acesso", "teste_sem_chave"}
 TAMANHO_MAXIMO_DESCRICAO = 120
 
 
@@ -57,7 +57,7 @@ def validar(dados: dict) -> list[str]:
             opcoes = ", ".join(AUTENTICACOES)
             erros.append(f"{rotulo}: autenticacao '{autenticacao}' inválida. Use: {opcoes}.")
 
-        for campo in ("docs", "exemplo"):
+        for campo in ("docs", "exemplo", "teste_sem_chave"):
             valor = str(api.get(campo, ""))
             # Prefira https://. http:// é aceito para serviços oficiais que só respondem em HTTP.
             if valor and not valor.startswith(("https://", "http://")):
@@ -79,6 +79,8 @@ def validar(dados: dict) -> list[str]:
         teste = api.get("teste", True)
         if not isinstance(teste, bool):
             erros.append(f"{rotulo}: 'teste' deve ser true ou false.")
+        if api.get("teste_sem_chave") and teste is not False:
+            erros.append(f"{rotulo}: 'teste_sem_chave' só faz sentido com 'teste: false'.")
 
     for categoria in categorias:
         if categoria.get("id") not in categorias_usadas:

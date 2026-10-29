@@ -33,6 +33,7 @@ Sem tempo para isso? [Sugira a API em uma issue](../../issues/new?template=suger
 | `limite` | não | Limite de uso conhecido, ex.: `3 req/min por IP`. |
 | `exemplo` | sim | Uma URL GET que funciona de verdade e retorna dados. É ela que o robô testa todo dia. |
 | `acesso` | não | Use `acesso: brasil` quando a API bloqueia acessos de fora do Brasil (abre no seu navegador, mas falha no robô do GitHub). Ela passa a ser testada a partir de São Paulo, pela função na nuvem do projeto. |
+| `teste_sem_chave` | não | Para APIs que exigem chave: uma URL da API que o robô chama **sem** a chave. Se ela responder 401 ou 403 ("não autorizado"), conta como no ar. Use junto com `teste: false`. |
 | `teste` | não | Use `teste: false` quando a API exige chave ou não aceita um GET simples. Nesse caso, coloque em `exemplo` o link da documentação. |
 
 ## O que entra na lista

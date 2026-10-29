@@ -19,7 +19,15 @@ import tempfile
 import urllib.request
 from datetime import datetime, timezone
 
-from common import carregar_dados, carregar_status, deve_testar, salvar_status, so_do_brasil
+from common import (
+    carregar_dados,
+    carregar_status,
+    deve_testar,
+    salvar_status,
+    so_do_brasil,
+    testa_sem_chave,
+    url_teste,
+)
 from verificacao import verificar_lista
 
 TAMANHO_HISTORICO = 30  # dias guardados para calcular a disponibilidade
@@ -87,6 +95,10 @@ def imprimir(nome: str, resultado: dict, origem: str = "") -> None:
     simbolo = "OK  " if resultado["ok"] else "ERRO"
     detalhe = resultado["http"] if resultado["ok"] else resultado["erro"]
     aviso = f" [aviso: {resultado['aviso']}]" if resultado.get("aviso") else ""
+    if resultado.get("formato") == "html":
+        aviso += " [atenção: devolveu uma página HTML, não dados]"
+    if resultado.get("sem_chave"):
+        aviso += " [testada sem chave]"
     tempo = f"{resultado['ms']} ms" if resultado["ms"] is not None else "sem resposta"
     print(f"[{simbolo}] {nome}: {detalhe} ({tempo}){aviso}{origem}")
 
@@ -95,8 +107,12 @@ def main() -> None:
     dados = carregar_dados()
     status_anterior = carregar_status().get("apis", {})
     testaveis = [api for api in dados["apis"] if deve_testar(api)]
-    daqui = {api["nome"]: api["exemplo"] for api in testaveis if not so_do_brasil(api)}
-    do_brasil = {api["nome"]: api["exemplo"] for api in testaveis if so_do_brasil(api)}
+    daqui = {
+        api["nome"]: {"url": url_teste(api), "sem_chave": testa_sem_chave(api)}
+        for api in testaveis
+        if not so_do_brasil(api)
+    }
+    do_brasil = {api["nome"]: url_teste(api) for api in testaveis if so_do_brasil(api)}
 
     resultados = verificar_lista(daqui)
 
@@ -134,6 +150,8 @@ def main() -> None:
             "cors": cors,
             "erro": resultado["erro"],
             "aviso": resultado.get("aviso"),
+            "formato": resultado.get("formato"),
+            "sem_chave": bool(resultado.get("sem_chave")),
             "historico": historico,
         }
         imprimir(nome, resultado, " [testada do Brasil]" if nome in do_brasil else "")

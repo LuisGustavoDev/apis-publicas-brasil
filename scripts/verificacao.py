@@ -11,6 +11,7 @@ Este arquivo é usado em dois lugares:
 from __future__ import annotations
 
 import hmac
+import json
 import os
 import ssl
 import time
@@ -22,6 +23,8 @@ TEMPO_LIMITE = 30  # segundos por requisição
 ESPERA_ANTES_DE_REPETIR = 5  # segundos
 ORIGEM_TESTE = "https://example.com"
 USER_AGENT = "apis-publicas-brasil/1.0 (verificacao diaria de disponibilidade)"
+
+LIMITE_LEITURA = 512 * 1024  # bytes lidos da resposta para conferir o formato
 
 AVISO_CERTIFICADO = "certificado SSL inválido ou incompleto"
 AVISO_TLS_ANTIGO = "configuração de segurança (TLS) antiga"
@@ -55,8 +58,34 @@ def _contexto(modo: str) -> ssl.SSLContext | None:
     return None
 
 
-def requisitar(url: str, modo: str = "normal", tempo_limite: float = TEMPO_LIMITE) -> dict:
-    """Faz um GET e devolve o resultado. modo: normal, sem_certificado ou tls_antigo."""
+def detectar_formato(content_type: str, corpo: bytes, completo: bool) -> str:
+    """Descobre o que a resposta contém: json, xml, csv, html (página de site) ou outro."""
+    tipo = (content_type or "").lower()
+    inicio = corpo.lstrip()[:200].lower()
+    if "html" in tipo or inicio.startswith((b"<!doctype html", b"<html")):
+        return "html"
+    if "json" in tipo or inicio[:1] in (b"{", b"["):
+        if completo:
+            try:
+                json.loads(corpo.decode("utf-8-sig"))
+            except ValueError:
+                return "outro"
+        return "json"
+    if "xml" in tipo or inicio.startswith(b"<"):
+        return "xml"
+    if "csv" in tipo:
+        return "csv"
+    return "outro"
+
+
+def requisitar(
+    url: str, modo: str = "normal", tempo_limite: float = TEMPO_LIMITE, aceitar_auth: bool = False
+) -> dict:
+    """Faz um GET e devolve o resultado. modo: normal, sem_certificado ou tls_antigo.
+
+    Com aceitar_auth=True (APIs que exigem chave, testadas sem ela), respostas 401 e 403
+    contam como "no ar": o servidor respondeu e só recusou por falta da chave.
+    """
     pedido = urllib.request.Request(
         url,
         headers={
@@ -68,12 +97,13 @@ def requisitar(url: str, modo: str = "normal", tempo_limite: float = TEMPO_LIMIT
     inicio = time.monotonic()
     try:
         with urllib.request.urlopen(pedido, timeout=tempo_limite, context=_contexto(modo)) as resposta:
-            resposta.read(65536)  # basta confirmar que o corpo começa a chegar
+            corpo = resposta.read(LIMITE_LEITURA + 1)
             codigo = resposta.status
             cabecalhos = resposta.headers
     except urllib.error.HTTPError as erro:
         codigo = erro.code
         cabecalhos = erro.headers
+        corpo = b""
     except Exception as erro:  # timeout, DNS, TLS, conexão recusada...
         texto = descrever_erro(erro)
         return {
@@ -91,55 +121,69 @@ def requisitar(url: str, modo: str = "normal", tempo_limite: float = TEMPO_LIMIT
     cors = acao in ("*", ORIGEM_TESTE)
     # 429 significa que a API está no ar, apenas limitou a requisição.
     sucesso = 200 <= codigo < 300
-    ok = sucesso or codigo == 429
+    ok = sucesso or codigo == 429 or (aceitar_auth and codigo in (401, 403))
+    formato = None
+    if sucesso:
+        completo = len(corpo) <= LIMITE_LEITURA
+        formato = detectar_formato(cabecalhos.get("Content-Type", ""), corpo[:LIMITE_LEITURA], completo)
     # Só confia no cabeçalho de CORS quando a resposta foi um sucesso normal.
     return {
         "ok": ok,
         "http": codigo,
         "ms": ms,
         "cors": cors if sucesso else None,
+        "formato": formato,
         "erro": None if ok else f"HTTP {codigo}",
     }
 
 
 def verificar_url(
-    url: str, tempo_limite: float = TEMPO_LIMITE, espera: float = ESPERA_ANTES_DE_REPETIR
+    url: str,
+    tempo_limite: float = TEMPO_LIMITE,
+    espera: float = ESPERA_ANTES_DE_REPETIR,
+    aceitar_auth: bool = False,
 ) -> dict:
     """Testa uma URL, repetindo uma vez em caso de falha e contornando problemas de TLS."""
-    resultado = requisitar(url, tempo_limite=tempo_limite)
+    resultado = requisitar(url, tempo_limite=tempo_limite, aceitar_auth=aceitar_auth)
     if not resultado["ok"]:
         time.sleep(espera)
-        resultado = requisitar(url, tempo_limite=tempo_limite)
+        resultado = requisitar(url, tempo_limite=tempo_limite, aceitar_auth=aceitar_auth)
 
     # Alguns servidores públicos enviam a cadeia de certificados incompleta: o navegador
     # aceita, mas clientes como Python e Node recusam. Testa de novo sem verificar o
     # certificado, só para saber se a API está no ar, e registra o aviso.
     if not resultado["ok"] and resultado.get("certificado_invalido"):
-        resultado = requisitar(url, modo="sem_certificado", tempo_limite=tempo_limite)
+        resultado = requisitar(url, "sem_certificado", tempo_limite, aceitar_auth)
         resultado["aviso"] = AVISO_CERTIFICADO
 
     # Outros usam configurações de TLS antigas que o Python recusa por padrão.
     if not resultado["ok"] and resultado.get("tls_antigo"):
-        resultado = requisitar(url, modo="tls_antigo", tempo_limite=tempo_limite)
+        resultado = requisitar(url, "tls_antigo", tempo_limite, aceitar_auth)
         resultado["aviso"] = AVISO_TLS_ANTIGO
 
     resultado.pop("certificado_invalido", None)
     resultado.pop("tls_antigo", None)
+    if aceitar_auth:
+        resultado["sem_chave"] = True
     return resultado
 
 
 def verificar_lista(
-    apis: dict[str, str],
+    apis: dict,
     paralelo: int = 8,
     tempo_limite: float = TEMPO_LIMITE,
     espera: float = ESPERA_ANTES_DE_REPETIR,
 ) -> dict[str, dict]:
-    """Recebe {nome: url} e devolve {nome: resultado}."""
+    """Recebe {nome: url} ou {nome: {"url": ..., "sem_chave": bool}} e devolve {nome: resultado}."""
+    def testar(nome: str) -> dict:
+        alvo = apis[nome]
+        if isinstance(alvo, dict):
+            return verificar_url(alvo["url"], tempo_limite, espera, bool(alvo.get("sem_chave")))
+        return verificar_url(alvo, tempo_limite, espera)
+
     nomes = list(apis)
     with ThreadPoolExecutor(max_workers=paralelo) as executor:
-        resultados = list(
-            executor.map(lambda nome: verificar_url(apis[nome], tempo_limite, espera), nomes)
-        )
+        resultados = list(executor.map(testar, nomes))
     return dict(zip(nomes, resultados))
 
 
@@ -163,7 +207,7 @@ def processar_pedido(
     )
     if not validas:
         return {"erro": "envie {\"apis\": {nome: url}} com 1 a 50 URLs http(s)"}, 400
-    return {"resultados": verificar_lista(apis, 16, tempo_limite, espera)}, 200
+    return {"resultados": verificar_lista(apis, 32, tempo_limite, espera)}, 200
 
 
 def verificar_http(request):

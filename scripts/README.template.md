@@ -24,6 +24,12 @@ São **{{TOTAL}} APIs** em **{{TOTAL_CATEGORIAS}} categorias**: CEP, CNPJ, banco
 
 ## Índice
 
+**Situação das APIs na última verificação** (atualizada automaticamente a cada teste):
+
+{{RESUMO}}
+
+Ao lado de cada categoria aparecem as mesmas contagens, com os símbolos da tabela acima.
+
 {{INDICE}}
 
 ## APIs
@@ -36,7 +42,7 @@ São **{{TOTAL}} APIs** em **{{TOTAL_CATEGORIAS}} categorias**: CEP, CNPJ, banco
 |---|---|
 | **Autenticação** | **Não**: é só chamar · **Opcional**: funciona sem chave, mas uma chave grátis aumenta os limites · **Chave grátis / Token grátis**: exige cadastro gratuito · **Chave pública**: a chave é divulgada publicamente pelo órgão |
 | **CORS** | **Sim**: pode ser chamada direto do navegador (front-end) · **Não**: chame pelo seu servidor · **?**: ainda não verificado |
-| **Status** | 🟢 online · 🟡 lenta (acima de 3 s) ou instável (disponibilidade abaixo de 95% nos últimos 30 dias) · 🔴 fora do ar na última verificação · 🔑 requer chave, por isso não é testada automaticamente · 🇧🇷 só do Brasil: a API bloqueia acessos de fora do país e é testada a partir de São Paulo · ⚪ aguardando a primeira verificação |
+| **Status** | Mesmos símbolos da tabela de situação no [Índice](#índice). Nos detalhes: **🔑 testada sem chave** indica uma API que exige chave e foi testada sem ela (respondeu “não autorizado”, o que mostra que está no ar); **🇧🇷 só do Brasil** indica uma API que bloqueia acessos de fora do país e é testada a partir de São Paulo |
 
 A porcentagem mostra a disponibilidade nos últimos 30 dias de verificação. O aviso **⚠️ certificado SSL** indica que o servidor envia um certificado incompleto: abre normalmente no navegador, mas pode dar erro de certificado em Python, Node e outros clientes de back-end. O aviso **⚠️ TLS antigo** indica um servidor com configuração de segurança antiga, que alguns clientes recusam por padrão. APIs marcadas com **🇧🇷 só do Brasil** não funcionam em servidores hospedados fora do país (por exemplo, nos EUA).
 
