@@ -15,25 +15,12 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "http": 503,
-      "ms": 144,
+      "ms": 116,
       "ok": false,
-      "sem_chave": false
-    },
-    "ANA Telemetria": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "html",
-      "historico": [
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 647,
-      "ok": true,
       "sem_chave": false
     },
     "ANEEL Dados Abertos": {
@@ -43,10 +30,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 1021,
+      "ms": 646,
       "ok": true,
       "sem_chave": false
     },
@@ -65,6 +53,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "http": null,
@@ -78,10 +67,11 @@
       "erro": null,
       "formato": null,
       "historico": [
+        1,
         1
       ],
       "http": 401,
-      "ms": 668,
+      "ms": 665,
       "ok": true,
       "sem_chave": true
     },
@@ -92,19 +82,21 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 1389,
+      "ms": 1461,
       "ok": true,
       "sem_chave": false
     },
     "Alagoas Dados Abertos": {
       "aviso": null,
       "cors": null,
-      "erro": "ConnectionResetError: [Errno 104] Connection reset by peer",
+      "erro": "TimeoutError: timed out",
       "formato": null,
       "historico": [
+        0,
         0,
         0
       ],
@@ -119,10 +111,11 @@
       "erro": null,
       "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 124,
+      "ms": 169,
       "ok": true,
       "sem_chave": true
     },
@@ -141,10 +134,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 546,
+      "ms": 539,
       "ok": true,
       "sem_chave": false
     },
@@ -155,10 +149,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 1396,
+      "ms": 2072,
       "ok": true,
       "sem_chave": false
     },
@@ -177,10 +172,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 429,
-      "ms": 318,
+      "ms": 288,
       "ok": true,
       "sem_chave": false
     },
@@ -199,10 +195,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 429,
-      "ms": 241,
+      "ms": 203,
       "ok": true,
       "sem_chave": false
     },
@@ -213,10 +210,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 979,
+      "ms": 1153,
       "ok": true,
       "sem_chave": false
     },
@@ -227,10 +225,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 1107,
+      "ms": 1067,
       "ok": true,
       "sem_chave": false
     },
@@ -241,10 +240,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 1418,
+      "ms": 1055,
       "ok": true,
       "sem_chave": false
     },
@@ -255,10 +255,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 194,
+      "ms": 607,
       "ok": true,
       "sem_chave": false
     },
@@ -277,10 +278,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 753,
+      "ms": 606,
       "ok": true,
       "sem_chave": false
     },
@@ -299,10 +301,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 665,
+      "ms": 637,
       "ok": true,
       "sem_chave": false
     },
@@ -321,10 +324,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 648,
+      "ms": 765,
       "ok": true,
       "sem_chave": false
     },
@@ -343,10 +347,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 3598,
+      "ms": 3327,
       "ok": true,
       "sem_chave": false
     },
@@ -365,10 +370,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 817,
+      "ms": 320,
       "ok": true,
       "sem_chave": false
     },
@@ -379,10 +385,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 642,
+      "ms": 601,
       "ok": true,
       "sem_chave": false
     },
@@ -401,10 +408,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 111,
+      "ms": 150,
       "ok": true,
       "sem_chave": false
     },
@@ -415,10 +423,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 361,
+      "ms": 256,
       "ok": true,
       "sem_chave": false
     },
@@ -429,25 +438,13 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 213,
+      "ms": 194,
       "ok": true,
       "sem_chave": false
-    },
-    "Brasil Aberto": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "html",
-      "historico": [
-        1
-      ],
-      "http": 200,
-      "ms": 630,
-      "ok": true,
-      "sem_chave": true
     },
     "Brasil.IO": {
       "aviso": null,
@@ -455,10 +452,11 @@
       "erro": null,
       "formato": null,
       "historico": [
+        1,
         1
       ],
       "http": 401,
-      "ms": 367,
+      "ms": 256,
       "ok": true,
       "sem_chave": true
     },
@@ -477,10 +475,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 202,
+      "ms": 129,
       "ok": true,
       "sem_chave": false
     },
@@ -499,10 +498,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 355,
+      "ms": 287,
       "ok": true,
       "sem_chave": false
     },
@@ -521,10 +521,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 359,
+      "ms": 324,
       "ok": true,
       "sem_chave": false
     },
@@ -543,10 +544,11 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "http": 500,
-      "ms": 1164,
+      "ms": 1131,
       "ok": false,
       "sem_chave": false
     },
@@ -565,10 +567,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 395,
+      "ms": 314,
       "ok": true,
       "sem_chave": false
     },
@@ -587,10 +590,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 889,
+      "ms": 90,
       "ok": true,
       "sem_chave": false
     },
@@ -609,10 +613,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 142,
+      "ms": 112,
       "ok": true,
       "sem_chave": false
     },
@@ -631,10 +636,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 104,
+      "ms": 95,
       "ok": true,
       "sem_chave": false
     },
@@ -653,10 +659,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 139,
+      "ms": 93,
       "ok": true,
       "sem_chave": false
     },
@@ -667,10 +674,11 @@
       "formato": "json",
       "historico": [
         0,
+        1,
         1
       ],
       "http": 200,
-      "ms": 145,
+      "ms": 96,
       "ok": true,
       "sem_chave": false
     },
@@ -689,10 +697,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 539,
+      "ms": 101,
       "ok": true,
       "sem_chave": false
     },
@@ -711,10 +720,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 1910,
+      "ms": 97,
       "ok": true,
       "sem_chave": false
     },
@@ -733,10 +743,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 172,
+      "ms": 112,
       "ok": true,
       "sem_chave": false
     },
@@ -755,10 +766,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 912,
+      "ms": 92,
       "ok": true,
       "sem_chave": false
     },
@@ -777,10 +789,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 110,
+      "ms": 108,
       "ok": true,
       "sem_chave": false
     },
@@ -799,18 +812,19 @@
         1,
         0,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 29562,
+      "ms": 718,
       "ok": true,
       "sem_chave": false
     },
     "CCEE Dados Abertos": {
       "aviso": null,
       "cors": false,
-      "erro": null,
-      "formato": "json",
+      "erro": "HTTP 403",
+      "formato": null,
       "historico": [
         1,
         1,
@@ -821,11 +835,12 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ],
-      "http": 200,
-      "ms": 717,
-      "ok": true,
+      "http": 403,
+      "ms": 58,
+      "ok": false,
       "sem_chave": false
     },
     "CEP Aberto": {
@@ -834,10 +849,11 @@
       "erro": null,
       "formato": null,
       "historico": [
+        1,
         1
       ],
       "http": 401,
-      "ms": 965,
+      "ms": 902,
       "ok": true,
       "sem_chave": true
     },
@@ -856,10 +872,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 239,
+      "ms": 670,
       "ok": true,
       "sem_chave": false
     },
@@ -878,10 +895,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 238,
+      "ms": 243,
       "ok": true,
       "sem_chave": false
     },
@@ -900,10 +918,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 3567,
+      "ms": 1968,
       "ok": true,
       "sem_chave": false
     },
@@ -922,10 +941,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 631,
+      "ms": 644,
       "ok": true,
       "sem_chave": false
     },
@@ -935,10 +955,11 @@
       "erro": null,
       "formato": null,
       "historico": [
+        1,
         1
       ],
       "http": 401,
-      "ms": 308,
+      "ms": 264,
       "ok": true,
       "sem_chave": true
     },
@@ -957,24 +978,26 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 589,
+      "ms": 683,
       "ok": true,
       "sem_chave": false
     },
     "Climatempo Advisor": {
       "aviso": null,
       "cors": null,
-      "erro": "HTTP 400",
+      "erro": null,
       "formato": null,
       "historico": [
-        0
+        0,
+        1
       ],
       "http": 400,
-      "ms": 106,
-      "ok": false,
+      "ms": 273,
+      "ok": true,
       "sem_chave": true
     },
     "CoinGecko": {
@@ -992,10 +1015,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 149,
+      "ms": 140,
       "ok": true,
       "sem_chave": false
     },
@@ -1006,10 +1030,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 384,
+      "ms": 276,
       "ok": true,
       "sem_chave": false
     },
@@ -1019,10 +1044,11 @@
       "erro": null,
       "formato": null,
       "historico": [
+        1,
         1
       ],
       "http": 401,
-      "ms": 300,
+      "ms": 598,
       "ok": true,
       "sem_chave": true
     },
@@ -1033,10 +1059,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 224,
+      "ms": 374,
       "ok": true,
       "sem_chave": false
     },
@@ -1047,10 +1074,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 256,
+      "ms": 50,
       "ok": true,
       "sem_chave": false
     },
@@ -1069,10 +1097,24 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 2914,
+      "ms": 4123,
+      "ok": true,
+      "sem_chave": false
+    },
+    "DOAJ": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 323,
       "ok": true,
       "sem_chave": false
     },
@@ -1082,10 +1124,11 @@
       "erro": null,
       "formato": null,
       "historico": [
+        1,
         1
       ],
       "http": 401,
-      "ms": 818,
+      "ms": 824,
       "ok": true,
       "sem_chave": true
     },
@@ -1096,10 +1139,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 320,
+      "ms": 330,
       "ok": true,
       "sem_chave": false
     },
@@ -1118,10 +1162,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 480,
+      "ms": 474,
       "ok": true,
       "sem_chave": false
     },
@@ -1131,10 +1176,11 @@
       "erro": null,
       "formato": null,
       "historico": [
+        1,
         1
       ],
       "http": 401,
-      "ms": 775,
+      "ms": 707,
       "ok": true,
       "sem_chave": true
     },
@@ -1145,10 +1191,24 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 1136,
+      "ms": 2084,
+      "ok": true,
+      "sem_chave": false
+    },
+    "Europe PMC": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 1275,
       "ok": true,
       "sem_chave": false
     },
@@ -1159,10 +1219,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 206,
+      "ms": 155,
       "ok": true,
       "sem_chave": false
     },
@@ -1181,10 +1242,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 809,
+      "ms": 843,
       "ok": true,
       "sem_chave": false
     },
@@ -1195,10 +1257,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 545,
+      "ms": 5040,
       "ok": true,
       "sem_chave": false
     },
@@ -1208,6 +1271,7 @@
       "erro": "HTTP 403",
       "formato": null,
       "historico": [
+        0,
         0,
         0
       ],
@@ -1222,10 +1286,11 @@
       "erro": null,
       "formato": null,
       "historico": [
+        1,
         1
       ],
       "http": 401,
-      "ms": 307,
+      "ms": 367,
       "ok": true,
       "sem_chave": true
     },
@@ -1236,10 +1301,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 412,
+      "ms": 342,
       "ok": true,
       "sem_chave": false
     },
@@ -1258,10 +1324,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 588,
+      "ms": 546,
       "ok": true,
       "sem_chave": false
     },
@@ -1272,10 +1339,11 @@
       "formato": null,
       "historico": [
         0,
+        0,
         0
       ],
       "http": 403,
-      "ms": 16,
+      "ms": 17,
       "ok": false,
       "sem_chave": false
     },
@@ -1286,24 +1354,26 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 2107,
+      "ms": 550,
       "ok": true,
       "sem_chave": false
     },
     "GNews": {
       "aviso": null,
       "cors": null,
-      "erro": "HTTP 400",
+      "erro": null,
       "formato": null,
       "historico": [
-        0
+        0,
+        1
       ],
       "http": 400,
-      "ms": 105,
-      "ok": false,
+      "ms": 196,
+      "ok": true,
       "sem_chave": true
     },
     "GeoNames": {
@@ -1312,10 +1382,11 @@
       "erro": null,
       "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 780,
+      "ms": 769,
       "ok": true,
       "sem_chave": true
     },
@@ -1326,10 +1397,11 @@
       "formato": null,
       "historico": [
         0,
+        0,
         0
       ],
       "http": 403,
-      "ms": 80,
+      "ms": 81,
       "ok": false,
       "sem_chave": false
     },
@@ -1340,10 +1412,11 @@
       "formato": null,
       "historico": [
         1,
+        1,
         1
       ],
       "http": 429,
-      "ms": 82,
+      "ms": 113,
       "ok": true,
       "sem_chave": false
     },
@@ -1354,10 +1427,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 3604,
+      "ms": 4510,
       "ok": true,
       "sem_chave": false
     },
@@ -1368,10 +1442,11 @@
       "formato": "json",
       "historico": [
         0,
+        1,
         1
       ],
       "http": 200,
-      "ms": 284,
+      "ms": 280,
       "ok": true,
       "sem_chave": false
     },
@@ -1381,10 +1456,11 @@
       "erro": null,
       "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 228,
+      "ms": 125,
       "ok": true,
       "sem_chave": true
     },
@@ -1394,10 +1470,11 @@
       "erro": null,
       "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 224,
+      "ms": 194,
       "ok": true,
       "sem_chave": true
     },
@@ -1408,10 +1485,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 603,
+      "ms": 729,
       "ok": true,
       "sem_chave": false
     },
@@ -1423,10 +1501,11 @@
       "historico": [
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 186,
+      "ms": 258,
       "ok": true,
       "sem_chave": false
     },
@@ -1438,10 +1517,11 @@
       "historico": [
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 103,
+      "ms": 155,
       "ok": true,
       "sem_chave": false
     },
@@ -1453,10 +1533,11 @@
       "historico": [
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 60,
+      "ms": 98,
       "ok": true,
       "sem_chave": false
     },
@@ -1467,10 +1548,11 @@
       "formato": "xml",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 170,
+      "ms": 156,
       "ok": true,
       "sem_chave": false
     },
@@ -1482,10 +1564,11 @@
       "historico": [
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 144,
+      "ms": 198,
       "ok": true,
       "sem_chave": false
     },
@@ -1497,10 +1580,11 @@
       "historico": [
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 135,
+      "ms": 202,
       "ok": true,
       "sem_chave": false
     },
@@ -1512,10 +1596,11 @@
       "historico": [
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 223,
+      "ms": 234,
       "ok": true,
       "sem_chave": false
     },
@@ -1523,14 +1608,15 @@
       "aviso": null,
       "cors": true,
       "erro": null,
-      "formato": "json",
+      "formato": "outro",
       "historico": [
+        1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 115,
+      "ms": 181,
       "ok": true,
       "sem_chave": false
     },
@@ -1542,10 +1628,11 @@
       "historico": [
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 65,
+      "ms": 172,
       "ok": true,
       "sem_chave": false
     },
@@ -1556,10 +1643,11 @@
       "formato": "outro",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 83,
+      "ms": 62,
       "ok": true,
       "sem_chave": false
     },
@@ -1570,10 +1658,11 @@
       "formato": null,
       "historico": [
         0,
+        0,
         0
       ],
       "http": 404,
-      "ms": 63,
+      "ms": 62,
       "ok": false,
       "sem_chave": false
     },
@@ -1592,10 +1681,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 408,
+      "ms": 413,
       "ok": true,
       "sem_chave": false
     },
@@ -1614,10 +1704,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 2215,
+      "ms": 1904,
       "ok": true,
       "sem_chave": false
     },
@@ -1628,10 +1719,11 @@
       "formato": null,
       "historico": [
         0,
+        0,
         0
       ],
       "http": 502,
-      "ms": 3672,
+      "ms": 3771,
       "ok": false,
       "sem_chave": false
     },
@@ -1642,10 +1734,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 125,
+      "ms": 41,
       "ok": true,
       "sem_chave": false
     },
@@ -1656,10 +1749,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 340,
+      "ms": 591,
       "ok": true,
       "sem_chave": false
     },
@@ -1669,10 +1763,11 @@
       "erro": null,
       "formato": null,
       "historico": [
+        1,
         1
       ],
       "http": 401,
-      "ms": 186,
+      "ms": 447,
       "ok": true,
       "sem_chave": true
     },
@@ -1691,10 +1786,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 30766,
+      "ms": 741,
       "ok": true,
       "sem_chave": false
     },
@@ -1705,10 +1801,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 542,
+      "ms": 493,
       "ok": true,
       "sem_chave": false
     },
@@ -1719,32 +1816,11 @@
       "formato": "json",
       "historico": [
         1,
-        1
-      ],
-      "http": 200,
-      "ms": 521,
-      "ok": true,
-      "sem_chave": false
-    },
-    "LexML": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "html",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         1,
         1
       ],
       "http": 200,
-      "ms": 2255,
+      "ms": 612,
       "ok": true,
       "sem_chave": false
     },
@@ -1763,24 +1839,11 @@
         1,
         1,
         1,
-        1
-      ],
-      "http": 200,
-      "ms": 132,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Mapas Culturais (MinC)": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "html",
-      "historico": [
         1,
         1
       ],
       "http": 200,
-      "ms": 3784,
+      "ms": 121,
       "ok": true,
       "sem_chave": false
     },
@@ -1799,10 +1862,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 258,
+      "ms": 267,
       "ok": true,
       "sem_chave": false
     },
@@ -1813,10 +1877,11 @@
       "formato": null,
       "historico": [
         0,
+        1,
         1
       ],
       "http": 403,
-      "ms": 88,
+      "ms": 99,
       "ok": true,
       "sem_chave": true
     },
@@ -1827,10 +1892,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 645,
+      "ms": 593,
       "ok": true,
       "sem_chave": false
     },
@@ -1849,10 +1915,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 530,
+      "ms": 330,
       "ok": true,
       "sem_chave": false
     },
@@ -1863,10 +1930,24 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 677,
+      "ms": 395,
+      "ok": true,
+      "sem_chave": false
+    },
+    "NASA EONET": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 353,
       "ok": true,
       "sem_chave": false
     },
@@ -1877,10 +1958,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 355,
+      "ms": 352,
       "ok": true,
       "sem_chave": false
     },
@@ -1899,10 +1981,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 342,
+      "ms": 206,
       "ok": true,
       "sem_chave": false
     },
@@ -1912,10 +1995,11 @@
       "erro": null,
       "formato": null,
       "historico": [
+        1,
         1
       ],
       "http": 401,
-      "ms": 205,
+      "ms": 249,
       "ok": true,
       "sem_chave": true
     },
@@ -1926,10 +2010,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 436,
+      "ms": 497,
       "ok": true,
       "sem_chave": false
     },
@@ -1940,10 +2025,11 @@
       "formato": null,
       "historico": [
         0,
+        0,
         0
       ],
       "http": 500,
-      "ms": 712,
+      "ms": 519,
       "ok": false,
       "sem_chave": false
     },
@@ -1954,10 +2040,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 331,
+      "ms": 1483,
       "ok": true,
       "sem_chave": false
     },
@@ -1968,10 +2055,24 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 639,
+      "ms": 1010,
+      "ok": true,
+      "sem_chave": false
+    },
+    "ORCID": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 625,
       "ok": true,
       "sem_chave": false
     },
@@ -1982,10 +2083,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 4211,
+      "ms": 1061,
       "ok": true,
       "sem_chave": false
     },
@@ -1996,10 +2098,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 858,
+      "ms": 997,
       "ok": true,
       "sem_chave": false
     },
@@ -2010,10 +2113,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 495,
+      "ms": 1115,
       "ok": true,
       "sem_chave": false
     },
@@ -2024,10 +2128,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 415,
+      "ms": 437,
       "ok": true,
       "sem_chave": false
     },
@@ -2046,10 +2151,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 505,
+      "ms": 251,
       "ok": true,
       "sem_chave": false
     },
@@ -2060,10 +2166,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 495,
+      "ms": 498,
       "ok": true,
       "sem_chave": false
     },
@@ -2074,10 +2181,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 511,
+      "ms": 500,
       "ok": true,
       "sem_chave": false
     },
@@ -2088,10 +2196,24 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 541,
+      "ms": 511,
+      "ok": true,
+      "sem_chave": false
+    },
+    "Open-Meteo Ensemble": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 630,
       "ok": true,
       "sem_chave": false
     },
@@ -2102,10 +2224,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 523,
+      "ms": 567,
       "ok": true,
       "sem_chave": false
     },
@@ -2116,10 +2239,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 540,
+      "ms": 498,
       "ok": true,
       "sem_chave": false
     },
@@ -2130,10 +2254,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 506,
+      "ms": 524,
       "ok": true,
       "sem_chave": false
     },
@@ -2144,10 +2269,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 497,
+      "ms": 528,
       "ok": true,
       "sem_chave": false
     },
@@ -2157,10 +2283,11 @@
       "erro": null,
       "formato": null,
       "historico": [
+        1,
         1
       ],
       "http": 401,
-      "ms": 127,
+      "ms": 113,
       "ok": true,
       "sem_chave": true
     },
@@ -2171,10 +2298,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 544,
+      "ms": 499,
       "ok": true,
       "sem_chave": false
     },
@@ -2193,10 +2321,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 163,
+      "ms": 131,
       "ok": true,
       "sem_chave": false
     },
@@ -2215,32 +2344,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 437,
-      "ok": true,
-      "sem_chave": false
-    },
-    "OpenDataSUS": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "html",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1
-      ],
-      "http": 200,
-      "ms": 509,
+      "ms": 169,
       "ok": true,
       "sem_chave": false
     },
@@ -2251,10 +2359,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 537,
+      "ms": 665,
       "ok": true,
       "sem_chave": false
     },
@@ -2264,10 +2373,11 @@
       "erro": null,
       "formato": null,
       "historico": [
+        1,
         1
       ],
       "http": 401,
-      "ms": 139,
+      "ms": 170,
       "ok": true,
       "sem_chave": true
     },
@@ -2277,6 +2387,7 @@
       "erro": "TimeoutError: The read operation timed out",
       "formato": null,
       "historico": [
+        0,
         0,
         0
       ],
@@ -2300,10 +2411,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 8260,
+      "ms": 4667,
       "ok": true,
       "sem_chave": false
     },
@@ -2314,10 +2426,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 1482,
+      "ms": 1408,
       "ok": true,
       "sem_chave": false
     },
@@ -2328,10 +2441,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 563,
+      "ms": 699,
       "ok": true,
       "sem_chave": false
     },
@@ -2341,10 +2455,11 @@
       "erro": null,
       "formato": null,
       "historico": [
+        1,
         1
       ],
       "http": 403,
-      "ms": 599,
+      "ms": 830,
       "ok": true,
       "sem_chave": true
     },
@@ -2354,10 +2469,11 @@
       "erro": null,
       "formato": null,
       "historico": [
+        1,
         1
       ],
       "http": 401,
-      "ms": 410,
+      "ms": 902,
       "ok": true,
       "sem_chave": true
     },
@@ -2368,10 +2484,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 2314,
+      "ms": 1884,
       "ok": true,
       "sem_chave": false
     },
@@ -2390,10 +2507,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 1527,
+      "ms": 1133,
       "ok": true,
       "sem_chave": false
     },
@@ -2412,10 +2530,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 1672,
+      "ms": 1523,
       "ok": true,
       "sem_chave": false
     },
@@ -2434,10 +2553,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 5275,
+      "ms": 5999,
       "ok": true,
       "sem_chave": false
     },
@@ -2449,10 +2569,11 @@
       "historico": [
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 263,
+      "ms": 221,
       "ok": true,
       "sem_chave": false
     },
@@ -2463,10 +2584,11 @@
       "formato": "outro",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 693,
+      "ms": 711,
       "ok": true,
       "sem_chave": false
     },
@@ -2476,6 +2598,7 @@
       "erro": "SSLError: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1010)",
       "formato": null,
       "historico": [
+        0,
         0,
         0,
         0,
@@ -2498,10 +2621,11 @@
       "erro": null,
       "formato": null,
       "historico": [
+        1,
         1
       ],
       "http": 401,
-      "ms": 8429,
+      "ms": 3038,
       "ok": true,
       "sem_chave": true
     },
@@ -2520,10 +2644,24 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 330,
+      "ms": 192,
+      "ok": true,
+      "sem_chave": false
+    },
+    "ROR (Research Organization Registry)": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 499,
       "ok": true,
       "sem_chave": false
     },
@@ -2534,10 +2672,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 750,
+      "ms": 568,
       "ok": true,
       "sem_chave": false
     },
@@ -2556,10 +2695,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 416,
+      "ms": 364,
       "ok": true,
       "sem_chave": false
     },
@@ -2578,10 +2718,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 591,
+      "ms": 552,
       "ok": true,
       "sem_chave": false
     },
@@ -2592,10 +2733,11 @@
       "formato": null,
       "historico": [
         0,
+        0,
         0
       ],
       "http": 403,
-      "ms": 72,
+      "ms": 79,
       "ok": false,
       "sem_chave": false
     },
@@ -2614,10 +2756,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 293,
+      "ms": 224,
       "ok": true,
       "sem_chave": false
     },
@@ -2628,10 +2771,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 971,
+      "ms": 1045,
       "ok": true,
       "sem_chave": false
     },
@@ -2642,10 +2786,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 1884,
+      "ms": 1782,
       "ok": true,
       "sem_chave": false
     },
@@ -2655,10 +2800,11 @@
       "erro": null,
       "formato": null,
       "historico": [
+        1,
         1
       ],
       "http": 401,
-      "ms": 360,
+      "ms": 266,
       "ok": true,
       "sem_chave": true
     },
@@ -2677,24 +2823,11 @@
         1,
         1,
         1,
-        1
-      ],
-      "http": 200,
-      "ms": 173,
-      "ok": true,
-      "sem_chave": false
-    },
-    "SIORG": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "html",
-      "historico": [
         1,
         1
       ],
       "http": 200,
-      "ms": 839,
+      "ms": 191,
       "ok": true,
       "sem_chave": false
     },
@@ -2704,10 +2837,11 @@
       "erro": null,
       "formato": null,
       "historico": [
+        1,
         1
       ],
       "http": 401,
-      "ms": 859,
+      "ms": 522,
       "ok": true,
       "sem_chave": true
     },
@@ -2718,10 +2852,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 510,
+      "ms": 446,
       "ok": true,
       "sem_chave": false
     },
@@ -2732,10 +2867,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 909,
+      "ms": 1685,
       "ok": true,
       "sem_chave": false
     },
@@ -2754,10 +2890,24 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 514,
+      "ms": 608,
+      "ok": true,
+      "sem_chave": false
+    },
+    "Semantic Scholar": {
+      "aviso": null,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "historico": [
+        1
+      ],
+      "http": 429,
+      "ms": 152,
       "ok": true,
       "sem_chave": false
     },
@@ -2776,10 +2926,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 2358,
+      "ms": 2102,
       "ok": true,
       "sem_chave": false
     },
@@ -2790,38 +2941,11 @@
       "formato": "json",
       "historico": [
         1,
-        1
-      ],
-      "http": 200,
-      "ms": 189,
-      "ok": true,
-      "sem_chave": false
-    },
-    "TCE-MG Dados Abertos": {
-      "aviso": "certificado SSL inválido ou incompleto",
-      "cors": false,
-      "erro": null,
-      "formato": "html",
-      "historico": [
-        0,
-        1
-      ],
-      "http": 200,
-      "ms": 89,
-      "ok": true,
-      "sem_chave": false
-    },
-    "TCE-PE Dados Abertos": {
-      "aviso": "certificado SSL inválido ou incompleto",
-      "cors": false,
-      "erro": null,
-      "formato": "html",
-      "historico": [
         1,
         1
       ],
       "http": 200,
-      "ms": 1281,
+      "ms": 373,
       "ok": true,
       "sem_chave": false
     },
@@ -2832,25 +2956,27 @@
       "formato": null,
       "historico": [
         0,
+        0,
         0
       ],
       "http": 503,
-      "ms": 239,
+      "ms": 224,
       "ok": false,
       "sem_chave": false
     },
     "TCE-RS Dados Abertos": {
       "aviso": null,
-      "cors": null,
-      "erro": "HTTP 403",
-      "formato": null,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
       "historico": [
         0,
-        0
+        0,
+        1
       ],
-      "http": 403,
-      "ms": 83,
-      "ok": false,
+      "http": 200,
+      "ms": 176,
+      "ok": true,
       "sem_chave": false
     },
     "TCM-CE Dados Abertos": {
@@ -2860,25 +2986,12 @@
       "formato": null,
       "historico": [
         0,
+        0,
         0
       ],
       "http": null,
       "ms": null,
       "ok": false,
-      "sem_chave": false
-    },
-    "TCU Dados Abertos": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "html",
-      "historico": [
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 181,
-      "ok": true,
       "sem_chave": false
     },
     "TMDB": {
@@ -2887,10 +3000,11 @@
       "erro": null,
       "formato": null,
       "historico": [
+        1,
         1
       ],
       "http": 401,
-      "ms": 112,
+      "ms": 328,
       "ok": true,
       "sem_chave": true
     },
@@ -2901,10 +3015,11 @@
       "formato": "json",
       "historico": [
         0,
+        1,
         1
       ],
       "http": 200,
-      "ms": 324,
+      "ms": 245,
       "ok": true,
       "sem_chave": false
     },
@@ -2923,25 +3038,27 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 258,
+      "ms": 395,
       "ok": true,
       "sem_chave": false
     },
     "TSE DivulgaCandContas": {
       "aviso": null,
       "cors": true,
-      "erro": null,
-      "formato": "json",
+      "erro": "HTTP 403",
+      "formato": null,
       "historico": [
         1,
-        1
+        1,
+        0
       ],
-      "http": 200,
-      "ms": 272,
-      "ok": true,
+      "http": 403,
+      "ms": 54,
+      "ok": false,
       "sem_chave": false
     },
     "TabNews": {
@@ -2959,10 +3076,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 680,
+      "ms": 327,
       "ok": true,
       "sem_chave": false
     },
@@ -2981,38 +3099,11 @@
         1,
         1,
         1,
-        1
-      ],
-      "http": 200,
-      "ms": 1437,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Tesouro Nacional CUSTOS": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "html",
-      "historico": [
         1,
         1
       ],
       "http": 200,
-      "ms": 584,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Tesouro Nacional SADIPEM": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "html",
-      "historico": [
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 339,
+      "ms": 1361,
       "ok": true,
       "sem_chave": false
     },
@@ -3023,10 +3114,11 @@
       "formato": null,
       "historico": [
         0,
+        0,
         0
       ],
       "http": 403,
-      "ms": 524,
+      "ms": 895,
       "ok": false,
       "sem_chave": false
     },
@@ -3037,10 +3129,11 @@
       "formato": "json",
       "historico": [
         0,
+        1,
         1
       ],
       "http": 200,
-      "ms": 294,
+      "ms": 245,
       "ok": true,
       "sem_chave": false
     },
@@ -3051,46 +3144,11 @@
       "formato": "json",
       "historico": [
         1,
-        1
-      ],
-      "http": 200,
-      "ms": 656,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Transferegov": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "html",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         1,
         1
       ],
       "http": 200,
-      "ms": 540,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Tábua de Marés": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "html",
-      "historico": [
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 720,
+      "ms": 561,
       "ok": true,
       "sem_chave": false
     },
@@ -3101,10 +3159,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 217,
+      "ms": 372,
       "ok": true,
       "sem_chave": false
     },
@@ -3114,10 +3173,11 @@
       "erro": "HTTP 503",
       "formato": null,
       "historico": [
+        0,
         0
       ],
       "http": 503,
-      "ms": 310,
+      "ms": 296,
       "ok": false,
       "sem_chave": true
     },
@@ -3136,10 +3196,24 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 446,
+      "ms": 484,
+      "ok": true,
+      "sem_chave": false
+    },
+    "Wikcionário em Português": {
+      "aviso": null,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 242,
       "ok": true,
       "sem_chave": false
     },
@@ -3150,10 +3224,37 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 363,
+      "ms": 435,
+      "ok": true,
+      "sem_chave": false
+    },
+    "Wikidata SPARQL": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 555,
+      "ok": true,
+      "sem_chave": false
+    },
+    "Wikimedia Commons": {
+      "aviso": null,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 1405,
       "ok": true,
       "sem_chave": false
     },
@@ -3164,10 +3265,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 232,
+      "ms": 83,
       "ok": true,
       "sem_chave": false
     },
@@ -3186,10 +3288,37 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 95,
+      "ms": 210,
+      "ok": true,
+      "sem_chave": false
+    },
+    "Wikipédia em Português (busca)": {
+      "aviso": null,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 441,
+      "ok": true,
+      "sem_chave": false
+    },
+    "Wikivoyage em Português": {
+      "aviso": null,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 409,
       "ok": true,
       "sem_chave": false
     },
@@ -3200,10 +3329,11 @@
       "formato": "json",
       "historico": [
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 167,
+      "ms": 105,
       "ok": true,
       "sem_chave": false
     },
@@ -3222,10 +3352,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 188,
+      "ms": 172,
       "ok": true,
       "sem_chave": false
     },
@@ -3235,13 +3366,27 @@
       "erro": null,
       "formato": null,
       "historico": [
+        1,
         1
       ],
       "http": 403,
-      "ms": 601,
+      "ms": 507,
       "ok": true,
       "sem_chave": true
+    },
+    "iNaturalist": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 791,
+      "ok": true,
+      "sem_chave": false
     }
   },
-  "verificado_em": "2026-10-29T20:49:51Z"
+  "verificado_em": "2026-10-29T20:54:09Z"
 }
