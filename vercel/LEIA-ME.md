@@ -9,7 +9,7 @@ GitHub Actions (EUA) ──► função na Vercel (São Paulo) ──► APIs �
 
 - O código da função está neste repositório, em [`api/verificar.py`](../api/verificar.py), e usa a mesma lógica do robô ([`scripts/verificacao.py`](../scripts/verificacao.py)).
 - A região de São Paulo já está definida no [`vercel.json`](../vercel.json).
-- A cada `git push` que mude a função, a Vercel atualiza tudo sozinha. Os commits diários do robô não geram novas publicações.
+- A cada `git push`, a Vercel publica a versão nova sozinha. Os commits diários do robô também geram uma publicação rápida, o que não tem custo no plano gratuito.
 
 **Custo:** o plano gratuito (Hobby) não pede cartão e inclui 1 milhão de chamadas por mês. O robô faz cerca de 30. Sem cartão cadastrado, não existe cobrança possível.
 
@@ -83,6 +83,6 @@ Depois, vá em **Actions → Verificar APIs → Run workflow**. No log do passo 
 
 ## Manutenção
 
-- **Atualizações:** nada a fazer. Quando `api/`, `scripts/verificacao.py` ou `vercel.json` mudarem no GitHub, a Vercel publica a nova versão sozinha.
+- **Atualizações:** nada a fazer. A cada push no GitHub, a Vercel publica a nova versão sozinha.
 - **Trocar a senha:** gere uma nova (passo 1), atualize `TOKEN_VERIFICADOR` em **Settings → Environment Variables** na Vercel, faça um **Redeploy** e atualize o segredo `VERIFICADOR_BR_TOKEN` no GitHub.
 - **Desligar:** apague os dois segredos do GitHub e exclua o projeto na Vercel (**Settings → Advanced → Delete Project**). As APIs 🇧🇷 voltam a ficar sem teste.
