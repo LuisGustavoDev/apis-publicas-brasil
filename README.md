@@ -463,6 +463,8 @@ Conhece uma API pública brasileira que não está aqui? Adicionar é simples: v
 
 Veja todos os detalhes em [CONTRIBUTING.md](CONTRIBUTING.md). Também dá para só [sugerir uma API](../../issues/new?template=sugerir-api.yml) sem mexer em código.
 
+Encontrou um link quebrado ou uma informação errada? [Reporte um problema](../../issues/new?template=reportar-problema.yml).
+
 ## Como funciona
 
 ```
@@ -470,7 +472,7 @@ data/apis.yaml ──► scripts/check.py ──► data/status.json ──► s
    (você edita)      (testa as APIs)       (resultados)          (monta as tabelas)
 ```
 
-Um [GitHub Action](.github/workflows/verificar.yml) roda esse fluxo todo dia e sempre que o `apis.yaml` muda na branch principal. Cada API é testada de dois lugares: **do Brasil**, por uma [função na Vercel em São Paulo](vercel/LEIA-ME.md), que dá o resultado oficial, e **dos EUA**, pelo próprio GitHub, como segunda opinião. Quando uma API funciona do Brasil e falha dos EUA, ela ganha a marca 🇧🇷 automaticamente. Também há guias para usar [Google Cloud](google/LEIA-ME.md) ou [AWS](aws/LEIA-ME.md) no lugar da Vercel.
+Um [GitHub Action](.github/workflows/verificar.yml) roda esse fluxo todo dia e sempre que o `apis.yaml` muda na branch principal. Cada API é testada de dois lugares: **do Brasil**, por uma [função na Vercel em São Paulo](vercel/LEIA-ME.md), que dá o resultado oficial, e **dos EUA**, pelo próprio GitHub, como segunda opinião. Quando uma API funciona do Brasil e falha dos EUA, ela ganha a marca 🇧🇷 automaticamente.
 
 Além de ver se a API responde, o robô confere **o que** ela devolveu: dados (JSON, XML, CSV), a página de documentação da API (Swagger, Redoc, WSDL, conferindo o arquivo OpenAPI quando existe), uma página de bloqueio de robôs ou um site comum. Para rodar localmente:
 

@@ -38,15 +38,10 @@ jobs:
       - name: Testar as APIs
         run: python scripts/check.py
         env:
-          # Opcional: função em São Paulo que testa as APIs só acessíveis do Brasil.
-          # Use a Vercel (vercel/LEIA-ME.md), o Google Cloud (google/LEIA-ME.md)
-          # ou a AWS (aws/LEIA-ME.md). Sem nenhuma, essas APIs ficam sem teste.
+          # Opcional: função da Vercel em São Paulo que testa as APIs só acessíveis
+          # do Brasil (vercel/LEIA-ME.md). Sem ela, vale o resultado dos EUA.
           VERIFICADOR_BR_URL: ${{ secrets.VERIFICADOR_BR_URL }}
           VERIFICADOR_BR_TOKEN: ${{ secrets.VERIFICADOR_BR_TOKEN }}
-          GCP_VERIFICADOR_URL: ${{ secrets.GCP_VERIFICADOR_URL }}
-          GCP_VERIFICADOR_TOKEN: ${{ secrets.GCP_VERIFICADOR_TOKEN }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
       - name: Gerar README
         run: python scripts/build_readme.py

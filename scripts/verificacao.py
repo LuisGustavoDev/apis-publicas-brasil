@@ -2,9 +2,8 @@
 
 Este arquivo é usado em dois lugares:
   1. Pelo robô do GitHub (scripts/check.py), que testa a partir dos EUA.
-  2. Pela função em São Paulo, que testa a partir do Brasil: na Vercel
-     (api/verificar.py usa este arquivo direto; veja vercel/LEIA-ME.md), no
-     Google Cloud (veja google/LEIA-ME.md) ou na AWS Lambda (veja aws/LEIA-ME.md).
+  2. Pela função da Vercel em São Paulo, que testa a partir do Brasil
+     (api/verificar.py usa este arquivo direto; veja vercel/LEIA-ME.md).
 Ele usa só a biblioteca padrão do Python.
 
 Como a resposta é classificada (campo "formato"):
@@ -310,14 +309,3 @@ def processar_pedido(
     if not validas:
         return {"erro": "envie {\"apis\": {nome: url}} com 1 a 50 URLs http(s)"}, 400
     return {"resultados": verificar_lista(apis, 32, tempo_limite, espera)}, 200
-
-
-def verificar_http(request):
-    """Ponto de entrada da função no Google Cloud (Cloud Run functions)."""
-    return processar_pedido(request.headers.get("Authorization", ""), request.get_json(silent=True))
-
-
-def lambda_handler(event, context):
-    """Ponto de entrada da função na AWS. Recebe {"apis": {nome: url}}."""
-    apis = event.get("apis") or {}
-    return {"resultados": verificar_lista(apis, paralelo=16)}

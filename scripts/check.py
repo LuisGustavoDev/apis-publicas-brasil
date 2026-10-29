@@ -3,7 +3,7 @@
 Uso: python scripts/check.py
 
 Cada API é testada de dois lugares:
-  1. Do Brasil, pela função em São Paulo (Vercel, Google Cloud ou AWS; veja vercel/LEIA-ME.md).
+  1. Do Brasil, pela função da Vercel em São Paulo (veja vercel/LEIA-ME.md).
      Esse é o resultado oficial que aparece no README.
   2. Dos EUA, pelo próprio robô do GitHub. Serve de segunda opinião: quando uma API funciona
      do Brasil e falha dos EUA, ela é marcada automaticamente como "só do Brasil".
@@ -16,8 +16,6 @@ from __future__ import annotations
 
 import json
 import os
-import subprocess
-import tempfile
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
@@ -35,11 +33,9 @@ from verificacao import verificar_lista
 TAMANHO_HISTORICO = 30  # dias guardados para calcular a disponibilidade
 TAMANHO_LOTE = 30  # APIs por chamada à função em São Paulo (cabe no limite de 60 s da Vercel)
 LOTES_SIMULTANEOS = 3
-FUNCAO_LAMBDA = os.environ.get("AWS_LAMBDA_FUNCAO", "verificador-apis-brasil")
-REGIAO_LAMBDA = os.environ.get("AWS_LAMBDA_REGIAO", "sa-east-1")
-# Função HTTP em São Paulo (Vercel ou Google Cloud). Os nomes GCP_* são aceitos por compatibilidade.
-FUNCAO_URL = (os.environ.get("VERIFICADOR_BR_URL") or os.environ.get("GCP_VERIFICADOR_URL") or "").strip()
-FUNCAO_TOKEN = (os.environ.get("VERIFICADOR_BR_TOKEN") or os.environ.get("GCP_VERIFICADOR_TOKEN") or "").strip()
+# Função HTTP da Vercel em São Paulo.
+FUNCAO_URL = os.environ.get("VERIFICADOR_BR_URL", "").strip()
+FUNCAO_TOKEN = os.environ.get("VERIFICADOR_BR_TOKEN", "").strip()
 
 
 def funcao_http_configurada() -> bool:
@@ -47,7 +43,7 @@ def funcao_http_configurada() -> bool:
 
 
 def verificar_pela_funcao_http(apis: dict) -> dict[str, dict] | None:
-    """Pede para a função em São Paulo (Vercel ou Google Cloud) testar as APIs. Devolve None se falhar."""
+    """Pede para a função da Vercel em São Paulo testar as APIs. Devolve None se falhar."""
     pedido = urllib.request.Request(
         FUNCAO_URL,
         data=json.dumps({"apis": apis}).encode("utf-8"),
@@ -79,39 +75,6 @@ def verificar_em_lotes(apis: dict) -> dict[str, dict] | None:
     if falhas:
         print(f"Aviso: {falhas} de {len(lotes)} lotes não puderam ser testados em São Paulo.")
     return juntos or None
-
-
-def aws_configurada() -> bool:
-    return bool(os.environ.get("AWS_ACCESS_KEY_ID") and os.environ.get("AWS_SECRET_ACCESS_KEY"))
-
-
-def verificar_pelo_brasil(apis: dict[str, str]) -> dict[str, dict] | None:
-    """Pede para a função na AWS (São Paulo) testar as APIs. Devolve None se falhar."""
-    with tempfile.TemporaryDirectory() as pasta:
-        saida = os.path.join(pasta, "saida.json")
-        comando = [
-            "aws", "lambda", "invoke",
-            "--function-name", FUNCAO_LAMBDA,
-            "--region", REGIAO_LAMBDA,
-            "--cli-binary-format", "raw-in-base64-out",
-            "--cli-read-timeout", "360",
-            "--payload", json.dumps({"apis": apis}),
-            saida,
-        ]
-        try:
-            execucao = subprocess.run(comando, capture_output=True, text=True, timeout=400)
-        except Exception as erro:
-            print(f"Aviso: não foi possível chamar a função na AWS ({erro}).")
-            return None
-        if execucao.returncode != 0:
-            print(f"Aviso: a chamada à função na AWS falhou: {execucao.stderr.strip()[:500]}")
-            return None
-        if "FunctionError" in execucao.stdout:
-            with open(saida, encoding="utf-8") as f:
-                print(f"Aviso: a função na AWS deu erro: {f.read()[:500]}")
-            return None
-        with open(saida, encoding="utf-8") as f:
-            return json.load(f).get("resultados")
 
 
 def descrever(resultado: dict) -> str:
@@ -148,9 +111,6 @@ def main() -> None:
     if funcao_http_configurada():
         print(f"Testando {len(alvos)} APIs a partir de São Paulo (função HTTP)...")
         do_brasil = verificar_em_lotes(alvos)
-    elif aws_configurada():
-        print(f"Testando {len(alvos)} APIs a partir de São Paulo (AWS)...")
-        do_brasil = verificar_pelo_brasil(alvos)
     else:
         print("Função em São Paulo não configurada: vale o resultado dos EUA.")
     do_brasil = do_brasil or {}
