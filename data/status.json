@@ -11,10 +11,11 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "http": 503,
-      "ms": 191,
+      "ms": 137,
       "ok": false
     },
     "ANTT Dados Abertos": {
@@ -28,6 +29,7 @@
         1,
         1,
         1,
+        0,
         0
       ],
       "http": null,
@@ -45,10 +47,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 2232,
+      "ms": 564,
       "ok": true
     },
     "AwesomeAPI CEP": {
@@ -62,10 +65,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 429,
-      "ms": 298,
+      "ms": 328,
       "ok": true
     },
     "AwesomeAPI Moedas": {
@@ -79,10 +83,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 429,
-      "ms": 189,
+      "ms": 210,
       "ok": true
     },
     "Banco Central Estatísticas do Pix": {
@@ -96,10 +101,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 215,
+      "ms": 719,
       "ok": true
     },
     "Banco Central Focus (Expectativas)": {
@@ -113,10 +119,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 751,
+      "ms": 825,
       "ok": true
     },
     "Banco Central PTAX": {
@@ -130,10 +137,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 232,
+      "ms": 738,
       "ok": true
     },
     "Banco Central Postos de Atendimento": {
@@ -147,10 +155,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 216,
+      "ms": 3477,
       "ok": true
     },
     "Banco Central SGS": {
@@ -164,10 +173,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 714,
+      "ms": 658,
       "ok": true
     },
     "Banco Mundial": {
@@ -181,10 +191,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 163,
+      "ms": 185,
       "ok": true
     },
     "BrasilAPI Bancos": {
@@ -198,10 +209,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 83,
+      "ms": 175,
       "ok": true
     },
     "BrasilAPI CEP v2": {
@@ -215,10 +227,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 2349,
+      "ms": 368,
       "ok": true
     },
     "BrasilAPI CNPJ": {
@@ -232,10 +245,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 330,
+      "ms": 432,
       "ok": true
     },
     "BrasilAPI CPTEC": {
@@ -249,10 +263,11 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "http": 500,
-      "ms": 1043,
+      "ms": 1196,
       "ok": false
     },
     "BrasilAPI Corretoras": {
@@ -266,10 +281,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 433,
+      "ms": 440,
       "ok": true
     },
     "BrasilAPI Câmbio": {
@@ -283,10 +299,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 813,
+      "ms": 960,
       "ok": true
     },
     "BrasilAPI DDD": {
@@ -300,10 +317,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 39,
+      "ms": 153,
       "ok": true
     },
     "BrasilAPI FIPE": {
@@ -317,10 +335,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 416,
+      "ms": 130,
       "ok": true
     },
     "BrasilAPI Feriados": {
@@ -334,10 +353,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 40,
+      "ms": 169,
       "ok": true
     },
     "BrasilAPI ISBN": {
@@ -351,10 +371,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 341,
+      "ms": 151,
       "ok": true
     },
     "BrasilAPI NCM": {
@@ -368,10 +389,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 1797,
+      "ms": 3242,
       "ok": true
     },
     "BrasilAPI Participantes do Pix": {
@@ -385,10 +407,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 140,
+      "ms": 180,
       "ok": true
     },
     "BrasilAPI Registro.br": {
@@ -402,10 +425,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 621,
+      "ms": 737,
       "ok": true
     },
     "BrasilAPI Taxas": {
@@ -419,16 +443,17 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 63,
+      "ms": 113,
       "ok": true
     },
     "CAPES Dados Abertos": {
       "aviso": null,
       "cors": false,
-      "erro": null,
+      "erro": "TimeoutError: The read operation timed out",
       "historico": [
         1,
         1,
@@ -436,11 +461,12 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ],
-      "http": 200,
-      "ms": 586,
-      "ok": true
+      "http": null,
+      "ms": null,
+      "ok": false
     },
     "CCEE Dados Abertos": {
       "aviso": null,
@@ -453,10 +479,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 1370,
+      "ms": 1243,
       "ok": true
     },
     "CNPJ.ws Pública": {
@@ -470,10 +497,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 699,
+      "ms": 279,
       "ok": true
     },
     "CNPJá Open": {
@@ -487,10 +515,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 318,
+      "ms": 253,
       "ok": true
     },
     "CPTEC/INPE (XML)": {
@@ -504,10 +533,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 3015,
+      "ms": 2409,
       "ok": true
     },
     "CVM Dados Abertos": {
@@ -521,10 +551,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 410,
+      "ms": 372,
       "ok": true
     },
     "Cartola FC": {
@@ -538,10 +569,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 672,
+      "ms": 710,
       "ok": true
     },
     "CoinGecko": {
@@ -555,10 +587,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 117,
+      "ms": 178,
       "ok": true
     },
     "Câmara dos Deputados": {
@@ -572,10 +605,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 2562,
+      "ms": 3601,
       "ok": true
     },
     "Dicionário Aberto": {
@@ -589,10 +623,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 643,
+      "ms": 437,
       "ok": true
     },
     "FIPE (Parallelum)": {
@@ -606,10 +641,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 1062,
+      "ms": 786,
       "ok": true
     },
     "Frankfurter": {
@@ -623,10 +659,99 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 562,
+      "ms": 526,
+      "ok": true
+    },
+    "IBGE Agregados (SIDRA)": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 114,
+      "ok": true
+    },
+    "IBGE CNAE": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 71,
+      "ok": true
+    },
+    "IBGE Calendário": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 98,
+      "ok": true
+    },
+    "IBGE Localidades": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 63,
+      "ok": true
+    },
+    "IBGE Malhas": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 62,
+      "ok": true
+    },
+    "IBGE Nomes": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 108,
+      "ok": true
+    },
+    "IBGE Notícias": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 132,
+      "ok": true
+    },
+    "IBGE Países": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 83,
       "ok": true
     },
     "IBGE SIDRA": {
@@ -640,10 +765,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 732,
+      "ms": 1003,
       "ok": true
     },
     "INMET Alertas": {
@@ -657,10 +783,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 1926,
+      "ms": 1706,
       "ok": true
     },
     "Ipeadata": {
@@ -674,10 +801,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 30938,
+      "ms": 780,
       "ok": true
     },
     "LexML": {
@@ -691,10 +819,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 2881,
+      "ms": 2471,
       "ok": true
     },
     "Loterias Caixa API": {
@@ -708,10 +837,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 194,
+      "ms": 134,
       "ok": true
     },
     "Mercado Bitcoin": {
@@ -725,10 +855,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 235,
+      "ms": 183,
       "ok": true
     },
     "Minha Receita": {
@@ -742,10 +873,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 326,
+      "ms": 314,
       "ok": true
     },
     "Nager.Date": {
@@ -759,10 +891,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 385,
+      "ms": 372,
       "ok": true
     },
     "Open-Meteo": {
@@ -776,10 +909,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 291,
+      "ms": 498,
       "ok": true
     },
     "OpenCEP": {
@@ -793,10 +927,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 1082,
+      "ms": 1193,
       "ok": true
     },
     "OpenCNPJ": {
@@ -810,10 +945,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 1133,
+      "ms": 366,
       "ok": true
     },
     "OpenDataSUS": {
@@ -827,10 +963,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 2005,
+      "ms": 2078,
       "ok": true
     },
     "PNCP (Portal Nacional de Contratações Públicas)": {
@@ -844,10 +981,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 3063,
+      "ms": 7529,
       "ok": true
     },
     "Prefeitura de Fortaleza Dados Abertos": {
@@ -861,10 +999,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 1886,
+      "ms": 1184,
       "ok": true
     },
     "Prefeitura de Porto Alegre Dados Abertos": {
@@ -878,10 +1017,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 1832,
+      "ms": 1606,
       "ok": true
     },
     "Prefeitura de São Paulo Dados Abertos": {
@@ -895,10 +1035,22 @@
         0,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 8820,
+      "ms": 764,
+      "ok": true
+    },
+    "Prefeitura do Recife Dados Abertos": {
+      "aviso": null,
+      "cors": false,
+      "erro": null,
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 314,
       "ok": true
     },
     "Querido Diário": {
@@ -906,6 +1058,7 @@
       "cors": null,
       "erro": "SSLError: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1010)",
       "historico": [
+        0,
         0,
         0,
         0,
@@ -920,9 +1073,10 @@
     },
     "REST Countries": {
       "aviso": null,
-      "cors": false,
+      "cors": true,
       "erro": null,
       "historico": [
+        1,
         1,
         1,
         1,
@@ -932,7 +1086,7 @@
         1
       ],
       "http": 200,
-      "ms": 246,
+      "ms": 394,
       "ok": true
     },
     "ReceitaWS": {
@@ -946,10 +1100,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 396,
+      "ms": 488,
       "ok": true
     },
     "Registro.br RDAP": {
@@ -963,10 +1118,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 661,
+      "ms": 578,
       "ok": true
     },
     "Resultado Mega": {
@@ -980,10 +1136,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 673,
+      "ms": 329,
       "ok": true
     },
     "SICONFI (Tesouro Nacional)": {
@@ -997,10 +1154,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 203,
+      "ms": 163,
       "ok": true
     },
     "SciELO ArticleMeta": {
@@ -1014,10 +1172,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 361,
+      "ms": 1056,
       "ok": true
     },
     "Senado Federal": {
@@ -1031,10 +1190,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 2583,
+      "ms": 1911,
       "ok": true
     },
     "TSE Dados Abertos": {
@@ -1048,10 +1208,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 222,
+      "ms": 268,
       "ok": true
     },
     "TabNews": {
@@ -1065,10 +1226,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 583,
+      "ms": 864,
       "ok": true
     },
     "TerraBrasilis (INPE)": {
@@ -1082,10 +1244,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 1373,
+      "ms": 1121,
       "ok": true
     },
     "Transferegov": {
@@ -1099,10 +1262,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 439,
+      "ms": 564,
       "ok": true
     },
     "ViaCEP": {
@@ -1116,10 +1280,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 635,
+      "ms": 422,
       "ok": true
     },
     "Wikipédia em Português": {
@@ -1127,6 +1292,7 @@
       "cors": true,
       "erro": null,
       "historico": [
+        1,
         1,
         1,
         1,
@@ -1150,12 +1316,13 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 180,
+      "ms": 235,
       "ok": true
     }
   },
-  "verificado_em": "2026-10-29T19:37:02Z"
+  "verificado_em": "2026-10-29T20:14:18Z"
 }
