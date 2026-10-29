@@ -791,3 +791,825 @@ apis:
     docs: https://frankfurter.dev
     autenticacao: nenhuma
     exemplo: https://api.frankfurter.app/latest?from=BRL
+
+  # =====================================================================
+  # Ampliação para 200+ APIs
+  # =====================================================================
+
+  - nome: BrasilAPI IBGE
+    categoria: ibge
+    descricao: Estados e municípios do IBGE, funcionando também em servidores fora do Brasil
+    docs: https://brasilapi.com.br/docs
+    autenticacao: nenhuma
+    exemplo: https://brasilapi.com.br/api/ibge/uf/v1
+
+  - nome: Zippopotam.us
+    categoria: cep
+    descricao: Cidade e estado a partir do prefixo do CEP
+    docs: https://www.zippopotam.us
+    autenticacao: nenhuma
+    exemplo: https://api.zippopotam.us/br/01000-000
+
+  - nome: Nominatim (OpenStreetMap)
+    categoria: internacional
+    descricao: Geocodificação de endereços brasileiros e busca reversa por coordenadas
+    docs: https://nominatim.org/release-docs/latest/api/Search/
+    autenticacao: nenhuma
+    limite: 1 req/s, exige User-Agent
+    exemplo: https://nominatim.openstreetmap.org/search?q=Avenida%20Paulista&countrycodes=br&format=json&limit=1
+
+  - nome: Photon (Komoot)
+    categoria: internacional
+    descricao: Geocodificação com autocompletar sobre dados do OpenStreetMap
+    docs: https://photon.komoot.io
+    autenticacao: nenhuma
+    exemplo: https://photon.komoot.io/api/?q=Copacabana&limit=1
+
+  - nome: Overpass API
+    categoria: internacional
+    descricao: Consultas avançadas a pontos e vias do OpenStreetMap, como escolas ou ciclovias de uma cidade
+    docs: https://wiki.openstreetmap.org/wiki/Overpass_API
+    autenticacao: nenhuma
+    exemplo: https://overpass-api.de/api/status
+
+  - nome: Open-Meteo Geocoding
+    categoria: internacional
+    descricao: Busca de cidades com coordenadas, população e fuso horário
+    docs: https://open-meteo.com/en/docs/geocoding-api
+    autenticacao: nenhuma
+    exemplo: https://geocoding-api.open-meteo.com/v1/search?name=Campinas&language=pt&count=1
+
+  - nome: Open-Meteo Elevation
+    categoria: internacional
+    descricao: Altitude de qualquer coordenada do Brasil
+    docs: https://open-meteo.com/en/docs/elevation-api
+    autenticacao: nenhuma
+    exemplo: https://api.open-meteo.com/v1/elevation?latitude=-22.95&longitude=-43.21
+
+  - nome: GeoNames
+    categoria: internacional
+    descricao: Base geográfica com cidades, bairros e pontos de interesse do Brasil
+    docs: https://www.geonames.org/export/web-services.html
+    autenticacao: chave
+    exemplo: https://www.geonames.org/export/web-services.html
+    teste: false
+
+  - nome: IBGE Projeção da População
+    categoria: ibge
+    descricao: Projeção da população brasileira em tempo real e por estado
+    docs: https://servicodados.ibge.gov.br/api/docs/projecoes
+    autenticacao: nenhuma
+    exemplo: https://servicodados.ibge.gov.br/api/v1/projecoes/populacao
+    acesso: brasil
+
+  - nome: IBGE Pesquisas
+    categoria: ibge
+    descricao: Lista de pesquisas do IBGE e seus indicadores
+    docs: https://servicodados.ibge.gov.br/api/docs/pesquisas
+    autenticacao: nenhuma
+    exemplo: https://servicodados.ibge.gov.br/api/v1/pesquisas
+    acesso: brasil
+
+  - nome: IBGE Geoserviços
+    categoria: ibge
+    descricao: Camadas geográficas oficiais do IBGE via GeoServer (WFS/WMS)
+    docs: https://geoservicos.ibge.gov.br/geoserver/web/
+    autenticacao: nenhuma
+    exemplo: https://geoservicos.ibge.gov.br/geoserver/ows?service=WFS&version=2.0.0&request=GetCapabilities
+    acesso: brasil
+
+  - nome: Banco Central Agências
+    categoria: bancos
+    descricao: Agências bancárias por instituição, município e endereço
+    docs: https://olinda.bcb.gov.br/olinda/servico/Informes_Agencias/versao/v1/swagger-ui3
+    autenticacao: nenhuma
+    exemplo: https://olinda.bcb.gov.br/olinda/servico/Informes_Agencias/versao/v1/odata/
+
+  - nome: Banco Central Taxas de Juros
+    categoria: bancos
+    descricao: Taxas de juros praticadas pelos bancos em cada modalidade de crédito
+    docs: https://dadosabertos.bcb.gov.br/dataset/taxas-de-juros-de-operacoes-de-credito
+    autenticacao: nenhuma
+    exemplo: https://olinda.bcb.gov.br/olinda/servico/taxaJuros/versao/v2/odata/
+
+  - nome: Tesouro Nacional CUSTOS
+    categoria: economia
+    descricao: Custos do governo federal por órgão, programa e natureza de despesa
+    docs: https://apidatalake.tesouro.gov.br/docs/custos/
+    autenticacao: nenhuma
+    exemplo: https://apidatalake.tesouro.gov.br/docs/custos/
+
+  - nome: Tesouro Nacional SADIPEM
+    categoria: economia
+    descricao: Operações de crédito e dívida pública de estados e municípios
+    docs: https://apidatalake.tesouro.gov.br/docs/sadipem/
+    autenticacao: nenhuma
+    exemplo: https://apidatalake.tesouro.gov.br/docs/sadipem/
+
+  - nome: Tesouro Nacional Transferências Constitucionais
+    categoria: economia
+    descricao: Repasses constitucionais da União a estados e municípios, como FPM e FPE
+    docs: https://apiapex.tesouro.gov.br/aria/v1/transferencias_constitucionais/docs
+    autenticacao: nenhuma
+    exemplo: https://apiapex.tesouro.gov.br/aria/v1/transferencias_constitucionais/docs
+
+  - nome: Foxbit
+    categoria: economia
+    descricao: Mercados, cotações e livro de ofertas de criptomoedas em reais
+    docs: https://docs.foxbit.com.br
+    autenticacao: nenhuma
+    exemplo: https://api.foxbit.com.br/rest/v3/markets
+
+  - nome: NovaDAX
+    categoria: economia
+    descricao: Cotações de criptomoedas em reais na corretora brasileira NovaDAX
+    docs: https://doc.novadax.com/pt-BR/
+    autenticacao: nenhuma
+    exemplo: https://api.novadax.com/v1/market/tickers
+
+  - nome: HG Brasil Finance
+    categoria: economia
+    descricao: Cotações de moedas, índices da bolsa e taxas como Selic e CDI
+    docs: https://hgbrasil.com/docs
+    autenticacao: chave
+    exemplo: https://hgbrasil.com/docs
+    teste: false
+
+  - nome: Alpha Vantage
+    categoria: internacional
+    descricao: Cotações e histórico de ações, incluindo papéis da B3 (sufixo .SA)
+    docs: https://www.alphavantage.co/documentation/
+    autenticacao: chave
+    exemplo: https://www.alphavantage.co/documentation/
+    teste: false
+
+  - nome: ExchangeRate-API (aberta)
+    categoria: internacional
+    descricao: Câmbio diário do real para mais de 150 moedas, sem chave
+    docs: https://www.exchangerate-api.com/docs/free
+    autenticacao: nenhuma
+    exemplo: https://open.er-api.com/v6/latest/BRL
+
+  - nome: Currency API (fawazahmed0)
+    categoria: internacional
+    descricao: Câmbio diário do real para moedas e criptomoedas, servido por CDN
+    docs: https://github.com/fawazahmed0/exchange-api
+    autenticacao: nenhuma
+    exemplo: https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/brl.json
+
+  - nome: FMI DataMapper
+    categoria: internacional
+    descricao: Indicadores e projeções do FMI para o Brasil, como PIB, inflação e dívida
+    docs: https://www.imf.org/external/datamapper/api/help
+    autenticacao: nenhuma
+    exemplo: https://www.imf.org/external/datamapper/api/v1/NGDP_RPCH/BRA
+
+  - nome: Mercado Livre
+    categoria: comercio
+    descricao: Categorias, produtos e vendedores do Mercado Livre Brasil
+    docs: https://developers.mercadolivre.com.br/pt_br/api-docs-pt-br
+    autenticacao: opcional
+    exemplo: https://api.mercadolibre.com/sites/MLB/categories
+
+  - nome: Open Food Facts Brasil
+    categoria: comercio
+    descricao: Ingredientes, tabela nutricional e Nutri-Score de alimentos pelo código de barras
+    docs: https://openfoodfacts.github.io/openfoodfacts-server/api/
+    autenticacao: nenhuma
+    exemplo: https://br.openfoodfacts.org/api/v2/product/7891000100103.json
+
+  - nome: SIORG
+    categoria: governo
+    descricao: Estrutura organizacional dos órgãos do governo federal
+    docs: https://estruturaorganizacional.dados.gov.br
+    autenticacao: nenhuma
+    exemplo: https://estruturaorganizacional.dados.gov.br
+
+  - nome: TCU Dados Abertos
+    categoria: governo
+    descricao: Acórdãos, súmulas, jurisprudência e normas do Tribunal de Contas da União
+    docs: https://sites.tcu.gov.br/dados-abertos/
+    autenticacao: nenhuma
+    exemplo: https://sites.tcu.gov.br/dados-abertos/
+
+  - nome: TCE-RN Dados Abertos
+    categoria: governo
+    descricao: Licitações, contratos e órgãos fiscalizados pelo Tribunal de Contas do RN
+    docs: https://apidadosabertos.tce.rn.gov.br/
+    autenticacao: nenhuma
+    exemplo: https://apidadosabertos.tce.rn.gov.br/
+
+  - nome: TCE-PE Dados Abertos
+    categoria: governo
+    descricao: Licitações, contratos, despesas e fornecedores fiscalizados pelo TCE de Pernambuco
+    docs: https://www.tce.pe.gov.br/internet/index.php/dados-abertos
+    autenticacao: nenhuma
+    exemplo: https://www.tce.pe.gov.br/internet/index.php/dados-abertos
+
+  - nome: TCM-CE Dados Abertos
+    categoria: governo
+    descricao: Dados dos municípios cearenses fiscalizados pelo Tribunal de Contas
+    docs: https://api.tcm.ce.gov.br/
+    autenticacao: nenhuma
+    exemplo: https://api.tcm.ce.gov.br/
+
+  - nome: TCE-MG Dados Abertos
+    categoria: governo
+    descricao: Dados fiscais e de contratações dos municípios de Minas Gerais
+    docs: https://dadosabertos.tce.mg.gov.br/
+    autenticacao: nenhuma
+    exemplo: https://dadosabertos.tce.mg.gov.br/
+
+  - nome: Assembleia Legislativa de Minas Gerais
+    categoria: governo
+    descricao: Deputados estaduais, proposições, votações e legislação mineira
+    docs: https://dadosabertos.almg.gov.br/ws/ajuda/sobre
+    autenticacao: nenhuma
+    exemplo: https://dadosabertos.almg.gov.br/ws/deputados/em_exercicio?formato=json
+
+  - nome: TSE DivulgaCandContas
+    categoria: governo
+    descricao: Eleições, candidatos, bens declarados e prestação de contas de campanha
+    docs: https://divulgacandcontas.tse.jus.br/divulga/
+    autenticacao: nenhuma
+    exemplo: https://divulgacandcontas.tse.jus.br/divulga/rest/v1/eleicao/ordinarias
+
+  - nome: INLABS (Diário Oficial da União)
+    categoria: governo
+    descricao: Edições completas do Diário Oficial da União em XML
+    docs: https://inlabs.in.gov.br
+    autenticacao: chave
+    exemplo: https://inlabs.in.gov.br
+    teste: false
+
+  - nome: Atlas da Violência (Ipea)
+    categoria: seguranca
+    descricao: Séries de homicídios, violência por gênero e raça e mortes por arma de fogo
+    docs: https://www.ipea.gov.br/atlasviolencia/
+    autenticacao: nenhuma
+    exemplo: https://www.ipea.gov.br/atlasviolencia/api/v1/temas
+
+  - nome: Fórum Brasileiro de Segurança Pública
+    categoria: seguranca
+    descricao: Metadados das publicações do FBSP, como o Anuário de Segurança Pública
+    docs: https://publicacoes.forumseguranca.org.br
+    autenticacao: nenhuma
+    exemplo: https://publicacoes.forumseguranca.org.br/server/api
+
+  - nome: MJSP Dados Abertos
+    categoria: portais
+    descricao: Dados do Ministério da Justiça, como SINESP, sistema prisional e Procon
+    docs: https://dados.mj.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dados.mj.gov.br/api/3/action/status_show
+
+  - nome: TCE-RS Dados Abertos
+    categoria: portais
+    descricao: Educação, saúde e gestão fiscal dos municípios gaúchos
+    docs: https://dados.tce.rs.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dados.tce.rs.gov.br/api/3/action/status_show
+
+  - nome: TRE-PR Dados Abertos
+    categoria: portais
+    descricao: Dados eleitorais e administrativos do Tribunal Regional Eleitoral do Paraná
+    docs: https://dadosabertos.tre-pr.jus.br
+    autenticacao: nenhuma
+    exemplo: https://dadosabertos.tre-pr.jus.br/api/3/action/status_show
+
+  - nome: STJ Dados Abertos
+    categoria: portais
+    descricao: Decisões, estatísticas e dados administrativos do Superior Tribunal de Justiça
+    docs: https://dadosabertos.web.stj.jus.br
+    autenticacao: nenhuma
+    exemplo: https://dadosabertos.web.stj.jus.br/api/3/action/status_show
+
+  - nome: Rondônia Dados Abertos
+    categoria: portais
+    descricao: Dados abertos do Governo de Rondônia
+    docs: https://dados.ro.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dados.ro.gov.br/api/3/action/status_show
+
+  - nome: Acre Dados Abertos
+    categoria: portais
+    descricao: Dados abertos do Governo do Acre
+    docs: https://dados.ac.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dados.ac.gov.br/api/3/action/status_show
+
+  - nome: Bahia Dados Abertos
+    categoria: portais
+    descricao: Dados abertos do Governo da Bahia
+    docs: https://dados.ba.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dados.ba.gov.br/api/3/action/status_show
+
+  - nome: Pernambuco Dados Abertos
+    categoria: portais
+    descricao: Dados abertos do Governo de Pernambuco
+    docs: https://dados.pe.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dados.pe.gov.br/api/3/action/status_show
+
+  - nome: Rio Grande do Sul Dados Abertos
+    categoria: portais
+    descricao: Dados abertos do Governo do Rio Grande do Sul, com mais de 400 conjuntos
+    docs: https://dados.rs.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dados.rs.gov.br/api/3/action/status_show
+
+  - nome: Santa Catarina Dados Abertos
+    categoria: portais
+    descricao: Dados abertos do Governo de Santa Catarina
+    docs: https://dados.sc.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dados.sc.gov.br/api/3/action/status_show
+
+  - nome: Governo Aberto SP
+    categoria: portais
+    descricao: Dados abertos do Governo do Estado de São Paulo, com mais de 400 conjuntos
+    docs: https://www.governoaberto.sp.gov.br
+    autenticacao: nenhuma
+    exemplo: https://www.governoaberto.sp.gov.br/api/3/action/status_show
+
+  - nome: Minas Gerais Dados Abertos
+    categoria: portais
+    descricao: Dados abertos do Governo de Minas Gerais
+    docs: https://dados.mg.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dados.mg.gov.br/api/3/action/status_show
+
+  - nome: Espírito Santo Dados Abertos
+    categoria: portais
+    descricao: Dados abertos do Governo do Espírito Santo
+    docs: https://dados.es.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dados.es.gov.br/api/3/action/status_show
+
+  - nome: Goiás Dados Abertos
+    categoria: portais
+    descricao: Dados abertos do Governo de Goiás
+    docs: https://dadosabertos.go.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dadosabertos.go.gov.br/api/3/action/status_show
+
+  - nome: Prefeitura de Belo Horizonte Dados Abertos
+    categoria: portais
+    descricao: Dados abertos da cidade de Belo Horizonte, incluindo transporte e saúde
+    docs: https://dados.pbh.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dados.pbh.gov.br/api/3/action/status_show
+
+  - nome: Prefeitura de Campinas Dados Abertos
+    categoria: portais
+    descricao: Dados abertos da cidade de Campinas
+    docs: https://dados.campinas.sp.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dados.campinas.sp.gov.br/api/3/action/status_show
+
+  - nome: IBAMA Dados Abertos
+    categoria: portais
+    descricao: Autos de infração, licenciamento, Cadastro Técnico Federal e biomas
+    docs: https://dadosabertos.ibama.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dadosabertos.ibama.gov.br/api/3/action/status_show
+
+  - nome: ANEEL Dados Abertos
+    categoria: portais
+    descricao: Geração de energia, geração distribuída, tarifas e bandeiras tarifárias
+    docs: https://dadosabertos.aneel.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dadosabertos.aneel.gov.br/api/3/action/status_show
+
+  - nome: ONS Dados Abertos
+    categoria: portais
+    descricao: Carga, geração e intercâmbio de energia do Sistema Interligado Nacional
+    docs: https://dados.ons.org.br
+    autenticacao: nenhuma
+    exemplo: https://dados.ons.org.br/api/3/action/status_show
+
+  - nome: BNDES Dados Abertos
+    categoria: portais
+    descricao: Operações de financiamento, desembolsos e instituições credenciadas do BNDES
+    docs: https://dadosabertos.bndes.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dadosabertos.bndes.gov.br/api/3/action/status_show
+
+  - nome: FNDE Dados Abertos
+    categoria: portais
+    descricao: Repasses da educação, como merenda escolar, transporte escolar e PDDE
+    docs: https://www.fnde.gov.br/dadosabertos
+    autenticacao: nenhuma
+    exemplo: https://www.fnde.gov.br/dadosabertos/api/3/action/status_show
+
+  - nome: Alagoas Dados Abertos
+    categoria: portais
+    descricao: Dados abertos do Governo de Alagoas
+    docs: https://dados.al.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dados.al.gov.br/catalogo/api/3/action/status_show
+
+  - nome: INPE Queimadas
+    categoria: meio-ambiente
+    descricao: Focos de queimadas detectados por satélite e risco de fogo
+    docs: https://queimadas.dgi.inpe.br/queimadas/dados-abertos/
+    autenticacao: nenhuma
+    exemplo: https://queimadas.dgi.inpe.br/queimadas/dados-abertos/
+
+  - nome: INPE Catálogo de Dados (GeoNetwork)
+    categoria: meio-ambiente
+    descricao: Catálogo de metadados de dados geoespaciais e de satélite do INPE
+    docs: https://data.inpe.br/geonetwork/
+    autenticacao: nenhuma
+    exemplo: https://data.inpe.br/geonetwork/srv/api/site
+
+  - nome: ANA Telemetria
+    categoria: meio-ambiente
+    descricao: Níveis de rios, vazão e chuva das estações telemétricas da Agência Nacional de Águas
+    docs: https://www.snirh.gov.br/hidroweb/
+    autenticacao: nenhuma
+    exemplo: https://telemetriaws1.ana.gov.br/ServiceANA.asmx
+
+  - nome: MapBiomas Alerta
+    categoria: meio-ambiente
+    descricao: Alertas de desmatamento validados, com laudos e imagens de satélite
+    docs: https://plataforma.alerta.mapbiomas.org/api
+    autenticacao: chave
+    exemplo: https://plataforma.alerta.mapbiomas.org/api
+    teste: false
+
+  - nome: GBIF
+    categoria: internacional
+    descricao: Registros de ocorrência de espécies no Brasil
+    docs: https://techdocs.gbif.org/en/openapi/
+    autenticacao: nenhuma
+    exemplo: https://api.gbif.org/v1/occurrence/search?country=BR&limit=1
+
+  - nome: NASA FIRMS
+    categoria: internacional
+    descricao: Focos de incêndio detectados por satélite em tempo quase real
+    docs: https://firms.modaps.eosdis.nasa.gov/api/
+    autenticacao: chave
+    exemplo: https://firms.modaps.eosdis.nasa.gov/api/
+    teste: false
+
+  - nome: OpenAQ
+    categoria: internacional
+    descricao: Medições de qualidade do ar de estações no Brasil e no mundo
+    docs: https://docs.openaq.org
+    autenticacao: chave
+    exemplo: https://docs.openaq.org
+    teste: false
+
+  - nome: Tábua de Marés
+    categoria: clima
+    descricao: Previsão de marés dos portos brasileiros com base nas tábuas da Marinha
+    docs: https://tabuamare.devtu.qzz.io/
+    autenticacao: nenhuma
+    exemplo: https://tabuamare.devtu.qzz.io/
+
+  - nome: Climatempo Advisor
+    categoria: clima
+    descricao: Previsão do tempo, condições atuais e alertas para cidades brasileiras
+    docs: https://advisor.climatempo.com.br
+    autenticacao: chave
+    exemplo: https://advisor.climatempo.com.br
+    teste: false
+
+  - nome: OpenWeatherMap
+    categoria: internacional
+    descricao: Clima atual e previsão para qualquer cidade do Brasil
+    docs: https://openweathermap.org/api
+    autenticacao: chave
+    exemplo: https://openweathermap.org/api
+    teste: false
+
+  - nome: Open-Meteo Qualidade do Ar
+    categoria: internacional
+    descricao: Poluentes e índice de qualidade do ar para qualquer coordenada
+    docs: https://open-meteo.com/en/docs/air-quality-api
+    autenticacao: nenhuma
+    exemplo: https://air-quality-api.open-meteo.com/v1/air-quality?latitude=-23.55&longitude=-46.63&current=pm10
+
+  - nome: Open-Meteo Marine
+    categoria: internacional
+    descricao: Altura, direção e período das ondas no litoral brasileiro
+    docs: https://open-meteo.com/en/docs/marine-weather-api
+    autenticacao: nenhuma
+    exemplo: https://marine-api.open-meteo.com/v1/marine?latitude=-22.97&longitude=-43.18&current=wave_height
+
+  - nome: Open-Meteo Histórico
+    categoria: internacional
+    descricao: Clima histórico diário e horário desde 1940 para qualquer coordenada
+    docs: https://open-meteo.com/en/docs/historical-weather-api
+    autenticacao: nenhuma
+    exemplo: https://archive-api.open-meteo.com/v1/archive?latitude=-23.55&longitude=-46.63&start_date=2025-01-01&end_date=2025-01-02&daily=temperature_2m_max
+
+  - nome: Open-Meteo Cheias
+    categoria: internacional
+    descricao: Previsão de vazão de rios, incluindo a bacia amazônica
+    docs: https://open-meteo.com/en/docs/flood-api
+    autenticacao: nenhuma
+    exemplo: https://flood-api.open-meteo.com/v1/flood?latitude=-3.1&longitude=-60.0&daily=river_discharge
+
+  - nome: Open-Meteo Clima Futuro
+    categoria: internacional
+    descricao: Projeções climáticas até 2050 para qualquer coordenada
+    docs: https://open-meteo.com/en/docs/climate-api
+    autenticacao: nenhuma
+    exemplo: https://climate-api.open-meteo.com/v1/climate?latitude=-23.55&longitude=-46.63&start_date=2050-01-01&end_date=2050-01-02&models=MRI_AGCM3_2_S&daily=temperature_2m_max
+
+  - nome: NASA POWER
+    categoria: agro
+    descricao: Radiação solar, temperatura e chuva diárias por coordenada, muito usadas no agro
+    docs: https://power.larc.nasa.gov/docs/services/api/
+    autenticacao: nenhuma
+    exemplo: https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M&community=AG&longitude=-47.06&latitude=-22.9&start=20250101&end=20250102&format=JSON
+
+  - nome: OpenSky Network
+    categoria: transporte
+    descricao: Posição em tempo real das aeronaves sobre o Brasil
+    docs: https://openskynetwork.github.io/opensky-api/rest.html
+    autenticacao: opcional
+    limite: Uso anônimo com cota diária menor
+    exemplo: https://opensky-network.org/api/states/all?lamin=-34&lomin=-74&lamax=6&lomax=-34
+
+  - nome: AISWEB (DECEA)
+    categoria: transporte
+    descricao: Informações aeronáuticas oficiais, como cartas, NOTAM e dados de aeródromos
+    docs: http://www.aisweb.aer.mil.br/api/doc/index.cfm
+    autenticacao: chave
+    exemplo: http://www.aisweb.aer.mil.br/api/doc/index.cfm
+    teste: false
+
+  - nome: REDEMET (DECEA)
+    categoria: transporte
+    descricao: METAR, TAF, imagens de radar e satélite da meteorologia aeronáutica
+    docs: https://api-redemet.decea.mil.br/
+    autenticacao: chave
+    exemplo: https://api-redemet.decea.mil.br/
+    teste: false
+
+  - nome: FIPE (site oficial)
+    categoria: veiculos
+    descricao: Consulta oficial da Tabela FIPE por marca, modelo e ano (requisições POST)
+    docs: https://veiculos.fipe.org.br
+    autenticacao: nenhuma
+    exemplo: https://veiculos.fipe.org.br
+    teste: false
+
+  - nome: OMS Global Health Observatory
+    categoria: saude
+    descricao: Indicadores de saúde da OMS para o Brasil, como expectativa de vida e mortalidade
+    docs: https://www.who.int/data/gho/info/gho-odata-api
+    autenticacao: nenhuma
+    exemplo: https://ghoapi.azureedge.net/api/WHOSIS_000001?$filter=SpatialDim%20eq%20%27BRA%27
+
+  - nome: OpenAlex
+    categoria: ciencia
+    descricao: Artigos, autores e instituições de pesquisa brasileiras
+    docs: https://docs.openalex.org
+    autenticacao: nenhuma
+    exemplo: https://api.openalex.org/institutions?filter=country_code:BR&per-page=1
+
+  - nome: Crossref
+    categoria: ciencia
+    descricao: Metadados de artigos com DOI, incluindo periódicos brasileiros
+    docs: https://www.crossref.org/documentation/retrieve-metadata/rest-api/
+    autenticacao: nenhuma
+    exemplo: https://api.crossref.org/works?query=brasil&rows=1
+
+  - nome: BDTD (IBICT)
+    categoria: ciencia
+    descricao: Busca em teses e dissertações das universidades brasileiras
+    docs: https://bdtd.ibict.br/vufind/
+    autenticacao: nenhuma
+    exemplo: https://bdtd.ibict.br/vufind/api/v1/search?lookfor=amazonia&limit=1
+
+  - nome: Oasisbr (IBICT)
+    categoria: ciencia
+    descricao: Busca na produção científica de acesso aberto do Brasil e de Portugal
+    docs: https://oasisbr.ibict.br/vufind/
+    autenticacao: nenhuma
+    exemplo: https://oasisbr.ibict.br/vufind/api/v1/search?lookfor=amazonia&limit=1
+
+  - nome: Repositório do Ipea
+    categoria: ciencia
+    descricao: Publicações e estudos do Instituto de Pesquisa Econômica Aplicada
+    docs: https://repositorio.ipea.gov.br
+    autenticacao: nenhuma
+    exemplo: https://repositorio.ipea.gov.br/server/api
+
+  - nome: ONU Objetivos de Desenvolvimento Sustentável
+    categoria: internacional
+    descricao: Metas e indicadores dos ODS da ONU, com séries do Brasil
+    docs: https://unstats.un.org/sdgapi/swagger/
+    autenticacao: nenhuma
+    exemplo: https://unstats.un.org/sdgapi/v1/sdg/Goal/List
+
+  - nome: Google Books
+    categoria: livros
+    descricao: Busca de livros por título, autor ou ISBN, com capa e descrição
+    docs: https://developers.google.com/books/docs/v1/using
+    autenticacao: opcional
+    exemplo: https://www.googleapis.com/books/v1/volumes?q=machado+de+assis&maxResults=1
+
+  - nome: Open Library
+    categoria: livros
+    descricao: Catálogo aberto de livros e autores, incluindo literatura brasileira
+    docs: https://openlibrary.org/developers/api
+    autenticacao: nenhuma
+    exemplo: https://openlibrary.org/search.json?q=machado+de+assis&limit=1
+
+  - nome: Gutendex
+    categoria: livros
+    descricao: Livros em domínio público do Projeto Gutenberg, com filtro para português
+    docs: https://gutendex.com
+    autenticacao: nenhuma
+    exemplo: https://gutendex.com/books/?languages=pt
+
+  - nome: Bible API (Almeida)
+    categoria: livros
+    descricao: Versículos da Bíblia na tradução de João Ferreira de Almeida
+    docs: https://bible-api.com
+    autenticacao: nenhuma
+    exemplo: https://bible-api.com/john+3:16?translation=almeida
+
+  - nome: LanguageTool
+    categoria: livros
+    descricao: Correção ortográfica e gramatical de textos em português do Brasil
+    docs: https://languagetool.org/http-api/
+    autenticacao: nenhuma
+    limite: 20 req/min na API pública
+    exemplo: https://api.languagetool.org/v2/languages
+
+  - nome: Wikidata
+    categoria: livros
+    descricao: Dados estruturados sobre pessoas, lugares e obras, como o item do Brasil (Q155)
+    docs: https://www.wikidata.org/wiki/Wikidata:Data_access
+    autenticacao: nenhuma
+    exemplo: https://www.wikidata.org/wiki/Special:EntityData/Q155.json
+
+  - nome: Wikimedia Pageviews
+    categoria: livros
+    descricao: Artigos mais lidos e audiência da Wikipédia em português
+    docs: https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/
+    autenticacao: nenhuma
+    exemplo: https://wikimedia.org/api/rest_v1/metrics/pageviews/top/pt.wikipedia/all-access/2026/10/01
+
+  - nome: Radio Browser
+    categoria: livros
+    descricao: Milhares de rádios brasileiras com link de transmissão
+    docs: https://api.radio-browser.info
+    autenticacao: nenhuma
+    exemplo: https://de1.api.radio-browser.info/json/stations/bycountrycodeexact/BR?limit=1
+
+  - nome: Deezer
+    categoria: livros
+    descricao: Busca de artistas, álbuns e músicas, incluindo prévias de 30 segundos
+    docs: https://developers.deezer.com/api
+    autenticacao: nenhuma
+    exemplo: https://api.deezer.com/search/artist?q=anitta
+
+  - nome: MusicBrainz
+    categoria: livros
+    descricao: Enciclopédia aberta de música com artistas e discografias brasileiras
+    docs: https://musicbrainz.org/doc/MusicBrainz_API
+    autenticacao: nenhuma
+    limite: 1 req/s, exige User-Agent
+    exemplo: https://musicbrainz.org/ws/2/artist/?query=country:BR&fmt=json&limit=1
+
+  - nome: TMDB
+    categoria: livros
+    descricao: Filmes e séries com títulos e sinopses em português
+    docs: https://developer.themoviedb.org/docs
+    autenticacao: chave
+    exemplo: https://developer.themoviedb.org/docs
+    teste: false
+
+  - nome: Mapas Culturais (MinC)
+    categoria: livros
+    descricao: Espaços, agentes, eventos e projetos culturais cadastrados no Ministério da Cultura
+    docs: https://mapas.cultura.gov.br
+    autenticacao: nenhuma
+    exemplo: https://mapas.cultura.gov.br/api/space/find?@select=id,name&@limit=1
+
+  - nome: Loterias Caixa (oficial)
+    categoria: esportes
+    descricao: Resultados oficiais das loterias direto do portal da Caixa
+    docs: https://loterias.caixa.gov.br
+    autenticacao: nenhuma
+    exemplo: https://servicebus2.caixa.gov.br/portaldeloterias/api/megasena
+    acesso: brasil
+
+  - nome: TheSportsDB
+    categoria: esportes
+    descricao: Times, jogadores e partidas do Brasileirão e de outras ligas
+    docs: https://www.thesportsdb.com/free_sports_api
+    autenticacao: nenhuma
+    exemplo: https://www.thesportsdb.com/api/v1/json/3/lookupleague.php?id=4351
+
+  - nome: football-data.org
+    categoria: esportes
+    descricao: Tabela, jogos e artilharia do Brasileirão Série A no plano gratuito
+    docs: https://www.football-data.org/documentation/quickstart
+    autenticacao: chave
+    exemplo: https://www.football-data.org/documentation/quickstart
+    teste: false
+
+  - nome: Jolpica F1 (Ergast)
+    categoria: esportes
+    descricao: Histórico da Fórmula 1, incluindo o circuito de Interlagos
+    docs: https://github.com/jolpica/jolpica-f1
+    autenticacao: nenhuma
+    exemplo: https://api.jolpi.ca/ergast/f1/circuits/interlagos.json
+
+  - nome: NewsAPI
+    categoria: internet
+    descricao: Manchetes de veículos brasileiros e busca de notícias
+    docs: https://newsapi.org/docs
+    autenticacao: chave
+    exemplo: https://newsapi.org/docs
+    teste: false
+
+  - nome: GNews
+    categoria: internet
+    descricao: Busca de notícias em português e manchetes do Brasil
+    docs: https://gnews.io/docs
+    autenticacao: chave
+    exemplo: https://gnews.io/docs
+    teste: false
+
+  - nome: Calendarific
+    categoria: calendario
+    descricao: Feriados nacionais, estaduais e datas comemorativas
+    docs: https://calendarific.com/api-documentation
+    autenticacao: chave
+    exemplo: https://calendarific.com/api-documentation
+    teste: false
+
+  - nome: TimeAPI.io
+    categoria: utilidades
+    descricao: Data e hora atuais nos fusos horários do Brasil
+    docs: https://timeapi.io/swagger/index.html
+    autenticacao: nenhuma
+    exemplo: https://timeapi.io/api/time/current/zone?timeZone=America/Sao_Paulo
+
+  - nome: Sunrise-Sunset
+    categoria: utilidades
+    descricao: Horários de nascer e pôr do sol para qualquer coordenada
+    docs: https://sunrise-sunset.org/api
+    autenticacao: nenhuma
+    exemplo: https://api.sunrise-sunset.org/json?lat=-23.55&lng=-46.63
+
+  - nome: USGS Terremotos
+    categoria: internacional
+    descricao: Abalos sísmicos registrados no Brasil e na América do Sul
+    docs: https://earthquake.usgs.gov/fdsnws/event/1/
+    autenticacao: nenhuma
+    exemplo: https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minlatitude=-34&maxlatitude=6&minlongitude=-74&maxlongitude=-34&limit=1
+
+  - nome: Internet Archive
+    categoria: livros
+    descricao: Busca no acervo digital do Internet Archive, com livros, áudios e vídeos em português
+    docs: https://archive.org/developers/
+    autenticacao: nenhuma
+    exemplo: https://archive.org/advancedsearch.php?q=language%3Apor&fl%5B%5D=identifier&rows=1&output=json
+
+  - nome: CoinPaprika
+    categoria: internacional
+    descricao: Cotações de criptomoedas convertidas para reais
+    docs: https://api.coinpaprika.com
+    autenticacao: nenhuma
+    exemplo: https://api.coinpaprika.com/v1/tickers/btc-bitcoin?quotes=BRL
+
+  - nome: Banco Mundial Projetos
+    categoria: internacional
+    descricao: Projetos financiados pelo Banco Mundial no Brasil
+    docs: https://projects.worldbank.org/en/projects-operations/projects-home
+    autenticacao: nenhuma
+    exemplo: https://search.worldbank.org/api/v2/projects?format=json&countrycode_exact=BR&rows=1
+
+  - nome: Open Topo Data
+    categoria: internacional
+    descricao: Altitude por coordenada a partir de modelos de relevo como o SRTM
+    docs: https://www.opentopodata.org
+    autenticacao: nenhuma
+    limite: 1 req/s e 1.000 por dia
+    exemplo: https://api.opentopodata.org/v1/srtm90m?locations=-22.95,-43.21
+
+  - nome: QR Server
+    categoria: utilidades
+    descricao: Geração de QR Codes, útil para códigos Pix copia e cola
+    docs: https://goqr.me/api/
+    autenticacao: nenhuma
+    exemplo: https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=apis-publicas-brasil
+
+  - nome: IP-API
+    categoria: utilidades
+    descricao: Localização aproximada por IP, com nomes de cidades e estados em português
+    docs: https://ip-api.com/docs
+    autenticacao: nenhuma
+    limite: 45 req/min, uso não comercial
+    exemplo: http://ip-api.com/json/?lang=pt-BR
