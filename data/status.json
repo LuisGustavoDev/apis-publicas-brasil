@@ -4,7 +4,9 @@
       "aviso": null,
       "cors": null,
       "erro": "HTTP 503",
+      "formato": null,
       "historico": [
+        0,
         0,
         0,
         0,
@@ -16,35 +18,43 @@
         0
       ],
       "http": 503,
-      "ms": 189,
-      "ok": false
+      "ms": 144,
+      "ok": false,
+      "sem_chave": false
     },
     "ANA Telemetria": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "html",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 724,
-      "ok": true
+      "ms": 647,
+      "ok": true,
+      "sem_chave": false
     },
     "ANEEL Dados Abertos": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 655,
-      "ok": true
+      "ms": 1021,
+      "ok": true,
+      "sem_chave": false
     },
     "ANTT Dados Abertos": {
       "aviso": null,
       "cors": false,
       "erro": "RemoteDisconnected: Remote end closed connection without response",
+      "formato": null,
       "historico": [
         1,
         1,
@@ -54,39 +64,75 @@
         1,
         0,
         0,
+        0,
         0
       ],
       "http": null,
       "ms": null,
-      "ok": false
+      "ok": false,
+      "sem_chave": false
+    },
+    "API-Futebol": {
+      "aviso": null,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "historico": [
+        1
+      ],
+      "http": 401,
+      "ms": 668,
+      "ok": true,
+      "sem_chave": true
     },
     "Acre Dados Abertos": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 1403,
-      "ok": true
+      "ms": 1389,
+      "ok": true,
+      "sem_chave": false
     },
     "Alagoas Dados Abertos": {
       "aviso": null,
       "cors": null,
       "erro": "ConnectionResetError: [Errno 104] Connection reset by peer",
+      "formato": null,
       "historico": [
+        0,
         0
       ],
       "http": null,
       "ms": null,
-      "ok": false
+      "ok": false,
+      "sem_chave": false
+    },
+    "Alpha Vantage": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 124,
+      "ok": true,
+      "sem_chave": true
     },
     "ApiCEP": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -98,36 +144,31 @@
         1
       ],
       "http": 200,
-      "ms": 394,
-      "ok": true
+      "ms": 546,
+      "ok": true,
+      "sem_chave": false
     },
     "Assembleia Legislativa de Minas Gerais": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 1744,
-      "ok": true
-    },
-    "Atlas da Violência (Ipea)": {
-      "aviso": null,
-      "cors": null,
-      "erro": "HTTP 404",
-      "historico": [
-        0
-      ],
-      "http": 404,
-      "ms": 1783,
-      "ok": false
+      "ms": 1396,
+      "ok": true,
+      "sem_chave": false
     },
     "AwesomeAPI CEP": {
       "aviso": null,
       "cors": null,
       "erro": null,
+      "formato": null,
       "historico": [
+        1,
         1,
         1,
         1,
@@ -139,14 +180,17 @@
         1
       ],
       "http": 429,
-      "ms": 320,
-      "ok": true
+      "ms": 318,
+      "ok": true,
+      "sem_chave": false
     },
     "AwesomeAPI Moedas": {
       "aviso": null,
       "cors": null,
       "erro": null,
+      "formato": null,
       "historico": [
+        1,
         1,
         1,
         1,
@@ -158,58 +202,73 @@
         1
       ],
       "http": 429,
-      "ms": 233,
-      "ok": true
+      "ms": 241,
+      "ok": true,
+      "sem_chave": false
     },
     "BDTD (IBICT)": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 1713,
-      "ok": true
+      "ms": 979,
+      "ok": true,
+      "sem_chave": false
     },
     "BNDES Dados Abertos": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 1499,
-      "ok": true
+      "ms": 1107,
+      "ok": true,
+      "sem_chave": false
     },
     "Bahia Dados Abertos": {
       "aviso": "certificado SSL inválido ou incompleto",
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 869,
-      "ok": true
+      "ms": 1418,
+      "ok": true,
+      "sem_chave": false
     },
     "Banco Central Agências": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 379,
-      "ok": true
+      "ms": 194,
+      "ok": true,
+      "sem_chave": false
     },
     "Banco Central Estatísticas do Pix": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -221,14 +280,17 @@
         1
       ],
       "http": 200,
-      "ms": 726,
-      "ok": true
+      "ms": 753,
+      "ok": true,
+      "sem_chave": false
     },
     "Banco Central Focus (Expectativas)": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -240,14 +302,17 @@
         1
       ],
       "http": 200,
-      "ms": 736,
-      "ok": true
+      "ms": 665,
+      "ok": true,
+      "sem_chave": false
     },
     "Banco Central PTAX": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -259,14 +324,17 @@
         1
       ],
       "http": 200,
-      "ms": 866,
-      "ok": true
+      "ms": 648,
+      "ok": true,
+      "sem_chave": false
     },
     "Banco Central Postos de Atendimento": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -278,14 +346,17 @@
         1
       ],
       "http": 200,
-      "ms": 709,
-      "ok": true
+      "ms": 3598,
+      "ok": true,
+      "sem_chave": false
     },
     "Banco Central SGS": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -297,25 +368,31 @@
         1
       ],
       "http": 200,
-      "ms": 353,
-      "ok": true
+      "ms": 817,
+      "ok": true,
+      "sem_chave": false
     },
     "Banco Central Taxas de Juros": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 723,
-      "ok": true
+      "ms": 642,
+      "ok": true,
+      "sem_chave": false
     },
     "Banco Mundial": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -327,36 +404,71 @@
         1
       ],
       "http": 200,
-      "ms": 71,
-      "ok": true
+      "ms": 111,
+      "ok": true,
+      "sem_chave": false
     },
     "Banco Mundial Projetos": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 241,
-      "ok": true
+      "ms": 361,
+      "ok": true,
+      "sem_chave": false
     },
     "Bible API (Almeida)": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
+      "historico": [
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 213,
+      "ok": true,
+      "sem_chave": false
+    },
+    "Brasil Aberto": {
+      "aviso": null,
+      "cors": false,
+      "erro": null,
+      "formato": "html",
       "historico": [
         1
       ],
       "http": 200,
-      "ms": 324,
-      "ok": true
+      "ms": 630,
+      "ok": true,
+      "sem_chave": true
+    },
+    "Brasil.IO": {
+      "aviso": null,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "historico": [
+        1
+      ],
+      "http": 401,
+      "ms": 367,
+      "ok": true,
+      "sem_chave": true
     },
     "BrasilAPI Bancos": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -368,14 +480,17 @@
         1
       ],
       "http": 200,
-      "ms": 79,
-      "ok": true
+      "ms": 202,
+      "ok": true,
+      "sem_chave": false
     },
     "BrasilAPI CEP v2": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -387,14 +502,17 @@
         1
       ],
       "http": 200,
-      "ms": 176,
-      "ok": true
+      "ms": 355,
+      "ok": true,
+      "sem_chave": false
     },
     "BrasilAPI CNPJ": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -406,14 +524,17 @@
         1
       ],
       "http": 200,
-      "ms": 168,
-      "ok": true
+      "ms": 359,
+      "ok": true,
+      "sem_chave": false
     },
     "BrasilAPI CPTEC": {
       "aviso": null,
       "cors": null,
       "erro": "HTTP 500",
+      "formato": null,
       "historico": [
+        0,
         0,
         0,
         0,
@@ -425,14 +546,17 @@
         0
       ],
       "http": 500,
-      "ms": 1268,
-      "ok": false
+      "ms": 1164,
+      "ok": false,
+      "sem_chave": false
     },
     "BrasilAPI Corretoras": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -444,14 +568,17 @@
         1
       ],
       "http": 200,
-      "ms": 354,
-      "ok": true
+      "ms": 395,
+      "ok": true,
+      "sem_chave": false
     },
     "BrasilAPI Câmbio": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -463,14 +590,17 @@
         1
       ],
       "http": 200,
-      "ms": 296,
-      "ok": true
+      "ms": 889,
+      "ok": true,
+      "sem_chave": false
     },
     "BrasilAPI DDD": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -482,14 +612,17 @@
         1
       ],
       "http": 200,
-      "ms": 109,
-      "ok": true
+      "ms": 142,
+      "ok": true,
+      "sem_chave": false
     },
     "BrasilAPI FIPE": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -501,14 +634,17 @@
         1
       ],
       "http": 200,
-      "ms": 424,
-      "ok": true
+      "ms": 104,
+      "ok": true,
+      "sem_chave": false
     },
     "BrasilAPI Feriados": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -520,25 +656,31 @@
         1
       ],
       "http": 200,
-      "ms": 46,
-      "ok": true
+      "ms": 139,
+      "ok": true,
+      "sem_chave": false
     },
     "BrasilAPI IBGE": {
       "aviso": null,
-      "cors": null,
-      "erro": "HTTP 504",
+      "cors": true,
+      "erro": null,
+      "formato": "json",
       "historico": [
-        0
+        0,
+        1
       ],
-      "http": 504,
-      "ms": 10127,
-      "ok": false
+      "http": 200,
+      "ms": 145,
+      "ok": true,
+      "sem_chave": false
     },
     "BrasilAPI ISBN": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -550,275 +692,17 @@
         1
       ],
       "http": 200,
-      "ms": 304,
-      "ok": true
+      "ms": 539,
+      "ok": true,
+      "sem_chave": false
     },
     "BrasilAPI NCM": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 1762,
-      "ok": true
-    },
-    "BrasilAPI Participantes do Pix": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 33,
-      "ok": true
-    },
-    "BrasilAPI Registro.br": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 723,
-      "ok": true
-    },
-    "BrasilAPI Taxas": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 56,
-      "ok": true
-    },
-    "CAPES Dados Abertos": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1
-      ],
-      "http": 200,
-      "ms": 856,
-      "ok": true
-    },
-    "CCEE Dados Abertos": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 1418,
-      "ok": true
-    },
-    "CNPJ.ws Pública": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 631,
-      "ok": true
-    },
-    "CNPJá Open": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 244,
-      "ok": true
-    },
-    "CPTEC/INPE (XML)": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 3017,
-      "ok": true
-    },
-    "CVM Dados Abertos": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 381,
-      "ok": true
-    },
-    "Cartola FC": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 678,
-      "ok": true
-    },
-    "CoinGecko": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 162,
-      "ok": true
-    },
-    "CoinPaprika": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "historico": [
-        1
-      ],
-      "http": 200,
-      "ms": 372,
-      "ok": true
-    },
-    "Crossref": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "historico": [
-        1
-      ],
-      "http": 200,
-      "ms": 250,
-      "ok": true
-    },
-    "Currency API (fawazahmed0)": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "historico": [
-        1
-      ],
-      "http": 200,
-      "ms": 22,
-      "ok": true
-    },
-    "Câmara dos Deputados": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "historico": [
         1,
         1,
         1,
@@ -831,24 +715,401 @@
       ],
       "http": 200,
       "ms": 1910,
-      "ok": true
+      "ok": true,
+      "sem_chave": false
+    },
+    "BrasilAPI Participantes do Pix": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 172,
+      "ok": true,
+      "sem_chave": false
+    },
+    "BrasilAPI Registro.br": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 912,
+      "ok": true,
+      "sem_chave": false
+    },
+    "BrasilAPI Taxas": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 110,
+      "ok": true,
+      "sem_chave": false
+    },
+    "CAPES Dados Abertos": {
+      "aviso": null,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 29562,
+      "ok": true,
+      "sem_chave": false
+    },
+    "CCEE Dados Abertos": {
+      "aviso": null,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 717,
+      "ok": true,
+      "sem_chave": false
+    },
+    "CEP Aberto": {
+      "aviso": null,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "historico": [
+        1
+      ],
+      "http": 401,
+      "ms": 965,
+      "ok": true,
+      "sem_chave": true
+    },
+    "CNPJ.ws Pública": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 239,
+      "ok": true,
+      "sem_chave": false
+    },
+    "CNPJá Open": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 238,
+      "ok": true,
+      "sem_chave": false
+    },
+    "CPTEC/INPE (XML)": {
+      "aviso": null,
+      "cors": false,
+      "erro": null,
+      "formato": "xml",
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 3567,
+      "ok": true,
+      "sem_chave": false
+    },
+    "CVM Dados Abertos": {
+      "aviso": null,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 631,
+      "ok": true,
+      "sem_chave": false
+    },
+    "Calendarific": {
+      "aviso": null,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "historico": [
+        1
+      ],
+      "http": 401,
+      "ms": 308,
+      "ok": true,
+      "sem_chave": true
+    },
+    "Cartola FC": {
+      "aviso": null,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 589,
+      "ok": true,
+      "sem_chave": false
+    },
+    "Climatempo Advisor": {
+      "aviso": null,
+      "cors": null,
+      "erro": "HTTP 400",
+      "formato": null,
+      "historico": [
+        0
+      ],
+      "http": 400,
+      "ms": 106,
+      "ok": false,
+      "sem_chave": true
+    },
+    "CoinGecko": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 149,
+      "ok": true,
+      "sem_chave": false
+    },
+    "CoinPaprika": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 384,
+      "ok": true,
+      "sem_chave": false
+    },
+    "Cosmos Bluesoft": {
+      "aviso": null,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "historico": [
+        1
+      ],
+      "http": 401,
+      "ms": 300,
+      "ok": true,
+      "sem_chave": true
+    },
+    "Crossref": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 224,
+      "ok": true,
+      "sem_chave": false
+    },
+    "Currency API (fawazahmed0)": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 256,
+      "ok": true,
+      "sem_chave": false
+    },
+    "Câmara dos Deputados": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 2914,
+      "ok": true,
+      "sem_chave": false
+    },
+    "DataJud": {
+      "aviso": null,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "historico": [
+        1
+      ],
+      "http": 401,
+      "ms": 818,
+      "ok": true,
+      "sem_chave": true
     },
     "Deezer": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 259,
-      "ok": true
+      "ms": 320,
+      "ok": true,
+      "sem_chave": false
     },
     "Dicionário Aberto": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -860,36 +1121,58 @@
         1
       ],
       "http": 200,
-      "ms": 566,
-      "ok": true
+      "ms": 480,
+      "ok": true,
+      "sem_chave": false
+    },
+    "Embrapa AgroAPI": {
+      "aviso": null,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "historico": [
+        1
+      ],
+      "http": 401,
+      "ms": 775,
+      "ok": true,
+      "sem_chave": true
     },
     "Espírito Santo Dados Abertos": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 2546,
-      "ok": true
+      "ms": 1136,
+      "ok": true,
+      "sem_chave": false
     },
     "ExchangeRate-API (aberta)": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 141,
-      "ok": true
+      "ms": 206,
+      "ok": true,
+      "sem_chave": false
     },
     "FIPE (Parallelum)": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -901,47 +1184,72 @@
         1
       ],
       "http": 200,
-      "ms": 393,
-      "ok": true
+      "ms": 809,
+      "ok": true,
+      "sem_chave": false
     },
     "FMI DataMapper": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 341,
-      "ok": true
+      "ms": 545,
+      "ok": true,
+      "sem_chave": false
     },
     "FNDE Dados Abertos": {
       "aviso": null,
       "cors": null,
       "erro": "HTTP 403",
+      "formato": null,
       "historico": [
+        0,
         0
       ],
       "http": 403,
-      "ms": 1368,
-      "ok": false
+      "ms": 88,
+      "ok": false,
+      "sem_chave": false
+    },
+    "Fogo Cruzado": {
+      "aviso": null,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "historico": [
+        1
+      ],
+      "http": 401,
+      "ms": 307,
+      "ok": true,
+      "sem_chave": true
     },
     "Foxbit": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 324,
-      "ok": true
+      "ms": 412,
+      "ok": true,
+      "sem_chave": false
     },
     "Frankfurter": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -953,220 +1261,329 @@
         1
       ],
       "http": 200,
-      "ms": 524,
-      "ok": true
+      "ms": 588,
+      "ok": true,
+      "sem_chave": false
     },
     "Fórum Brasileiro de Segurança Pública": {
       "aviso": null,
       "cors": null,
       "erro": "HTTP 403",
+      "formato": null,
       "historico": [
+        0,
         0
       ],
       "http": 403,
-      "ms": 840,
-      "ok": false
+      "ms": 16,
+      "ok": false,
+      "sem_chave": false
     },
     "GBIF": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
+      "historico": [
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 2107,
+      "ok": true,
+      "sem_chave": false
+    },
+    "GNews": {
+      "aviso": null,
+      "cors": null,
+      "erro": "HTTP 400",
+      "formato": null,
+      "historico": [
+        0
+      ],
+      "http": 400,
+      "ms": 105,
+      "ok": false,
+      "sem_chave": true
+    },
+    "GeoNames": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
       "historico": [
         1
       ],
       "http": 200,
-      "ms": 825,
-      "ok": true
+      "ms": 780,
+      "ok": true,
+      "sem_chave": true
     },
     "Goiás Dados Abertos": {
       "aviso": null,
       "cors": null,
       "erro": "HTTP 403",
+      "formato": null,
       "historico": [
+        0,
         0
       ],
       "http": 403,
-      "ms": 951,
-      "ok": false
+      "ms": 80,
+      "ok": false,
+      "sem_chave": false
     },
     "Google Books": {
       "aviso": null,
       "cors": null,
       "erro": null,
+      "formato": null,
       "historico": [
+        1,
         1
       ],
       "http": 429,
-      "ms": 74,
-      "ok": true
+      "ms": 82,
+      "ok": true,
+      "sem_chave": false
     },
     "Governo Aberto SP": {
       "aviso": "certificado SSL inválido ou incompleto",
       "cors": false,
       "erro": null,
+      "formato": "json",
+      "historico": [
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 3604,
+      "ok": true,
+      "sem_chave": false
+    },
+    "Gutendex": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "historico": [
+        0,
+        1
+      ],
+      "http": 200,
+      "ms": 284,
+      "ok": true,
+      "sem_chave": false
+    },
+    "HG Brasil Finance": {
+      "aviso": null,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
       "historico": [
         1
       ],
       "http": 200,
-      "ms": 4690,
-      "ok": true
+      "ms": 228,
+      "ok": true,
+      "sem_chave": true
     },
-    "Gutendex": {
+    "HG Brasil Weather": {
       "aviso": null,
-      "cors": null,
-      "erro": "TimeoutError: The read operation timed out",
+      "cors": false,
+      "erro": null,
+      "formato": "json",
       "historico": [
-        0
+        1
       ],
-      "http": null,
-      "ms": null,
-      "ok": false
+      "http": 200,
+      "ms": 224,
+      "ok": true,
+      "sem_chave": true
     },
     "IBAMA Dados Abertos": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 408,
-      "ok": true
+      "ms": 603,
+      "ok": true,
+      "sem_chave": false
     },
     "IBGE Agregados (SIDRA)": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "outro",
       "historico": [
+        1,
         1,
         1
       ],
       "http": 200,
-      "ms": 219,
-      "ok": true
+      "ms": 186,
+      "ok": true,
+      "sem_chave": false
     },
     "IBGE CNAE": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
         1,
-        1
-      ],
-      "http": 200,
-      "ms": 122,
-      "ok": true
-    },
-    "IBGE Calendário": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "historico": [
         1,
         1
       ],
       "http": 200,
       "ms": 103,
-      "ok": true
+      "ok": true,
+      "sem_chave": false
     },
-    "IBGE Geoserviços": {
+    "IBGE Calendário": {
       "aviso": null,
-      "cors": false,
+      "cors": true,
       "erro": null,
+      "formato": "outro",
       "historico": [
+        1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 82,
-      "ok": true
+      "ms": 60,
+      "ok": true,
+      "sem_chave": false
+    },
+    "IBGE Geoserviços": {
+      "aviso": null,
+      "cors": true,
+      "erro": null,
+      "formato": "xml",
+      "historico": [
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 170,
+      "ok": true,
+      "sem_chave": false
     },
     "IBGE Localidades": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "outro",
       "historico": [
+        1,
         1,
         1
       ],
       "http": 200,
-      "ms": 190,
-      "ok": true
+      "ms": 144,
+      "ok": true,
+      "sem_chave": false
     },
     "IBGE Malhas": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "outro",
       "historico": [
+        1,
         1,
         1
       ],
       "http": 200,
-      "ms": 177,
-      "ok": true
+      "ms": 135,
+      "ok": true,
+      "sem_chave": false
     },
     "IBGE Nomes": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1
       ],
       "http": 200,
-      "ms": 245,
-      "ok": true
+      "ms": 223,
+      "ok": true,
+      "sem_chave": false
     },
     "IBGE Notícias": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1
       ],
       "http": 200,
-      "ms": 183,
-      "ok": true
+      "ms": 115,
+      "ok": true,
+      "sem_chave": false
     },
     "IBGE Países": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "outro",
       "historico": [
+        1,
         1,
         1
       ],
       "http": 200,
-      "ms": 166,
-      "ok": true
+      "ms": 65,
+      "ok": true,
+      "sem_chave": false
     },
     "IBGE Pesquisas": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "outro",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 86,
-      "ok": true
+      "ms": 83,
+      "ok": true,
+      "sem_chave": false
     },
     "IBGE Projeção da População": {
       "aviso": null,
       "cors": null,
       "erro": "HTTP 404",
+      "formato": null,
       "historico": [
+        0,
         0
       ],
       "http": 404,
-      "ms": 72,
-      "ok": false
+      "ms": 63,
+      "ok": false,
+      "sem_chave": false
     },
     "IBGE SIDRA": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -1178,14 +1595,17 @@
         1
       ],
       "http": 200,
-      "ms": 737,
-      "ok": true
+      "ms": 408,
+      "ok": true,
+      "sem_chave": false
     },
     "INMET Alertas": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "xml",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -1197,58 +1617,72 @@
         1
       ],
       "http": 200,
-      "ms": 1805,
-      "ok": true
+      "ms": 2215,
+      "ok": true,
+      "sem_chave": false
     },
     "INPE Catálogo de Dados (GeoNetwork)": {
       "aviso": null,
       "cors": null,
       "erro": "HTTP 502",
+      "formato": null,
       "historico": [
+        0,
         0
       ],
       "http": 502,
-      "ms": 3769,
-      "ok": false
-    },
-    "INPE Queimadas": {
-      "aviso": null,
-      "cors": null,
-      "erro": "HTTP 404",
-      "historico": [
-        0
-      ],
-      "http": 404,
-      "ms": 1543,
-      "ok": false
+      "ms": 3672,
+      "ok": false,
+      "sem_chave": false
     },
     "IP-API": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 30,
-      "ok": true
+      "ms": 125,
+      "ok": true,
+      "sem_chave": false
     },
     "Internet Archive": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 195,
-      "ok": true
+      "ms": 340,
+      "ok": true,
+      "sem_chave": false
+    },
+    "Invertexto": {
+      "aviso": null,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "historico": [
+        1
+      ],
+      "http": 401,
+      "ms": 186,
+      "ok": true,
+      "sem_chave": true
     },
     "Ipeadata": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -1260,36 +1694,45 @@
         1
       ],
       "http": 200,
-      "ms": 881,
-      "ok": true
+      "ms": 30766,
+      "ok": true,
+      "sem_chave": false
     },
     "Jolpica F1 (Ergast)": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 529,
-      "ok": true
+      "ms": 542,
+      "ok": true,
+      "sem_chave": false
     },
     "LanguageTool": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 599,
-      "ok": true
+      "ms": 521,
+      "ok": true,
+      "sem_chave": false
     },
     "LexML": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "html",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -1301,25 +1744,17 @@
         1
       ],
       "http": 200,
-      "ms": 2272,
-      "ok": true
-    },
-    "Loterias Caixa (oficial)": {
-      "aviso": null,
-      "cors": null,
-      "erro": "HTTP 403",
-      "historico": [
-        0
-      ],
-      "http": 403,
-      "ms": 13,
-      "ok": false
+      "ms": 2255,
+      "ok": true,
+      "sem_chave": false
     },
     "Loterias Caixa API": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -1331,36 +1766,31 @@
         1
       ],
       "http": 200,
-      "ms": 190,
-      "ok": true
-    },
-    "MJSP Dados Abertos": {
-      "aviso": null,
-      "cors": null,
-      "erro": "gaierror: [Errno -2] Name or service not known",
-      "historico": [
-        0
-      ],
-      "http": null,
-      "ms": null,
-      "ok": false
+      "ms": 132,
+      "ok": true,
+      "sem_chave": false
     },
     "Mapas Culturais (MinC)": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "html",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 3525,
-      "ok": true
+      "ms": 3784,
+      "ok": true,
+      "sem_chave": false
     },
     "Mercado Bitcoin": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -1372,36 +1802,45 @@
         1
       ],
       "http": 200,
-      "ms": 184,
-      "ok": true
+      "ms": 258,
+      "ok": true,
+      "sem_chave": false
     },
     "Mercado Livre": {
       "aviso": null,
       "cors": null,
-      "erro": "HTTP 403",
+      "erro": null,
+      "formato": null,
       "historico": [
-        0
+        0,
+        1
       ],
       "http": 403,
-      "ms": 116,
-      "ok": false
+      "ms": 88,
+      "ok": true,
+      "sem_chave": true
     },
     "Minas Gerais Dados Abertos": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 863,
-      "ok": true
+      "ms": 645,
+      "ok": true,
+      "sem_chave": false
     },
     "Minha Receita": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -1413,36 +1852,45 @@
         1
       ],
       "http": 200,
-      "ms": 344,
-      "ok": true
+      "ms": 530,
+      "ok": true,
+      "sem_chave": false
     },
     "MusicBrainz": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 648,
-      "ok": true
+      "ms": 677,
+      "ok": true,
+      "sem_chave": false
     },
     "NASA POWER": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 217,
-      "ok": true
+      "ms": 355,
+      "ok": true,
+      "sem_chave": false
     },
     "Nager.Date": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -1454,113 +1902,142 @@
         1
       ],
       "http": 200,
-      "ms": 192,
-      "ok": true
+      "ms": 342,
+      "ok": true,
+      "sem_chave": false
+    },
+    "NewsAPI": {
+      "aviso": null,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "historico": [
+        1
+      ],
+      "http": 401,
+      "ms": 205,
+      "ok": true,
+      "sem_chave": true
     },
     "Nominatim (OpenStreetMap)": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 508,
-      "ok": true
-    },
-    "NovaDAX": {
-      "aviso": null,
-      "cors": null,
-      "erro": "gaierror: [Errno -2] Name or service not known",
-      "historico": [
-        0
-      ],
-      "http": null,
-      "ms": null,
-      "ok": false
+      "ms": 436,
+      "ok": true,
+      "sem_chave": false
     },
     "OMS Global Health Observatory": {
       "aviso": null,
       "cors": null,
       "erro": "HTTP 500",
+      "formato": null,
       "historico": [
+        0,
         0
       ],
       "http": 500,
-      "ms": 629,
-      "ok": false
+      "ms": 712,
+      "ok": false,
+      "sem_chave": false
     },
     "ONS Dados Abertos": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 402,
-      "ok": true
+      "ms": 331,
+      "ok": true,
+      "sem_chave": false
     },
     "ONU Objetivos de Desenvolvimento Sustentável": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 668,
-      "ok": true
+      "ms": 639,
+      "ok": true,
+      "sem_chave": false
     },
     "Oasisbr (IBICT)": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 6533,
-      "ok": true
+      "ms": 4211,
+      "ok": true,
+      "sem_chave": false
     },
     "Open Food Facts Brasil": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 1253,
-      "ok": true
+      "ms": 858,
+      "ok": true,
+      "sem_chave": false
     },
     "Open Library": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 469,
-      "ok": true
+      "ms": 495,
+      "ok": true,
+      "sem_chave": false
     },
     "Open Topo Data": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 477,
-      "ok": true
+      "ms": 415,
+      "ok": true,
+      "sem_chave": false
     },
     "Open-Meteo": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -1572,102 +2049,142 @@
         1
       ],
       "http": 200,
-      "ms": 663,
-      "ok": true
+      "ms": 505,
+      "ok": true,
+      "sem_chave": false
     },
     "Open-Meteo Cheias": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 689,
-      "ok": true
+      "ms": 495,
+      "ok": true,
+      "sem_chave": false
     },
     "Open-Meteo Clima Futuro": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 666,
-      "ok": true
+      "ms": 511,
+      "ok": true,
+      "sem_chave": false
     },
     "Open-Meteo Elevation": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 679,
-      "ok": true
+      "ms": 541,
+      "ok": true,
+      "sem_chave": false
     },
     "Open-Meteo Geocoding": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 703,
-      "ok": true
+      "ms": 523,
+      "ok": true,
+      "sem_chave": false
     },
     "Open-Meteo Histórico": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 690,
-      "ok": true
+      "ms": 540,
+      "ok": true,
+      "sem_chave": false
     },
     "Open-Meteo Marine": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 605,
-      "ok": true
+      "ms": 506,
+      "ok": true,
+      "sem_chave": false
     },
     "Open-Meteo Qualidade do Ar": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 603,
-      "ok": true
+      "ms": 497,
+      "ok": true,
+      "sem_chave": false
+    },
+    "OpenAQ": {
+      "aviso": null,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "historico": [
+        1
+      ],
+      "http": 401,
+      "ms": 127,
+      "ok": true,
+      "sem_chave": true
     },
     "OpenAlex": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 375,
-      "ok": true
+      "ms": 544,
+      "ok": true,
+      "sem_chave": false
     },
     "OpenCEP": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -1679,14 +2196,17 @@
         1
       ],
       "http": 200,
-      "ms": 106,
-      "ok": true
+      "ms": 163,
+      "ok": true,
+      "sem_chave": false
     },
     "OpenCNPJ": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -1698,13 +2218,15 @@
         1
       ],
       "http": 200,
-      "ms": 269,
-      "ok": true
+      "ms": 437,
+      "ok": true,
+      "sem_chave": false
     },
     "OpenDataSUS": {
       "aviso": null,
       "cors": false,
-      "erro": "TimeoutError: timed out",
+      "erro": null,
+      "formato": "html",
       "historico": [
         1,
         1,
@@ -1714,39 +2236,62 @@
         1,
         1,
         1,
-        0
+        0,
+        1
       ],
-      "http": null,
-      "ms": null,
-      "ok": false
+      "http": 200,
+      "ms": 509,
+      "ok": true,
+      "sem_chave": false
     },
     "OpenSky Network": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 844,
-      "ok": true
+      "ms": 537,
+      "ok": true,
+      "sem_chave": false
+    },
+    "OpenWeatherMap": {
+      "aviso": null,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "historico": [
+        1
+      ],
+      "http": 401,
+      "ms": 139,
+      "ok": true,
+      "sem_chave": true
     },
     "Overpass API": {
       "aviso": null,
       "cors": null,
-      "erro": "HTTP 502",
+      "erro": "TimeoutError: The read operation timed out",
+      "formato": null,
       "historico": [
+        0,
         0
       ],
-      "http": 502,
-      "ms": 512,
-      "ok": false
+      "http": null,
+      "ms": null,
+      "ok": false,
+      "sem_chave": false
     },
     "PNCP (Portal Nacional de Contratações Públicas)": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -1758,58 +2303,85 @@
         1
       ],
       "http": 200,
-      "ms": 12107,
-      "ok": true
+      "ms": 8260,
+      "ok": true,
+      "sem_chave": false
     },
     "Pernambuco Dados Abertos": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 2625,
-      "ok": true
+      "ms": 1482,
+      "ok": true,
+      "sem_chave": false
     },
     "Photon (Komoot)": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 646,
-      "ok": true
+      "ms": 563,
+      "ok": true,
+      "sem_chave": false
+    },
+    "Portal Brasileiro de Dados Abertos": {
+      "aviso": null,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "historico": [
+        1
+      ],
+      "http": 403,
+      "ms": 599,
+      "ok": true,
+      "sem_chave": true
+    },
+    "Portal da Transparência": {
+      "aviso": null,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "historico": [
+        1
+      ],
+      "http": 401,
+      "ms": 410,
+      "ok": true,
+      "sem_chave": true
     },
     "Prefeitura de Belo Horizonte Dados Abertos": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 1836,
-      "ok": true
-    },
-    "Prefeitura de Campinas Dados Abertos": {
-      "aviso": null,
-      "cors": null,
-      "erro": "gaierror: [Errno -2] Name or service not known",
-      "historico": [
-        0
-      ],
-      "http": null,
-      "ms": null,
-      "ok": false
+      "ms": 2314,
+      "ok": true,
+      "sem_chave": false
     },
     "Prefeitura de Fortaleza Dados Abertos": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -1821,14 +2393,17 @@
         1
       ],
       "http": 200,
-      "ms": 1949,
-      "ok": true
+      "ms": 1527,
+      "ok": true,
+      "sem_chave": false
     },
     "Prefeitura de Porto Alegre Dados Abertos": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -1840,13 +2415,15 @@
         1
       ],
       "http": 200,
-      "ms": 1807,
-      "ok": true
+      "ms": 1672,
+      "ok": true,
+      "sem_chave": false
     },
     "Prefeitura de São Paulo Dados Abertos": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
         1,
         1,
@@ -1856,40 +2433,50 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 729,
-      "ok": true
+      "ms": 5275,
+      "ok": true,
+      "sem_chave": false
     },
     "Prefeitura do Recife Dados Abertos": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1
       ],
       "http": 200,
-      "ms": 285,
-      "ok": true
+      "ms": 263,
+      "ok": true,
+      "sem_chave": false
     },
     "QR Server": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "outro",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 769,
-      "ok": true
+      "ms": 693,
+      "ok": true,
+      "sem_chave": false
     },
     "Querido Diário": {
       "aviso": "configuração de segurança (TLS) antiga",
       "cors": null,
-      "erro": "SSLError: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1010)",
+      "erro": "SSLError: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1010)",
+      "formato": null,
       "historico": [
+        0,
         0,
         0,
         0,
@@ -1902,13 +2489,29 @@
       ],
       "http": null,
       "ms": null,
-      "ok": false
+      "ok": false,
+      "sem_chave": false
+    },
+    "REDEMET (DECEA)": {
+      "aviso": null,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "historico": [
+        1
+      ],
+      "http": 401,
+      "ms": 8429,
+      "ok": true,
+      "sem_chave": true
     },
     "REST Countries": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -1920,25 +2523,31 @@
         1
       ],
       "http": 200,
-      "ms": 208,
-      "ok": true
+      "ms": 330,
+      "ok": true,
+      "sem_chave": false
     },
     "Radio Browser": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 768,
-      "ok": true
+      "ms": 750,
+      "ok": true,
+      "sem_chave": false
     },
     "ReceitaWS": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -1950,14 +2559,17 @@
         1
       ],
       "http": 200,
-      "ms": 590,
-      "ok": true
+      "ms": 416,
+      "ok": true,
+      "sem_chave": false
     },
     "Registro.br RDAP": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -1969,25 +2581,31 @@
         1
       ],
       "http": 200,
-      "ms": 671,
-      "ok": true
+      "ms": 591,
+      "ok": true,
+      "sem_chave": false
     },
     "Repositório do Ipea": {
       "aviso": null,
       "cors": null,
       "erro": "HTTP 403",
+      "formato": null,
       "historico": [
+        0,
         0
       ],
       "http": 403,
-      "ms": 586,
-      "ok": false
+      "ms": 72,
+      "ok": false,
+      "sem_chave": false
     },
     "Resultado Mega": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -1999,36 +2617,58 @@
         1
       ],
       "http": 200,
-      "ms": 227,
-      "ok": true
+      "ms": 293,
+      "ok": true,
+      "sem_chave": false
     },
     "Rio Grande do Sul Dados Abertos": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 1429,
-      "ok": true
+      "ms": 971,
+      "ok": true,
+      "sem_chave": false
     },
     "Rondônia Dados Abertos": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 2036,
-      "ok": true
+      "ms": 1884,
+      "ok": true,
+      "sem_chave": false
+    },
+    "SI5 Global": {
+      "aviso": null,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "historico": [
+        1
+      ],
+      "http": 401,
+      "ms": 360,
+      "ok": true,
+      "sem_chave": true
     },
     "SICONFI (Tesouro Nacional)": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -2040,47 +2680,72 @@
         1
       ],
       "http": 200,
-      "ms": 200,
-      "ok": true
+      "ms": 173,
+      "ok": true,
+      "sem_chave": false
     },
     "SIORG": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "html",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 930,
-      "ok": true
+      "ms": 839,
+      "ok": true,
+      "sem_chave": false
+    },
+    "SPTrans Olho Vivo": {
+      "aviso": null,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "historico": [
+        1
+      ],
+      "http": 401,
+      "ms": 859,
+      "ok": true,
+      "sem_chave": true
     },
     "STJ Dados Abertos": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 751,
-      "ok": true
+      "ms": 510,
+      "ok": true,
+      "sem_chave": false
     },
     "Santa Catarina Dados Abertos": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 1058,
-      "ok": true
+      "ms": 909,
+      "ok": true,
+      "sem_chave": false
     },
     "SciELO ArticleMeta": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -2092,14 +2757,17 @@
         1
       ],
       "http": 200,
-      "ms": 879,
-      "ok": true
+      "ms": 514,
+      "ok": true,
+      "sem_chave": false
     },
     "Senado Federal": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -2111,102 +2779,142 @@
         1
       ],
       "http": 200,
-      "ms": 1826,
-      "ok": true
+      "ms": 2358,
+      "ok": true,
+      "sem_chave": false
     },
     "Sunrise-Sunset": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 257,
-      "ok": true
+      "ms": 189,
+      "ok": true,
+      "sem_chave": false
     },
     "TCE-MG Dados Abertos": {
-      "aviso": null,
-      "cors": null,
-      "erro": "TimeoutError: timed out",
+      "aviso": "certificado SSL inválido ou incompleto",
+      "cors": false,
+      "erro": null,
+      "formato": "html",
       "historico": [
-        0
+        0,
+        1
       ],
-      "http": null,
-      "ms": null,
-      "ok": false
+      "http": 200,
+      "ms": 89,
+      "ok": true,
+      "sem_chave": false
     },
     "TCE-PE Dados Abertos": {
       "aviso": "certificado SSL inválido ou incompleto",
       "cors": false,
       "erro": null,
+      "formato": "html",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 2551,
-      "ok": true
+      "ms": 1281,
+      "ok": true,
+      "sem_chave": false
     },
     "TCE-RN Dados Abertos": {
       "aviso": null,
       "cors": null,
       "erro": "HTTP 503",
+      "formato": null,
       "historico": [
+        0,
         0
       ],
       "http": 503,
-      "ms": 1164,
-      "ok": false
+      "ms": 239,
+      "ok": false,
+      "sem_chave": false
     },
     "TCE-RS Dados Abertos": {
       "aviso": null,
       "cors": null,
-      "erro": "TimeoutError: timed out",
+      "erro": "HTTP 403",
+      "formato": null,
       "historico": [
+        0,
         0
       ],
-      "http": null,
-      "ms": null,
-      "ok": false
+      "http": 403,
+      "ms": 83,
+      "ok": false,
+      "sem_chave": false
     },
     "TCM-CE Dados Abertos": {
       "aviso": null,
       "cors": null,
-      "erro": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "erro": "OSError: [Errno 16] Device or resource busy",
+      "formato": null,
       "historico": [
+        0,
         0
       ],
       "http": null,
       "ms": null,
-      "ok": false
+      "ok": false,
+      "sem_chave": false
     },
     "TCU Dados Abertos": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "html",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 58,
-      "ok": true
+      "ms": 181,
+      "ok": true,
+      "sem_chave": false
+    },
+    "TMDB": {
+      "aviso": null,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "historico": [
+        1
+      ],
+      "http": 401,
+      "ms": 112,
+      "ok": true,
+      "sem_chave": true
     },
     "TRE-PR Dados Abertos": {
       "aviso": null,
-      "cors": null,
-      "erro": "RemoteDisconnected: Remote end closed connection without response",
+      "cors": false,
+      "erro": null,
+      "formato": "json",
       "historico": [
-        0
+        0,
+        1
       ],
-      "http": null,
-      "ms": null,
-      "ok": false
+      "http": 200,
+      "ms": 324,
+      "ok": true,
+      "sem_chave": false
     },
     "TSE Dados Abertos": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -2218,25 +2926,31 @@
         1
       ],
       "http": 200,
-      "ms": 249,
-      "ok": true
+      "ms": 258,
+      "ok": true,
+      "sem_chave": false
     },
     "TSE DivulgaCandContas": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 488,
-      "ok": true
+      "ms": 272,
+      "ok": true,
+      "sem_chave": false
     },
     "TabNews": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -2248,14 +2962,17 @@
         1
       ],
       "http": 200,
-      "ms": 568,
-      "ok": true
+      "ms": 680,
+      "ok": true,
+      "sem_chave": false
     },
     "TerraBrasilis (INPE)": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "xml",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -2267,69 +2984,87 @@
         1
       ],
       "http": 200,
-      "ms": 1252,
-      "ok": true
+      "ms": 1437,
+      "ok": true,
+      "sem_chave": false
     },
     "Tesouro Nacional CUSTOS": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "html",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 1210,
-      "ok": true
+      "ms": 584,
+      "ok": true,
+      "sem_chave": false
     },
     "Tesouro Nacional SADIPEM": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "html",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 1277,
-      "ok": true
+      "ms": 339,
+      "ok": true,
+      "sem_chave": false
     },
     "Tesouro Nacional Transferências Constitucionais": {
       "aviso": null,
       "cors": null,
       "erro": "HTTP 403",
+      "formato": null,
       "historico": [
+        0,
         0
       ],
       "http": 403,
-      "ms": 787,
-      "ok": false
+      "ms": 524,
+      "ok": false,
+      "sem_chave": false
     },
     "TheSportsDB": {
       "aviso": null,
-      "cors": null,
-      "erro": "HTTP 403",
+      "cors": true,
+      "erro": null,
+      "formato": "json",
       "historico": [
-        0
+        0,
+        1
       ],
-      "http": 403,
-      "ms": 30,
-      "ok": false
+      "http": 200,
+      "ms": 294,
+      "ok": true,
+      "sem_chave": false
     },
     "TimeAPI.io": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 917,
-      "ok": true
+      "ms": 656,
+      "ok": true,
+      "sem_chave": false
     },
     "Transferegov": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "html",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -2341,36 +3076,58 @@
         1
       ],
       "http": 200,
-      "ms": 562,
-      "ok": true
+      "ms": 540,
+      "ok": true,
+      "sem_chave": false
     },
     "Tábua de Marés": {
       "aviso": null,
       "cors": false,
       "erro": null,
+      "formato": "html",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 620,
-      "ok": true
+      "ms": 720,
+      "ok": true,
+      "sem_chave": false
     },
     "USGS Terremotos": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 377,
-      "ok": true
+      "ms": 217,
+      "ok": true,
+      "sem_chave": false
+    },
+    "Vagalume": {
+      "aviso": null,
+      "cors": null,
+      "erro": "HTTP 503",
+      "formato": null,
+      "historico": [
+        0
+      ],
+      "http": 503,
+      "ms": 310,
+      "ok": false,
+      "sem_chave": true
     },
     "ViaCEP": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -2382,36 +3139,45 @@
         1
       ],
       "http": 200,
-      "ms": 617,
-      "ok": true
+      "ms": 446,
+      "ok": true,
+      "sem_chave": false
     },
     "Wikidata": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 295,
-      "ok": true
+      "ms": 363,
+      "ok": true,
+      "sem_chave": false
     },
     "Wikimedia Pageviews": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 229,
-      "ok": true
+      "ms": 232,
+      "ok": true,
+      "sem_chave": false
     },
     "Wikipédia em Português": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -2423,25 +3189,31 @@
         1
       ],
       "http": 200,
-      "ms": 106,
-      "ok": true
+      "ms": 95,
+      "ok": true,
+      "sem_chave": false
     },
     "Zippopotam.us": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1
       ],
       "http": 200,
-      "ms": 119,
-      "ok": true
+      "ms": 167,
+      "ok": true,
+      "sem_chave": false
     },
     "brapi": {
       "aviso": null,
       "cors": true,
       "erro": null,
+      "formato": "json",
       "historico": [
+        1,
         1,
         1,
         1,
@@ -2453,9 +3225,23 @@
         1
       ],
       "http": 200,
-      "ms": 234,
-      "ok": true
+      "ms": 188,
+      "ok": true,
+      "sem_chave": false
+    },
+    "football-data.org": {
+      "aviso": null,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "historico": [
+        1
+      ],
+      "http": 403,
+      "ms": 601,
+      "ok": true,
+      "sem_chave": true
     }
   },
-  "verificado_em": "2026-10-29T20:38:26Z"
+  "verificado_em": "2026-10-29T20:49:51Z"
 }
