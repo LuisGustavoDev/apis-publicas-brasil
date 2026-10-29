@@ -1,0 +1,50 @@
+name: Reportar um problema
+description: Avise sobre uma API com link quebrado, informação errada ou que deixou de existir
+title: "[Problema] "
+labels: ["problema"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por avisar! Uma API marcada como 🔴 no README já foi detectada pelo robô e pode voltar sozinha.
+        Reporte quando ela **mudou de endereço**, **acabou de vez**, **virou paga** ou quando alguma informação da lista está errada.
+  - type: input
+    id: api
+    attributes:
+      label: Nome da API
+      description: Como aparece no README. Deixe em branco se o problema não é de uma API específica.
+      placeholder: "ex.: ViaCEP"
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Qual é o problema?
+      options:
+        - O link da documentação está quebrado
+        - A URL de exemplo não funciona mais
+        - A API foi descontinuada
+        - A API passou a ser paga ou a exigir cadastro
+        - Informação errada (descrição, categoria, autenticação ou limite)
+        - API duplicada na lista
+        - O status no README parece errado
+        - Problema no robô, no README ou no repositório
+        - Outro
+    validations:
+      required: true
+  - type: textarea
+    id: detalhes
+    attributes:
+      label: O que acontece?
+      description: Conte o que você viu. Se tiver, cole a mensagem de erro ou a resposta da API.
+    validations:
+      required: true
+  - type: input
+    id: correcao
+    attributes:
+      label: Link ou informação correta (se souber)
+      placeholder: "https://"
+  - type: checkboxes
+    id: pr
+    attributes:
+      label: Quer corrigir você mesmo?
+      options:
+        - label: Posso abrir um pull request com a correção

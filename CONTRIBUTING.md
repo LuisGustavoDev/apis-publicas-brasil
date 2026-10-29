@@ -21,6 +21,12 @@ Obrigado por querer ajudar! Toda a lista vive em um único arquivo: [`data/apis.
 
 Sem tempo para isso? [Sugira a API em uma issue](../../issues/new?template=sugerir-api.yml) e alguém adiciona.
 
+## Reportar um problema
+
+Achou um link quebrado, uma API que acabou, virou paga ou tem informação errada? [Abra uma issue de problema](../../issues/new?template=reportar-problema.yml). Se souber corrigir, edite o bloco da API no [`data/apis.yaml`](data/apis.yaml) e abra um pull request.
+
+Uma API marcada como 🔴 no README já foi detectada pelo robô e pode voltar sozinha no dia seguinte. Vale reportar quando o problema continua por vários dias ou quando o endereço mudou.
+
 ## Campos
 
 | Campo | Obrigatório | Como preencher |

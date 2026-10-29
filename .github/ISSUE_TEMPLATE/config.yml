@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Como contribuir
+    url: https://github.com/LuisGustavoDev/apis-publicas-brasil/blob/main/CONTRIBUTING.md
+    about: Veja como adicionar ou corrigir uma API editando o data/apis.yaml

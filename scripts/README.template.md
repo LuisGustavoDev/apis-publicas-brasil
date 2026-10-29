@@ -61,6 +61,8 @@ Conhece uma API pública brasileira que não está aqui? Adicionar é simples: v
 
 Veja todos os detalhes em [CONTRIBUTING.md](CONTRIBUTING.md). Também dá para só [sugerir uma API](../../issues/new?template=sugerir-api.yml) sem mexer em código.
 
+Encontrou um link quebrado ou uma informação errada? [Reporte um problema](../../issues/new?template=reportar-problema.yml).
+
 ## Como funciona
 
 ```
