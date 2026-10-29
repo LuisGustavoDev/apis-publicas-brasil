@@ -2,10 +2,13 @@
   "apis": {
     "A Bíblia Digital": {
       "aviso": null,
+      "bloqueado": false,
       "cors": null,
       "erro": "HTTP 503",
       "formato": null,
+      "funciona_do_exterior": false,
       "historico": [
+        0,
         0,
         0,
         0,
@@ -19,30 +22,59 @@
         0
       ],
       "http": 503,
-      "ms": 116,
+      "ms": 428,
       "ok": false,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "ANA Telemetria": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "documentacao",
+      "funciona_do_exterior": true,
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 5732,
+      "ok": true,
+      "openapi": false,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
     "ANEEL Dados Abertos": {
       "aviso": null,
+      "bloqueado": false,
       "cors": false,
       "erro": null,
       "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
+        1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 646,
+      "ms": 624,
       "ok": true,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
     "ANTT Dados Abertos": {
       "aviso": null,
+      "bloqueado": false,
       "cors": false,
       "erro": "RemoteDisconnected: Remote end closed connection without response",
       "formato": null,
+      "funciona_do_exterior": false,
       "historico": [
         1,
         1,
@@ -54,48 +86,67 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "http": null,
       "ms": null,
       "ok": false,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
     "API-Futebol": {
       "aviso": null,
+      "bloqueado": false,
       "cors": null,
       "erro": null,
       "formato": null,
+      "funciona_do_exterior": true,
       "historico": [
+        1,
         1,
         1
       ],
       "http": 401,
-      "ms": 665,
+      "ms": 153,
       "ok": true,
-      "sem_chave": true
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
     "Acre Dados Abertos": {
       "aviso": null,
+      "bloqueado": false,
       "cors": false,
       "erro": null,
       "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
+        1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 1461,
+      "ms": 1430,
       "ok": true,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
     },
     "Alagoas Dados Abertos": {
       "aviso": null,
+      "bloqueado": false,
       "cors": null,
-      "erro": "TimeoutError: timed out",
+      "erro": "ConnectionResetError: [Errno 104] Connection reset by peer",
       "formato": null,
+      "funciona_do_exterior": false,
       "historico": [
+        0,
         0,
         0,
         0
@@ -103,28 +154,40 @@
       "http": null,
       "ms": null,
       "ok": false,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
     "Alpha Vantage": {
       "aviso": null,
+      "bloqueado": false,
       "cors": true,
       "erro": null,
       "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
+        1,
         1,
         1
       ],
       "http": 200,
-      "ms": 169,
+      "ms": 52,
       "ok": true,
-      "sem_chave": true
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "eua"
     },
     "ApiCEP": {
       "aviso": null,
+      "bloqueado": false,
       "cors": true,
       "erro": null,
       "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
+        1,
         1,
         1,
         1,
@@ -138,31 +201,43 @@
         1
       ],
       "http": 200,
-      "ms": 539,
+      "ms": 822,
       "ok": true,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
     "Assembleia Legislativa de Minas Gerais": {
       "aviso": null,
+      "bloqueado": false,
       "cors": true,
       "erro": null,
       "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
+        1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 2072,
+      "ms": 1216,
       "ok": true,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
     },
     "AwesomeAPI CEP": {
       "aviso": null,
+      "bloqueado": false,
       "cors": null,
       "erro": null,
       "formato": null,
+      "funciona_do_exterior": true,
       "historico": [
+        1,
         1,
         1,
         1,
@@ -176,16 +251,22 @@
         1
       ],
       "http": 429,
-      "ms": 288,
+      "ms": 172,
       "ok": true,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
     "AwesomeAPI Moedas": {
       "aviso": null,
+      "bloqueado": false,
       "cors": null,
       "erro": null,
       "formato": null,
+      "funciona_do_exterior": true,
       "historico": [
+        1,
         1,
         1,
         1,
@@ -199,388 +280,106 @@
         1
       ],
       "http": 429,
-      "ms": 203,
+      "ms": 41,
       "ok": true,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
     "BDTD (IBICT)": {
       "aviso": null,
+      "bloqueado": false,
       "cors": true,
       "erro": null,
       "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
+        1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 1153,
+      "ms": 102,
       "ok": true,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
     "BNDES Dados Abertos": {
       "aviso": null,
+      "bloqueado": false,
       "cors": false,
       "erro": null,
       "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
+        1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 1067,
+      "ms": 106,
       "ok": true,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
     "Bahia Dados Abertos": {
       "aviso": "certificado SSL inválido ou incompleto",
+      "bloqueado": false,
       "cors": false,
       "erro": null,
       "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
+        1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 1055,
+      "ms": 296,
       "ok": true,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
     "Banco Central Agências": {
       "aviso": null,
+      "bloqueado": false,
       "cors": true,
       "erro": null,
       "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
+        1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 607,
+      "ms": 520,
       "ok": true,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
     },
     "Banco Central Estatísticas do Pix": {
       "aviso": null,
+      "bloqueado": false,
       "cors": true,
       "erro": null,
       "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 606,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Banco Central Focus (Expectativas)": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 637,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Banco Central PTAX": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 765,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Banco Central Postos de Atendimento": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 3327,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Banco Central SGS": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 320,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Banco Central Taxas de Juros": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 601,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Banco Mundial": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 150,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Banco Mundial Projetos": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 256,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Bible API (Almeida)": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 194,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Brasil.IO": {
-      "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        1,
-        1
-      ],
-      "http": 401,
-      "ms": 256,
-      "ok": true,
-      "sem_chave": true
-    },
-    "BrasilAPI Bancos": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 129,
-      "ok": true,
-      "sem_chave": false
-    },
-    "BrasilAPI CEP v2": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 287,
-      "ok": true,
-      "sem_chave": false
-    },
-    "BrasilAPI CNPJ": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 324,
-      "ok": true,
-      "sem_chave": false
-    },
-    "BrasilAPI CPTEC": {
-      "aviso": null,
-      "cors": null,
-      "erro": "HTTP 500",
-      "formato": null,
-      "historico": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "http": 500,
-      "ms": 1131,
-      "ok": false,
-      "sem_chave": false
-    },
-    "BrasilAPI Corretoras": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 314,
-      "ok": true,
-      "sem_chave": false
-    },
-    "BrasilAPI Câmbio": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
         1,
         1,
         1,
@@ -596,1382 +395,20 @@
       "http": 200,
       "ms": 90,
       "ok": true,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
-    "BrasilAPI DDD": {
+    "Banco Central Focus (Expectativas)": {
       "aviso": null,
+      "bloqueado": false,
       "cors": true,
       "erro": null,
       "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 112,
-      "ok": true,
-      "sem_chave": false
-    },
-    "BrasilAPI FIPE": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 95,
-      "ok": true,
-      "sem_chave": false
-    },
-    "BrasilAPI Feriados": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 93,
-      "ok": true,
-      "sem_chave": false
-    },
-    "BrasilAPI IBGE": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        0,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 96,
-      "ok": true,
-      "sem_chave": false
-    },
-    "BrasilAPI ISBN": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 101,
-      "ok": true,
-      "sem_chave": false
-    },
-    "BrasilAPI NCM": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 97,
-      "ok": true,
-      "sem_chave": false
-    },
-    "BrasilAPI Participantes do Pix": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 112,
-      "ok": true,
-      "sem_chave": false
-    },
-    "BrasilAPI Registro.br": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 92,
-      "ok": true,
-      "sem_chave": false
-    },
-    "BrasilAPI Taxas": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 108,
-      "ok": true,
-      "sem_chave": false
-    },
-    "CAPES Dados Abertos": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 718,
-      "ok": true,
-      "sem_chave": false
-    },
-    "CCEE Dados Abertos": {
-      "aviso": null,
-      "cors": false,
-      "erro": "HTTP 403",
-      "formato": null,
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0
-      ],
-      "http": 403,
-      "ms": 58,
-      "ok": false,
-      "sem_chave": false
-    },
-    "CEP Aberto": {
-      "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        1,
-        1
-      ],
-      "http": 401,
-      "ms": 902,
-      "ok": true,
-      "sem_chave": true
-    },
-    "CNPJ.ws Pública": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 670,
-      "ok": true,
-      "sem_chave": false
-    },
-    "CNPJá Open": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 243,
-      "ok": true,
-      "sem_chave": false
-    },
-    "CPTEC/INPE (XML)": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "xml",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 1968,
-      "ok": true,
-      "sem_chave": false
-    },
-    "CVM Dados Abertos": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 644,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Calendarific": {
-      "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        1,
-        1
-      ],
-      "http": 401,
-      "ms": 264,
-      "ok": true,
-      "sem_chave": true
-    },
-    "Cartola FC": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 683,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Climatempo Advisor": {
-      "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        0,
-        1
-      ],
-      "http": 400,
-      "ms": 273,
-      "ok": true,
-      "sem_chave": true
-    },
-    "CoinGecko": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 140,
-      "ok": true,
-      "sem_chave": false
-    },
-    "CoinPaprika": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 276,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Cosmos Bluesoft": {
-      "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        1,
-        1
-      ],
-      "http": 401,
-      "ms": 598,
-      "ok": true,
-      "sem_chave": true
-    },
-    "Crossref": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 374,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Currency API (fawazahmed0)": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 50,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Câmara dos Deputados": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 4123,
-      "ok": true,
-      "sem_chave": false
-    },
-    "DOAJ": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1
-      ],
-      "http": 200,
-      "ms": 323,
-      "ok": true,
-      "sem_chave": false
-    },
-    "DataJud": {
-      "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        1,
-        1
-      ],
-      "http": 401,
-      "ms": 824,
-      "ok": true,
-      "sem_chave": true
-    },
-    "Deezer": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 330,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Dicionário Aberto": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 474,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Embrapa AgroAPI": {
-      "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        1,
-        1
-      ],
-      "http": 401,
-      "ms": 707,
-      "ok": true,
-      "sem_chave": true
-    },
-    "Espírito Santo Dados Abertos": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 2084,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Europe PMC": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1
-      ],
-      "http": 200,
-      "ms": 1275,
-      "ok": true,
-      "sem_chave": false
-    },
-    "ExchangeRate-API (aberta)": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 155,
-      "ok": true,
-      "sem_chave": false
-    },
-    "FIPE (Parallelum)": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 843,
-      "ok": true,
-      "sem_chave": false
-    },
-    "FMI DataMapper": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 5040,
-      "ok": true,
-      "sem_chave": false
-    },
-    "FNDE Dados Abertos": {
-      "aviso": null,
-      "cors": null,
-      "erro": "HTTP 403",
-      "formato": null,
-      "historico": [
-        0,
-        0,
-        0
-      ],
-      "http": 403,
-      "ms": 88,
-      "ok": false,
-      "sem_chave": false
-    },
-    "Fogo Cruzado": {
-      "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        1,
-        1
-      ],
-      "http": 401,
-      "ms": 367,
-      "ok": true,
-      "sem_chave": true
-    },
-    "Foxbit": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 342,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Frankfurter": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 546,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Fórum Brasileiro de Segurança Pública": {
-      "aviso": null,
-      "cors": null,
-      "erro": "HTTP 403",
-      "formato": null,
-      "historico": [
-        0,
-        0,
-        0
-      ],
-      "http": 403,
-      "ms": 17,
-      "ok": false,
-      "sem_chave": false
-    },
-    "GBIF": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 550,
-      "ok": true,
-      "sem_chave": false
-    },
-    "GNews": {
-      "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        0,
-        1
-      ],
-      "http": 400,
-      "ms": 196,
-      "ok": true,
-      "sem_chave": true
-    },
-    "GeoNames": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 769,
-      "ok": true,
-      "sem_chave": true
-    },
-    "Goiás Dados Abertos": {
-      "aviso": null,
-      "cors": null,
-      "erro": "HTTP 403",
-      "formato": null,
-      "historico": [
-        0,
-        0,
-        0
-      ],
-      "http": 403,
-      "ms": 81,
-      "ok": false,
-      "sem_chave": false
-    },
-    "Google Books": {
-      "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 429,
-      "ms": 113,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Governo Aberto SP": {
-      "aviso": "certificado SSL inválido ou incompleto",
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 4510,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Gutendex": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        0,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 280,
-      "ok": true,
-      "sem_chave": false
-    },
-    "HG Brasil Finance": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 125,
-      "ok": true,
-      "sem_chave": true
-    },
-    "HG Brasil Weather": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 194,
-      "ok": true,
-      "sem_chave": true
-    },
-    "IBAMA Dados Abertos": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 729,
-      "ok": true,
-      "sem_chave": false
-    },
-    "IBGE Agregados (SIDRA)": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "outro",
-      "historico": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 258,
-      "ok": true,
-      "sem_chave": false
-    },
-    "IBGE CNAE": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 155,
-      "ok": true,
-      "sem_chave": false
-    },
-    "IBGE Calendário": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "outro",
-      "historico": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 98,
-      "ok": true,
-      "sem_chave": false
-    },
-    "IBGE Geoserviços": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "xml",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 156,
-      "ok": true,
-      "sem_chave": false
-    },
-    "IBGE Localidades": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "outro",
-      "historico": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 198,
-      "ok": true,
-      "sem_chave": false
-    },
-    "IBGE Malhas": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "outro",
-      "historico": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 202,
-      "ok": true,
-      "sem_chave": false
-    },
-    "IBGE Nomes": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 234,
-      "ok": true,
-      "sem_chave": false
-    },
-    "IBGE Notícias": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "outro",
-      "historico": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 181,
-      "ok": true,
-      "sem_chave": false
-    },
-    "IBGE Países": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "outro",
-      "historico": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 172,
-      "ok": true,
-      "sem_chave": false
-    },
-    "IBGE Pesquisas": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "outro",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 62,
-      "ok": true,
-      "sem_chave": false
-    },
-    "IBGE Projeção da População": {
-      "aviso": null,
-      "cors": null,
-      "erro": "HTTP 404",
-      "formato": null,
-      "historico": [
-        0,
-        0,
-        0
-      ],
-      "http": 404,
-      "ms": 62,
-      "ok": false,
-      "sem_chave": false
-    },
-    "IBGE SIDRA": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 413,
-      "ok": true,
-      "sem_chave": false
-    },
-    "INMET Alertas": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "xml",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 1904,
-      "ok": true,
-      "sem_chave": false
-    },
-    "INPE Catálogo de Dados (GeoNetwork)": {
-      "aviso": null,
-      "cors": null,
-      "erro": "HTTP 502",
-      "formato": null,
-      "historico": [
-        0,
-        0,
-        0
-      ],
-      "http": 502,
-      "ms": 3771,
-      "ok": false,
-      "sem_chave": false
-    },
-    "IP-API": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 41,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Internet Archive": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 591,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Invertexto": {
-      "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        1,
-        1
-      ],
-      "http": 401,
-      "ms": 447,
-      "ok": true,
-      "sem_chave": true
-    },
-    "Ipeadata": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 741,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Jolpica F1 (Ergast)": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 493,
-      "ok": true,
-      "sem_chave": false
-    },
-    "LanguageTool": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 612,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Loterias Caixa API": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 121,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Mercado Bitcoin": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 267,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Mercado Livre": {
-      "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        0,
-        1,
-        1
-      ],
-      "http": 403,
-      "ms": 99,
-      "ok": true,
-      "sem_chave": true
-    },
-    "Minas Gerais Dados Abertos": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 593,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Minha Receita": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 330,
-      "ok": true,
-      "sem_chave": false
-    },
-    "MusicBrainz": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 395,
-      "ok": true,
-      "sem_chave": false
-    },
-    "NASA EONET": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1
-      ],
-      "http": 200,
-      "ms": 353,
-      "ok": true,
-      "sem_chave": false
-    },
-    "NASA POWER": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 352,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Nager.Date": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
         1,
         1,
         1,
@@ -1987,161 +424,20 @@
       "http": 200,
       "ms": 206,
       "ok": true,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
-    "NewsAPI": {
+    "Banco Central PTAX": {
       "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        1,
-        1
-      ],
-      "http": 401,
-      "ms": 249,
-      "ok": true,
-      "sem_chave": true
-    },
-    "Nominatim (OpenStreetMap)": {
-      "aviso": null,
+      "bloqueado": false,
       "cors": true,
       "erro": null,
       "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
         1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 497,
-      "ok": true,
-      "sem_chave": false
-    },
-    "OMS Global Health Observatory": {
-      "aviso": null,
-      "cors": null,
-      "erro": "HTTP 500",
-      "formato": null,
-      "historico": [
-        0,
-        0,
-        0
-      ],
-      "http": 500,
-      "ms": 519,
-      "ok": false,
-      "sem_chave": false
-    },
-    "ONS Dados Abertos": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 1483,
-      "ok": true,
-      "sem_chave": false
-    },
-    "ONU Objetivos de Desenvolvimento Sustentável": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 1010,
-      "ok": true,
-      "sem_chave": false
-    },
-    "ORCID": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1
-      ],
-      "http": 200,
-      "ms": 625,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Oasisbr (IBICT)": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 1061,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Open Food Facts Brasil": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 997,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Open Library": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 1115,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Open Topo Data": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 437,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Open-Meteo": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
         1,
         1,
         1,
@@ -2155,163 +451,22 @@
         1
       ],
       "http": 200,
-      "ms": 251,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Open-Meteo Cheias": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 498,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Open-Meteo Clima Futuro": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 500,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Open-Meteo Elevation": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 511,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Open-Meteo Ensemble": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1
-      ],
-      "http": 200,
-      "ms": 630,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Open-Meteo Geocoding": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 567,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Open-Meteo Histórico": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 498,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Open-Meteo Marine": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 524,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Open-Meteo Qualidade do Ar": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 528,
-      "ok": true,
-      "sem_chave": false
-    },
-    "OpenAQ": {
-      "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        1,
-        1
-      ],
-      "http": 401,
       "ms": 113,
       "ok": true,
-      "sem_chave": true
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
-    "OpenAlex": {
+    "Banco Central Postos de Atendimento": {
       "aviso": null,
+      "bloqueado": false,
       "cors": true,
       "erro": null,
       "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
         1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 499,
-      "ok": true,
-      "sem_chave": false
-    },
-    "OpenCEP": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
         1,
         1,
         1,
@@ -2325,428 +480,22 @@
         1
       ],
       "http": 200,
-      "ms": 131,
-      "ok": true,
-      "sem_chave": false
-    },
-    "OpenCNPJ": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 169,
-      "ok": true,
-      "sem_chave": false
-    },
-    "OpenSky Network": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 665,
-      "ok": true,
-      "sem_chave": false
-    },
-    "OpenWeatherMap": {
-      "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        1,
-        1
-      ],
-      "http": 401,
-      "ms": 170,
-      "ok": true,
-      "sem_chave": true
-    },
-    "Overpass API": {
-      "aviso": null,
-      "cors": null,
-      "erro": "TimeoutError: The read operation timed out",
-      "formato": null,
-      "historico": [
-        0,
-        0,
-        0
-      ],
-      "http": null,
-      "ms": null,
-      "ok": false,
-      "sem_chave": false
-    },
-    "PNCP (Portal Nacional de Contratações Públicas)": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 4667,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Pernambuco Dados Abertos": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 1408,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Photon (Komoot)": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 699,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Portal Brasileiro de Dados Abertos": {
-      "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        1,
-        1
-      ],
-      "http": 403,
-      "ms": 830,
-      "ok": true,
-      "sem_chave": true
-    },
-    "Portal da Transparência": {
-      "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        1,
-        1
-      ],
-      "http": 401,
-      "ms": 902,
-      "ok": true,
-      "sem_chave": true
-    },
-    "Prefeitura de Belo Horizonte Dados Abertos": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 1884,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Prefeitura de Fortaleza Dados Abertos": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 1133,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Prefeitura de Porto Alegre Dados Abertos": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 1523,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Prefeitura de São Paulo Dados Abertos": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 5999,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Prefeitura do Recife Dados Abertos": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 221,
-      "ok": true,
-      "sem_chave": false
-    },
-    "QR Server": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "outro",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 711,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Querido Diário": {
-      "aviso": "configuração de segurança (TLS) antiga",
-      "cors": null,
-      "erro": "SSLError: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1010)",
-      "formato": null,
-      "historico": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "http": null,
-      "ms": null,
-      "ok": false,
-      "sem_chave": false
-    },
-    "REDEMET (DECEA)": {
-      "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        1,
-        1
-      ],
-      "http": 401,
-      "ms": 3038,
-      "ok": true,
-      "sem_chave": true
-    },
-    "REST Countries": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 192,
-      "ok": true,
-      "sem_chave": false
-    },
-    "ROR (Research Organization Registry)": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1
-      ],
-      "http": 200,
-      "ms": 499,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Radio Browser": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 568,
-      "ok": true,
-      "sem_chave": false
-    },
-    "ReceitaWS": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 364,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Registro.br RDAP": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 552,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Repositório do Ipea": {
-      "aviso": null,
-      "cors": null,
-      "erro": "HTTP 403",
-      "formato": null,
-      "historico": [
-        0,
-        0,
-        0
-      ],
-      "http": 403,
       "ms": 79,
-      "ok": false,
-      "sem_chave": false
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
-    "Resultado Mega": {
+    "Banco Central SGS": {
       "aviso": null,
+      "bloqueado": false,
       "cors": true,
       "erro": null,
       "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
+        1,
         1,
         1,
         1,
@@ -2760,163 +509,152 @@
         1
       ],
       "http": 200,
-      "ms": 224,
+      "ms": 104,
       "ok": true,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
-    "Rio Grande do Sul Dados Abertos": {
+    "Banco Central Taxas de Juros": {
       "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 504,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "Banco Mundial": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 220,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Banco Mundial Projetos": {
+      "aviso": null,
+      "bloqueado": false,
       "cors": false,
       "erro": null,
       "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
+        1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 1045,
+      "ms": 260,
       "ok": true,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
-    "Rondônia Dados Abertos": {
+    "Bible API (Almeida)": {
       "aviso": null,
-      "cors": false,
+      "bloqueado": false,
+      "cors": true,
       "erro": null,
       "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
+        1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 1782,
+      "ms": 492,
       "ok": true,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
-    "SI5 Global": {
+    "Brasil Aberto": {
       "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "html",
+      "funciona_do_exterior": true,
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 178,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Brasil.IO": {
+      "aviso": null,
+      "bloqueado": false,
       "cors": null,
       "erro": null,
       "formato": null,
+      "funciona_do_exterior": true,
       "historico": [
+        1,
         1,
         1
       ],
       "http": 401,
-      "ms": 266,
+      "ms": 634,
       "ok": true,
-      "sem_chave": true
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
-    "SICONFI (Tesouro Nacional)": {
+    "BrasilAPI Bancos": {
       "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 191,
-      "ok": true,
-      "sem_chave": false
-    },
-    "SPTrans Olho Vivo": {
-      "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        1,
-        1
-      ],
-      "http": 401,
-      "ms": 522,
-      "ok": true,
-      "sem_chave": true
-    },
-    "STJ Dados Abertos": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 446,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Santa Catarina Dados Abertos": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 1685,
-      "ok": true,
-      "sem_chave": false
-    },
-    "SciELO ArticleMeta": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 608,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Semantic Scholar": {
-      "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        1
-      ],
-      "http": 429,
-      "ms": 152,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Senado Federal": {
-      "aviso": null,
+      "bloqueado": false,
       "cors": true,
       "erro": null,
       "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
+        1,
         1,
         1,
         1,
@@ -2930,419 +668,22 @@
         1
       ],
       "http": 200,
-      "ms": 2102,
+      "ms": 61,
       "ok": true,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
-    "Sunrise-Sunset": {
+    "BrasilAPI CEP v2": {
       "aviso": null,
+      "bloqueado": false,
       "cors": true,
       "erro": null,
       "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
         1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 373,
-      "ok": true,
-      "sem_chave": false
-    },
-    "TCE-RN Dados Abertos": {
-      "aviso": null,
-      "cors": null,
-      "erro": "HTTP 503",
-      "formato": null,
-      "historico": [
-        0,
-        0,
-        0
-      ],
-      "http": 503,
-      "ms": 224,
-      "ok": false,
-      "sem_chave": false
-    },
-    "TCE-RS Dados Abertos": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        0,
-        0,
-        1
-      ],
-      "http": 200,
-      "ms": 176,
-      "ok": true,
-      "sem_chave": false
-    },
-    "TCM-CE Dados Abertos": {
-      "aviso": null,
-      "cors": null,
-      "erro": "OSError: [Errno 16] Device or resource busy",
-      "formato": null,
-      "historico": [
-        0,
-        0,
-        0
-      ],
-      "http": null,
-      "ms": null,
-      "ok": false,
-      "sem_chave": false
-    },
-    "TMDB": {
-      "aviso": null,
-      "cors": null,
-      "erro": null,
-      "formato": null,
-      "historico": [
-        1,
-        1
-      ],
-      "http": 401,
-      "ms": 328,
-      "ok": true,
-      "sem_chave": true
-    },
-    "TRE-PR Dados Abertos": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        0,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 245,
-      "ok": true,
-      "sem_chave": false
-    },
-    "TSE Dados Abertos": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 395,
-      "ok": true,
-      "sem_chave": false
-    },
-    "TSE DivulgaCandContas": {
-      "aviso": null,
-      "cors": true,
-      "erro": "HTTP 403",
-      "formato": null,
-      "historico": [
-        1,
-        1,
-        0
-      ],
-      "http": 403,
-      "ms": 54,
-      "ok": false,
-      "sem_chave": false
-    },
-    "TabNews": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 327,
-      "ok": true,
-      "sem_chave": false
-    },
-    "TerraBrasilis (INPE)": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "xml",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 1361,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Tesouro Nacional Transferências Constitucionais": {
-      "aviso": null,
-      "cors": null,
-      "erro": "HTTP 403",
-      "formato": null,
-      "historico": [
-        0,
-        0,
-        0
-      ],
-      "http": 403,
-      "ms": 895,
-      "ok": false,
-      "sem_chave": false
-    },
-    "TheSportsDB": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        0,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 245,
-      "ok": true,
-      "sem_chave": false
-    },
-    "TimeAPI.io": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 561,
-      "ok": true,
-      "sem_chave": false
-    },
-    "USGS Terremotos": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 372,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Vagalume": {
-      "aviso": null,
-      "cors": null,
-      "erro": "HTTP 503",
-      "formato": null,
-      "historico": [
-        0,
-        0
-      ],
-      "http": 503,
-      "ms": 296,
-      "ok": false,
-      "sem_chave": true
-    },
-    "ViaCEP": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 484,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Wikcionário em Português": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1
-      ],
-      "http": 200,
-      "ms": 242,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Wikidata": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 435,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Wikidata SPARQL": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1
-      ],
-      "http": 200,
-      "ms": 555,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Wikimedia Commons": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1
-      ],
-      "http": 200,
-      "ms": 1405,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Wikimedia Pageviews": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 83,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Wikipédia em Português": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 210,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Wikipédia em Português (busca)": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1
-      ],
-      "http": 200,
-      "ms": 441,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Wikivoyage em Português": {
-      "aviso": null,
-      "cors": false,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1
-      ],
-      "http": 200,
-      "ms": 409,
-      "ok": true,
-      "sem_chave": false
-    },
-    "Zippopotam.us": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
-        1,
-        1,
-        1
-      ],
-      "http": 200,
-      "ms": 105,
-      "ok": true,
-      "sem_chave": false
-    },
-    "brapi": {
-      "aviso": null,
-      "cors": true,
-      "erro": null,
-      "formato": "json",
-      "historico": [
         1,
         1,
         1,
@@ -3358,35 +699,4092 @@
       "http": 200,
       "ms": 172,
       "ok": true,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
-    "football-data.org": {
+    "BrasilAPI CNPJ": {
       "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 169,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "BrasilAPI CPTEC": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": "HTTP 500",
+      "formato": null,
+      "funciona_do_exterior": false,
+      "historico": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "http": 500,
+      "ms": 1278,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "BrasilAPI Corretoras": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 578,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "BrasilAPI Câmbio": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 53,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "BrasilAPI DDD": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 56,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "BrasilAPI FIPE": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 75,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "BrasilAPI Feriados": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 48,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "BrasilAPI IBGE": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 45,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "BrasilAPI ISBN": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 447,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "BrasilAPI NCM": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 1984,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "BrasilAPI Participantes do Pix": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 81,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "BrasilAPI Registro.br": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 817,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "BrasilAPI Taxas": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 37,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "CAPES Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 113,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "CCEE Dados Abertos": {
+      "aviso": null,
+      "bloqueado": true,
+      "cors": false,
+      "erro": "recusou o robô (HTTP 403)",
+      "formato": null,
+      "funciona_do_exterior": false,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "http": 403,
+      "ms": 40,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "CEP Aberto": {
+      "aviso": null,
+      "bloqueado": false,
       "cors": null,
       "erro": null,
       "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1
+      ],
+      "http": 401,
+      "ms": 1413,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "CNPJ.ws Pública": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 425,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "CNPJá Open": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 280,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "CPTEC/INPE (XML)": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "xml",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 71,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "CVM Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 42,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Calendarific": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1
+      ],
+      "http": 401,
+      "ms": 397,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Cartola FC": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 37,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Climatempo Advisor": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        0,
+        1,
+        1
+      ],
+      "http": 400,
+      "ms": 184,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "CoinGecko": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 206,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "CoinPaprika": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 262,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Cosmos Bluesoft": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1
+      ],
+      "http": 401,
+      "ms": 404,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Crossref": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 391,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Currency API (fawazahmed0)": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 54,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "Câmara dos Deputados": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": "TimeoutError: The read operation timed out",
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "http": null,
+      "ms": null,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "DOAJ": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
         1,
         1
       ],
-      "http": 403,
-      "ms": 507,
+      "http": 200,
+      "ms": 252,
       "ok": true,
-      "sem_chave": true
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     },
-    "iNaturalist": {
+    "DataJud": {
       "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1
+      ],
+      "http": 401,
+      "ms": 100,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Deezer": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 278,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Dicionário Aberto": {
+      "aviso": null,
+      "bloqueado": false,
       "cors": true,
       "erro": null,
       "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 953,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Embrapa AgroAPI": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1
+      ],
+      "http": 401,
+      "ms": 183,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Espírito Santo Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 135,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Europe PMC": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 1239,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "ExchangeRate-API (aberta)": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 166,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "FIPE (Parallelum)": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 75,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "FMI DataMapper": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 1310,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "FNDE Dados Abertos": {
+      "aviso": null,
+      "bloqueado": true,
+      "cors": null,
+      "erro": "recusou o robô (HTTP 403)",
+      "formato": null,
+      "funciona_do_exterior": false,
+      "historico": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "http": 403,
+      "ms": 128,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Fogo Cruzado": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1
+      ],
+      "http": 401,
+      "ms": 357,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Foxbit": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 243,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "Frankfurter": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 522,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Fórum Brasileiro de Segurança Pública": {
+      "aviso": null,
+      "bloqueado": true,
+      "cors": null,
+      "erro": "recusou o robô (HTTP 403)",
+      "formato": null,
+      "funciona_do_exterior": false,
+      "historico": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "http": 403,
+      "ms": 997,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "GBIF": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 631,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "GNews": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        0,
+        1,
+        1
+      ],
+      "http": 400,
+      "ms": 347,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "GeoNames": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 689,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "Goiás Dados Abertos": {
+      "aviso": null,
+      "bloqueado": true,
+      "cors": null,
+      "erro": "recusou o robô (HTTP 403)",
+      "formato": null,
+      "funciona_do_exterior": false,
+      "historico": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "http": 403,
+      "ms": 176,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Google Books": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 429,
+      "ms": 1097,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Governo Aberto SP": {
+      "aviso": "certificado SSL inválido ou incompleto",
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 3346,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Gutendex": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 490,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "HG Brasil Finance": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 66,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "HG Brasil Weather": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 540,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "IBAMA Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 2339,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "IBGE Agregados (SIDRA)": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "outro",
+      "funciona_do_exterior": false,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 160,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": true,
+      "testada_de": "brasil"
+    },
+    "IBGE CNAE": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": false,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 95,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": true,
+      "testada_de": "brasil"
+    },
+    "IBGE Calendário": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "outro",
+      "funciona_do_exterior": false,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 75,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": true,
+      "testada_de": "brasil"
+    },
+    "IBGE Geoserviços": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "xml",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 654,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "IBGE Localidades": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "outro",
+      "funciona_do_exterior": false,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 84,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": true,
+      "testada_de": "brasil"
+    },
+    "IBGE Malhas": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "outro",
+      "funciona_do_exterior": false,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 79,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": true,
+      "testada_de": "brasil"
+    },
+    "IBGE Nomes": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": false,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 129,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": true,
+      "testada_de": "brasil"
+    },
+    "IBGE Notícias": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "outro",
+      "funciona_do_exterior": false,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 73,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": true,
+      "testada_de": "brasil"
+    },
+    "IBGE Países": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "outro",
+      "funciona_do_exterior": false,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 62,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": true,
+      "testada_de": "brasil"
+    },
+    "IBGE Pesquisas": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": "TimeoutError: timed out",
+      "formato": null,
+      "funciona_do_exterior": false,
+      "historico": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "http": null,
+      "ms": null,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "IBGE Projeção da População": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": "TimeoutError: timed out",
+      "formato": null,
+      "funciona_do_exterior": false,
+      "historico": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "http": null,
+      "ms": null,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "IBGE SIDRA": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 68,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "INMET Alertas": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "xml",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 579,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "INPE Catálogo de Dados (GeoNetwork)": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": "HTTP 502",
+      "formato": null,
+      "funciona_do_exterior": false,
+      "historico": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "http": 502,
+      "ms": 1072,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "IP-API": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 284,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Internet Archive": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 715,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Invertexto": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1
+      ],
+      "http": 401,
+      "ms": 469,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Ipeadata": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 15161,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Jolpica F1 (Ergast)": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 576,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "LanguageTool": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 747,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "LexML": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "html",
+      "funciona_do_exterior": true,
       "historico": [
         1
       ],
       "http": 200,
-      "ms": 791,
+      "ms": 231,
       "ok": true,
-      "sem_chave": false
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Loterias Caixa API": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 356,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Mapas Culturais (MinC)": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "documentacao",
+      "funciona_do_exterior": true,
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 2424,
+      "ok": true,
+      "openapi": false,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Mercado Bitcoin": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 290,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Mercado Livre": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "http": 403,
+      "ms": 45,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "Minas Gerais Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 77,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Minha Receita": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 385,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "MusicBrainz": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 812,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "NASA EONET": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 769,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "NASA POWER": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 314,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Nager.Date": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 59,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "NewsAPI": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1
+      ],
+      "http": 401,
+      "ms": 205,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Nominatim (OpenStreetMap)": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 341,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "OMS Global Health Observatory": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": "HTTP 500",
+      "formato": null,
+      "funciona_do_exterior": false,
+      "historico": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "http": 500,
+      "ms": 732,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "ONS Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 405,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "ONU Objetivos de Desenvolvimento Sustentável": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 969,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "ORCID": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 405,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Oasisbr (IBICT)": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 208,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Open Food Facts Brasil": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 869,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "Open Library": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 1052,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Open Topo Data": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 405,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Open-Meteo": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 810,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Open-Meteo Cheias": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 995,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Open-Meteo Clima Futuro": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 833,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Open-Meteo Elevation": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 371,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "Open-Meteo Ensemble": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 1026,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Open-Meteo Geocoding": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 424,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "Open-Meteo Histórico": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 825,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Open-Meteo Marine": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 893,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Open-Meteo Qualidade do Ar": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 897,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "OpenAQ": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1
+      ],
+      "http": 401,
+      "ms": 38,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "OpenAlex": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 1007,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "OpenCEP": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 174,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "OpenCNPJ": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 857,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "OpenDataSUS": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "html",
+      "funciona_do_exterior": true,
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 624,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "OpenSky Network": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": "TimeoutError: timed out",
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "http": null,
+      "ms": null,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "OpenWeatherMap": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1
+      ],
+      "http": 401,
+      "ms": 346,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Overpass API": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": "HTTP 502",
+      "formato": null,
+      "funciona_do_exterior": false,
+      "historico": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "http": 502,
+      "ms": 367,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "PNCP (Portal Nacional de Contratações Públicas)": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 10866,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Pernambuco Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 247,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Photon (Komoot)": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 393,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "Portal Brasileiro de Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "html",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 81,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Portal da Transparência": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1
+      ],
+      "http": 401,
+      "ms": 46,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Prefeitura de Belo Horizonte Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 198,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Prefeitura de Fortaleza Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 302,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Prefeitura de Porto Alegre Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 350,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Prefeitura de São Paulo Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 9320,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Prefeitura do Recife Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": false,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 229,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": true,
+      "testada_de": "brasil"
+    },
+    "QR Server": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "outro",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 832,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Querido Diário": {
+      "aviso": "configuração de segurança (TLS) antiga",
+      "bloqueado": false,
+      "cors": null,
+      "erro": "SSLError: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1010)",
+      "formato": null,
+      "funciona_do_exterior": false,
+      "historico": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "http": null,
+      "ms": null,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "REDEMET (DECEA)": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1
+      ],
+      "http": 401,
+      "ms": 132,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "REST Countries": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 302,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "ROR (Research Organization Registry)": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 773,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Radio Browser": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 854,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "ReceitaWS": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 202,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Registro.br RDAP": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 38,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Repositório do Ipea": {
+      "aviso": null,
+      "bloqueado": true,
+      "cors": null,
+      "erro": "recusou o robô (HTTP 403)",
+      "formato": null,
+      "funciona_do_exterior": false,
+      "historico": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "http": 403,
+      "ms": 3267,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Resultado Mega": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 220,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Rio Grande do Sul Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 129,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Rondônia Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 1106,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "SI5 Global": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1
+      ],
+      "http": 401,
+      "ms": 342,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "SICONFI (Tesouro Nacional)": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 95,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "SIORG": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "documentacao",
+      "funciona_do_exterior": true,
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 115,
+      "ok": true,
+      "openapi": false,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "SPTrans Olho Vivo": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1
+      ],
+      "http": 401,
+      "ms": 224,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "STJ Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 1042,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "Santa Catarina Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 103,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "SciELO ArticleMeta": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 35,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Semantic Scholar": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1
+      ],
+      "http": 429,
+      "ms": 562,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Senado Federal": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 240,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Sunrise-Sunset": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 191,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "TCE-MG Dados Abertos": {
+      "aviso": "certificado SSL inválido ou incompleto",
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "html",
+      "funciona_do_exterior": false,
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 86,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": true,
+      "testada_de": "brasil"
+    },
+    "TCE-PE Dados Abertos": {
+      "aviso": "certificado SSL inválido ou incompleto",
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "html",
+      "funciona_do_exterior": true,
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 563,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "TCE-RN Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": "HTTP 503",
+      "formato": null,
+      "funciona_do_exterior": false,
+      "historico": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "http": 503,
+      "ms": 881,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "TCE-RS Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": "TimeoutError: timed out",
+      "formato": null,
+      "funciona_do_exterior": false,
+      "historico": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "http": null,
+      "ms": null,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "TCM-CE Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "formato": null,
+      "funciona_do_exterior": false,
+      "historico": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "http": null,
+      "ms": null,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "TCU Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "html",
+      "funciona_do_exterior": true,
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 184,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "TMDB": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1
+      ],
+      "http": 401,
+      "ms": 351,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "TRE-PR Dados Abertos": {
+      "aviso": null,
+      "bloqueado": true,
+      "cors": false,
+      "erro": "recusou o robô (HTTP 200)",
+      "formato": "bloqueio",
+      "funciona_do_exterior": false,
+      "historico": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "http": 200,
+      "ms": 834,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "TSE Dados Abertos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 59,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "TSE DivulgaCandContas": {
+      "aviso": null,
+      "bloqueado": true,
+      "cors": true,
+      "erro": "recusou o robô (HTTP 403)",
+      "formato": null,
+      "funciona_do_exterior": false,
+      "historico": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "http": 403,
+      "ms": 190,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "TabNews": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 293,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "TerraBrasilis (INPE)": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "xml",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 228,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Tesouro Nacional CUSTOS": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "documentacao",
+      "funciona_do_exterior": true,
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 734,
+      "ok": true,
+      "openapi": false,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Tesouro Nacional SADIPEM": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "documentacao",
+      "funciona_do_exterior": true,
+      "historico": [
+        1
+      ],
+      "http": 200,
+      "ms": 405,
+      "ok": true,
+      "openapi": false,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Tesouro Nacional Transferências Constitucionais": {
+      "aviso": null,
+      "bloqueado": true,
+      "cors": null,
+      "erro": "recusou o robô (HTTP 403)",
+      "formato": null,
+      "funciona_do_exterior": false,
+      "historico": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "http": 403,
+      "ms": 853,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "eua"
+    },
+    "TheSportsDB": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 234,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "TimeAPI.io": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 1064,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Transferegov": {
+      "aviso": null,
+      "bloqueado": true,
+      "cors": false,
+      "erro": "recusou o robô (HTTP 200)",
+      "formato": "bloqueio",
+      "funciona_do_exterior": false,
+      "historico": [
+        0
+      ],
+      "http": 200,
+      "ms": 70,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Tábua de Marés": {
+      "aviso": null,
+      "bloqueado": true,
+      "cors": false,
+      "erro": "recusou o robô (HTTP 200)",
+      "formato": "bloqueio",
+      "funciona_do_exterior": false,
+      "historico": [
+        0
+      ],
+      "http": 200,
+      "ms": 599,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "USGS Terremotos": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 634,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Vagalume": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": "HTTP 503",
+      "formato": null,
+      "funciona_do_exterior": false,
+      "historico": [
+        0,
+        0,
+        0
+      ],
+      "http": 503,
+      "ms": 459,
+      "ok": false,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "ViaCEP": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 438,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Wikcionário em Português": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 587,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Wikidata": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 850,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Wikidata SPARQL": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 329,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Wikimedia Commons": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 1464,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Wikimedia Pageviews": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 566,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Wikipédia em Português": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 37,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Wikipédia em Português (busca)": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 440,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Wikivoyage em Português": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 423,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "Zippopotam.us": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 205,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "brapi": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 151,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "football-data.org": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1,
+        1
+      ],
+      "http": 403,
+      "ms": 609,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "iNaturalist": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": true,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
+      "historico": [
+        1,
+        1
+      ],
+      "http": 200,
+      "ms": 1221,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
     }
   },
-  "verificado_em": "2026-10-29T20:54:09Z"
+  "verificado_em": "2026-10-29T21:03:11Z"
 }
