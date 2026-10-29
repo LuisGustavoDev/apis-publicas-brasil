@@ -1,6 +1,6 @@
 # Verificador em São Paulo (Vercel) — recomendado
 
-Algumas APIs do governo (IBGE, Prefeitura do Recife...) bloqueiam acessos vindos de fora do Brasil. Como os robôs do GitHub rodam nos EUA, essas APIs são testadas por uma função na **Vercel**, rodando em **São Paulo** (região `gru1`).
+Todas as APIs da lista são testadas a partir do Brasil por uma função na **Vercel**, rodando em **São Paulo** (região `gru1`). Esse é o resultado oficial do README. O robô do GitHub, que roda nos EUA, testa as mesmas APIs como segunda opinião: quando uma API funciona do Brasil e falha dos EUA, ela é marcada automaticamente com 🇧🇷.
 
 ```
 GitHub Actions (EUA) ──► função na Vercel (São Paulo) ──► APIs 🇧🇷

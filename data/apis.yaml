@@ -10,7 +10,8 @@
 #   autenticacao  nenhuma | opcional | chave | chave-publica | token
 #   limite        (opcional) Limite de uso conhecido, ex.: "3 req/min"
 #   exemplo       URL de exemplo que funciona de verdade (GET)
-#   acesso        (opcional) brasil quando a API bloqueia acessos de fora do Brasil
+#   acesso        (opcional, raramente necessário) brasil para forçar a marca 🇧🇷;
+#                 normalmente ela é detectada sozinha pelo robô
 #   teste         (opcional) false para não verificar automaticamente
 #   teste_sem_chave (opcional) URL de uma API que exige chave, testada sem ela:
 #                 respostas 401/403 contam como "no ar" (use junto com teste: false)
@@ -206,7 +207,6 @@ apis:
     autenticacao: nenhuma
     limite: Recomenda até 60 req/min
     exemplo: https://api.queridodiario.ok.org.br/gazettes?querystring=educacao&size=1
-    acesso: brasil
 
   - nome: Portal da Transparência
     categoria: governo
@@ -233,7 +233,6 @@ apis:
     docs: https://servicodados.ibge.gov.br/api/docs/localidades
     autenticacao: nenhuma
     exemplo: https://servicodados.ibge.gov.br/api/v1/localidades/estados
-    acesso: brasil
 
   - nome: IBGE Nomes
     categoria: ibge
@@ -241,7 +240,6 @@ apis:
     docs: https://servicodados.ibge.gov.br/api/docs/nomes?versao=2
     autenticacao: nenhuma
     exemplo: https://servicodados.ibge.gov.br/api/v2/censos/nomes/maria
-    acesso: brasil
 
   - nome: IBGE Agregados (SIDRA)
     categoria: ibge
@@ -249,7 +247,6 @@ apis:
     docs: https://servicodados.ibge.gov.br/api/docs/agregados?versao=3
     autenticacao: nenhuma
     exemplo: https://servicodados.ibge.gov.br/api/v3/agregados
-    acesso: brasil
 
   - nome: IBGE Malhas
     categoria: ibge
@@ -257,7 +254,6 @@ apis:
     docs: https://servicodados.ibge.gov.br/api/docs/malhas?versao=3
     autenticacao: nenhuma
     exemplo: https://servicodados.ibge.gov.br/api/v3/malhas/estados/SP?formato=application/vnd.geo+json
-    acesso: brasil
 
   - nome: IBGE Notícias
     categoria: ibge
@@ -265,7 +261,6 @@ apis:
     docs: https://servicodados.ibge.gov.br/api/docs/noticias?versao=3
     autenticacao: nenhuma
     exemplo: https://servicodados.ibge.gov.br/api/v3/noticias/?qtd=1
-    acesso: brasil
 
   - nome: IBGE Países
     categoria: ibge
@@ -273,7 +268,6 @@ apis:
     docs: https://servicodados.ibge.gov.br/api/docs/paises
     autenticacao: nenhuma
     exemplo: https://servicodados.ibge.gov.br/api/v1/paises/BR
-    acesso: brasil
 
   # ---------- Calendário e Feriados ----------
   - nome: BrasilAPI Feriados
@@ -517,7 +511,6 @@ apis:
     docs: https://servicodados.ibge.gov.br/api/docs/cnae?versao=2
     autenticacao: nenhuma
     exemplo: https://servicodados.ibge.gov.br/api/v2/cnae/secoes
-    acesso: brasil
 
   - nome: IBGE Calendário
     categoria: ibge
@@ -525,7 +518,6 @@ apis:
     docs: https://servicodados.ibge.gov.br/api/docs/calendario?versao=3
     autenticacao: nenhuma
     exemplo: https://servicodados.ibge.gov.br/api/v3/calendario/?qtd=1
-    acesso: brasil
 
   # ---------- Clima e Tempo ----------
   - nome: CPTEC/INPE (XML)
@@ -707,7 +699,6 @@ apis:
     docs: https://dados.antt.gov.br
     autenticacao: nenhuma
     exemplo: https://dados.antt.gov.br/api/3/action/status_show
-    acesso: brasil
 
   - nome: Prefeitura de São Paulo Dados Abertos
     categoria: portais
@@ -722,7 +713,6 @@ apis:
     docs: https://dados.recife.pe.gov.br
     autenticacao: nenhuma
     exemplo: https://dados.recife.pe.gov.br/api/3/action/status_show
-    acesso: brasil
 
   - nome: Prefeitura de Porto Alegre Dados Abertos
     categoria: portais
@@ -850,7 +840,6 @@ apis:
     docs: https://servicodados.ibge.gov.br/api/docs/projecoes
     autenticacao: nenhuma
     exemplo: https://servicodados.ibge.gov.br/api/v1/projecoes/populacao/BR
-    acesso: brasil
 
   - nome: IBGE Pesquisas
     categoria: ibge
@@ -858,7 +847,6 @@ apis:
     docs: https://servicodados.ibge.gov.br/api/docs/pesquisas
     autenticacao: nenhuma
     exemplo: https://servicodados.ibge.gov.br/api/v1/pesquisas
-    acesso: brasil
 
   - nome: IBGE Geoserviços
     categoria: ibge
@@ -866,7 +854,6 @@ apis:
     docs: https://geoservicos.ibge.gov.br/geoserver/web/
     autenticacao: nenhuma
     exemplo: https://geoservicos.ibge.gov.br/geoserver/ows?service=WFS&version=2.0.0&request=GetCapabilities
-    acesso: brasil
 
   - nome: Banco Central Agências
     categoria: bancos
@@ -888,7 +875,6 @@ apis:
     docs: https://apiapex.tesouro.gov.br/aria/v1/transferencias_constitucionais/docs
     autenticacao: nenhuma
     exemplo: https://apiapex.tesouro.gov.br/aria/v1/transferencias_constitucionais/docs
-    acesso: brasil
 
   - nome: Foxbit
     categoria: economia
@@ -958,7 +944,6 @@ apis:
     docs: https://apidadosabertos.tce.rn.gov.br/
     autenticacao: nenhuma
     exemplo: https://apidadosabertos.tce.rn.gov.br/
-    acesso: brasil
 
   - nome: TCM-CE Dados Abertos
     categoria: governo
@@ -966,7 +951,6 @@ apis:
     docs: https://api.tcm.ce.gov.br/
     autenticacao: nenhuma
     exemplo: https://api.tcm.ce.gov.br/
-    acesso: brasil
 
   - nome: Assembleia Legislativa de Minas Gerais
     categoria: governo
@@ -1004,7 +988,6 @@ apis:
     docs: https://publicacoes.forumseguranca.org.br
     autenticacao: nenhuma
     exemplo: https://publicacoes.forumseguranca.org.br/server/api
-    acesso: brasil
 
   - nome: TCE-RS Dados Abertos
     categoria: portais
@@ -1012,7 +995,6 @@ apis:
     docs: https://dados.tce.rs.gov.br
     autenticacao: nenhuma
     exemplo: https://dados.tce.rs.gov.br/api/3/action/status_show
-    acesso: brasil
 
   - nome: TRE-PR Dados Abertos
     categoria: portais
@@ -1020,7 +1002,6 @@ apis:
     docs: https://dadosabertos.tre-pr.jus.br
     autenticacao: nenhuma
     exemplo: https://dadosabertos.tre-pr.jus.br/api/3/action/status_show
-    acesso: brasil
 
   - nome: STJ Dados Abertos
     categoria: portais
@@ -1098,7 +1079,6 @@ apis:
     docs: https://dadosabertos.go.gov.br
     autenticacao: nenhuma
     exemplo: https://dadosabertos.go.gov.br/api/3/action/status_show
-    acesso: brasil
 
   - nome: Prefeitura de Belo Horizonte Dados Abertos
     categoria: portais
@@ -1141,7 +1121,6 @@ apis:
     docs: https://www.fnde.gov.br/dadosabertos
     autenticacao: nenhuma
     exemplo: https://www.fnde.gov.br/dadosabertos/api/3/action/status_show
-    acesso: brasil
 
   - nome: Alagoas Dados Abertos
     categoria: portais
@@ -1149,7 +1128,6 @@ apis:
     docs: https://dados.al.gov.br
     autenticacao: nenhuma
     exemplo: https://dados.al.gov.br/catalogo/api/3/action/status_show
-    acesso: brasil
 
   - nome: INPE Catálogo de Dados (GeoNetwork)
     categoria: meio-ambiente
@@ -1324,7 +1302,6 @@ apis:
     docs: https://repositorio.ipea.gov.br
     autenticacao: nenhuma
     exemplo: https://repositorio.ipea.gov.br/server/api
-    acesso: brasil
 
   - nome: ONU Objetivos de Desenvolvimento Sustentável
     categoria: internacional
@@ -1620,3 +1597,109 @@ apis:
     docs: https://open-meteo.com/en/docs/ensemble-api
     autenticacao: nenhuma
     exemplo: https://ensemble-api.open-meteo.com/v1/ensemble?latitude=-23.55&longitude=-46.63&hourly=temperature_2m&models=icon_seamless
+
+  # ---------- Devolvidas para nova classificação (documentação x site) ----------
+  - nome: ANA Telemetria
+    categoria: meio-ambiente
+    descricao: Níveis de rios, vazão e chuva das estações telemétricas da Agência Nacional de Águas
+    docs: https://www.snirh.gov.br/hidroweb/
+    autenticacao: nenhuma
+    exemplo: https://telemetriaws1.ana.gov.br/ServiceANA.asmx
+
+
+  - nome: Brasil Aberto
+    categoria: cep
+    descricao: CEP, cidades, bairros, ruas, CNPJ e rastreio de encomendas
+    docs: https://docs.brasilaberto.com
+    autenticacao: chave
+    exemplo: https://brasilaberto.com/api/v1/zipcode/01001000
+    teste: false
+    teste_sem_chave: https://brasilaberto.com/api/v1/zipcode/01001000
+
+
+  - nome: LexML
+    categoria: governo
+    descricao: Busca em leis, decretos, jurisprudência e proposições de todo o país (SRU, XML)
+    docs: https://www12.senado.leg.br/dados-abertos/legislativo/legislacao/acervo-do-portal-lexml
+    autenticacao: nenhuma
+    exemplo: https://www.lexml.gov.br/busca/SRU?operation=searchRetrieve&query=urn+any+lei&maximumRecords=1
+
+
+  - nome: Mapas Culturais (MinC)
+    categoria: livros
+    descricao: Espaços, agentes, eventos e projetos culturais cadastrados no Ministério da Cultura
+    docs: https://mapas.cultura.gov.br
+    autenticacao: nenhuma
+    exemplo: https://mapas.cultura.gov.br/api/space/find?@select=id,name&@limit=1
+
+
+  - nome: OpenDataSUS
+    categoria: saude
+    descricao: Catálogo de dados abertos do Ministério da Saúde (API CKAN)
+    docs: https://opendatasus.saude.gov.br
+    autenticacao: nenhuma
+    exemplo: https://opendatasus.saude.gov.br/api/3/action/package_list
+
+
+  - nome: SIORG
+    categoria: governo
+    descricao: Estrutura organizacional dos órgãos do governo federal
+    docs: https://estruturaorganizacional.dados.gov.br
+    autenticacao: nenhuma
+    exemplo: https://estruturaorganizacional.dados.gov.br
+
+
+  - nome: TCE-MG Dados Abertos
+    categoria: governo
+    descricao: Dados fiscais e de contratações dos municípios de Minas Gerais
+    docs: https://dadosabertos.tce.mg.gov.br/
+    autenticacao: nenhuma
+    exemplo: https://dadosabertos.tce.mg.gov.br/
+
+
+  - nome: TCE-PE Dados Abertos
+    categoria: governo
+    descricao: Licitações, contratos, despesas e fornecedores fiscalizados pelo TCE de Pernambuco
+    docs: https://www.tce.pe.gov.br/internet/index.php/dados-abertos
+    autenticacao: nenhuma
+    exemplo: https://www.tce.pe.gov.br/internet/index.php/dados-abertos
+
+
+  - nome: TCU Dados Abertos
+    categoria: governo
+    descricao: Acórdãos, súmulas, jurisprudência e normas do Tribunal de Contas da União
+    docs: https://sites.tcu.gov.br/dados-abertos/
+    autenticacao: nenhuma
+    exemplo: https://sites.tcu.gov.br/dados-abertos/
+
+
+  - nome: Tesouro Nacional CUSTOS
+    categoria: economia
+    descricao: Custos do governo federal por órgão, programa e natureza de despesa
+    docs: https://apidatalake.tesouro.gov.br/docs/custos/
+    autenticacao: nenhuma
+    exemplo: https://apidatalake.tesouro.gov.br/docs/custos/
+
+
+  - nome: Tesouro Nacional SADIPEM
+    categoria: economia
+    descricao: Operações de crédito e dívida pública de estados e municípios
+    docs: https://apidatalake.tesouro.gov.br/docs/sadipem/
+    autenticacao: nenhuma
+    exemplo: https://apidatalake.tesouro.gov.br/docs/sadipem/
+
+
+  - nome: Transferegov
+    categoria: governo
+    descricao: Transferências da União, emendas especiais, fundo a fundo e parcerias
+    docs: https://api-publica.transferegov.gestao.gov.br/ted/docs
+    autenticacao: nenhuma
+    exemplo: https://api-publica.transferegov.gestao.gov.br/ted/docs
+
+
+  - nome: Tábua de Marés
+    categoria: clima
+    descricao: Previsão de marés dos portos brasileiros com base nas tábuas da Marinha
+    docs: https://tabuamare.devtu.qzz.io/
+    autenticacao: nenhuma
+    exemplo: https://tabuamare.devtu.qzz.io/

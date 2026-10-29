@@ -42,7 +42,7 @@ Ao lado de cada categoria aparecem as mesmas contagens, com os símbolos da tabe
 |---|---|
 | **Autenticação** | **Não**: é só chamar · **Opcional**: funciona sem chave, mas uma chave grátis aumenta os limites · **Chave grátis / Token grátis**: exige cadastro gratuito · **Chave pública**: a chave é divulgada publicamente pelo órgão |
 | **CORS** | **Sim**: pode ser chamada direto do navegador (front-end) · **Não**: chame pelo seu servidor · **?**: ainda não verificado |
-| **Status** | Mesmos símbolos da tabela de situação no [Índice](#índice). Nos detalhes: **🔑 testada sem chave** indica uma API que exige chave e foi testada sem ela (respondeu “não autorizado”, o que mostra que está no ar); **🇧🇷 só do Brasil** indica uma API que bloqueia acessos de fora do país e é testada a partir de São Paulo |
+| **Status** | Mesmos símbolos da tabela de situação no [Índice](#índice). Nos detalhes: **🔑 testada sem chave** indica uma API que exige chave e foi testada sem ela (respondeu “não autorizado”, o que mostra que está no ar); **🇧🇷 só do Brasil** indica uma API que funciona quando acessada do Brasil, mas bloqueia servidores no exterior; **OpenAPI confirmado** indica que o robô encontrou o arquivo de especificação da API na página de documentação |
 
 A porcentagem mostra a disponibilidade nos últimos 30 dias de verificação. O aviso **⚠️ certificado SSL** indica que o servidor envia um certificado incompleto: abre normalmente no navegador, mas pode dar erro de certificado em Python, Node e outros clientes de back-end. O aviso **⚠️ TLS antigo** indica um servidor com configuração de segurança antiga, que alguns clientes recusam por padrão. APIs marcadas com **🇧🇷 só do Brasil** não funcionam em servidores hospedados fora do país (por exemplo, nos EUA).
 
@@ -68,7 +68,9 @@ data/apis.yaml ──► scripts/check.py ──► data/status.json ──► s
    (você edita)      (testa as APIs)       (resultados)          (monta as tabelas)
 ```
 
-Um [GitHub Action](.github/workflows/verificar.yml) roda esse fluxo todo dia e sempre que o `apis.yaml` muda na branch principal. As APIs que bloqueiam acessos de fora do Brasil são testadas por uma [função na Vercel em São Paulo](vercel/LEIA-ME.md) (também há guias para [Google Cloud](google/LEIA-ME.md) e [AWS](aws/LEIA-ME.md)). Para rodar localmente:
+Um [GitHub Action](.github/workflows/verificar.yml) roda esse fluxo todo dia e sempre que o `apis.yaml` muda na branch principal. Cada API é testada de dois lugares: **do Brasil**, por uma [função na Vercel em São Paulo](vercel/LEIA-ME.md), que dá o resultado oficial, e **dos EUA**, pelo próprio GitHub, como segunda opinião. Quando uma API funciona do Brasil e falha dos EUA, ela ganha a marca 🇧🇷 automaticamente. Também há guias para usar [Google Cloud](google/LEIA-ME.md) ou [AWS](aws/LEIA-ME.md) no lugar da Vercel.
+
+Além de ver se a API responde, o robô confere **o que** ela devolveu: dados (JSON, XML, CSV), a página de documentação da API (Swagger, Redoc, WSDL, conferindo o arquivo OpenAPI quando existe), uma página de bloqueio de robôs ou um site comum. Para rodar localmente:
 
 ```bash
 pip install -r requirements.txt

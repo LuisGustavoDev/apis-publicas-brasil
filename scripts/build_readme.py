@@ -45,9 +45,11 @@ SITUACOES = {
     "lenta": ("🟡", "lenta", "lentas", "respondeu, mas levou mais de 3 segundos"),
     "instavel": ("🟠", "instável", "instáveis", "está no ar, mas falhou em mais de 5% das verificações dos últimos 30 dias"),
     "fora": ("🔴", "fora do ar", "fora do ar", "não respondeu ou deu erro na última verificação"),
-    "pagina": ("🟣", "não é API", "não são API", "o endereço de exemplo devolveu uma página de site (HTML), não dados"),
+    "documentacao": ("🔵", "documentação", "documentação", "a API existe, mas o endereço de exemplo abre a documentação (Swagger, Redoc, WSDL...), não dados"),
+    "bloqueado": ("🛡️", "bloqueou o robô", "bloquearam o robô", "o servidor está no ar, mas recusou o teste automático (firewall, captcha ou acesso negado)"),
+    "pagina": ("🟣", "não é API", "não são API", "o endereço de exemplo abre um site comum, sem dados nem documentação de API"),
     "chave": ("🔑", "requer chave", "requerem chave", "precisa de chave ou cadastro, por isso não é testada automaticamente"),
-    "brasil": ("🇧🇷", "só do Brasil", "só do Brasil", "bloqueia acessos de fora do país e ainda não foi testada a partir de São Paulo"),
+    "brasil": ("🇧🇷", "só do Brasil, sem teste", "só do Brasil, sem teste", "bloqueia acessos de fora do país e ainda não foi testada a partir de São Paulo"),
     "aguardando": ("⚪", "aguardando", "aguardando", "entrou na lista e ainda não passou pela primeira verificação"),
 }
 
@@ -65,7 +67,9 @@ def classificar(api: dict, status: dict) -> str:
     if not info:
         return "brasil" if so_do_brasil(api) else "aguardando"
     if not info["ok"]:
-        return "fora"
+        return "bloqueado" if info.get("bloqueado") else "fora"
+    if info.get("formato") == "documentacao":
+        return "documentacao"
     if info.get("formato") == "html":
         return "pagina"
     ms = info.get("ms")
@@ -74,6 +78,11 @@ def classificar(api: dict, status: dict) -> str:
     if disponibilidade(info) < LIMITE_INSTAVEL:
         return "instavel"
     return "online"
+
+
+def so_do_brasil_status(api: dict, status: dict) -> bool:
+    """Só funciona a partir do Brasil: detectado automaticamente ou marcado no apis.yaml."""
+    return bool((status.get(api["nome"]) or {}).get("so_do_brasil")) or so_do_brasil(api)
 
 
 def rotulo(situacao: str) -> str:
@@ -93,6 +102,21 @@ def resumo_curto(contagem: dict[str, int]) -> str:
     return " · ".join(f"{SITUACOES[c][0]} {n}" for c, n in contagem.items() if n)
 
 
+def linha_brasil(apis: list[dict], status: dict) -> str:
+    n = sum(1 for api in apis if so_do_brasil_status(api, status))
+    if not n:
+        return ""
+    if n == 1:
+        return (
+            "🇧🇷 Além disso, **1** API só funciona quando acessada do Brasil: ela bloqueia servidores "
+            "no exterior (como Vercel, AWS ou Heroku fora do país) e está marcada com 🇧🇷 nas tabelas."
+        )
+    return (
+        f"🇧🇷 Além disso, **{n}** APIs só funcionam quando acessadas do Brasil: elas bloqueiam servidores "
+        "no exterior (como Vercel, AWS ou Heroku fora do país) e estão marcadas com 🇧🇷 nas tabelas."
+    )
+
+
 def linha_resumo(contagem: dict[str, int]) -> str:
     """Ex.: '🟢 136 online · 🔴 30 fora do ar · 🔑 34 requerem chave'."""
     partes = []
@@ -105,7 +129,7 @@ def linha_resumo(contagem: dict[str, int]) -> str:
 
 def tabela_resumo(contagem: dict[str, int], total: int) -> str:
     linhas = ["| | Situação | APIs | O que significa |", "|:---:|---|:---:|---|"]
-    sempre = ("online", "lenta", "instavel", "fora", "chave")
+    sempre = ("online", "lenta", "instavel", "fora", "bloqueado", "documentacao", "chave")
     for chave, (emoji, _, plural, significado) in SITUACOES.items():
         if contagem[chave] or chave in sempre:
             nome = plural[0].upper() + plural[1:]
@@ -116,13 +140,15 @@ def tabela_resumo(contagem: dict[str, int], total: int) -> str:
 
 def celula_status(api: dict, status: dict) -> str:
     situacao = classificar(api, status)
-    brasil = so_do_brasil(api)
+    brasil = so_do_brasil_status(api, status)
     if situacao in ("chave", "brasil", "aguardando"):
         return rotulo(situacao)
     info = status[api["nome"]]
-    if situacao == "fora":
-        detalhe = "🇧🇷 só do Brasil" if brasil else ""
-        return rotulo(situacao) + (f"<br><sub>{detalhe}</sub>" if detalhe else "")
+    if situacao in ("fora", "bloqueado"):
+        detalhes = [f"HTTP {info['http']}"] if info.get("http") else []
+        if brasil:
+            detalhes.append("🇧🇷 só do Brasil")
+        return rotulo(situacao) + (f"<br><sub>{' · '.join(detalhes)}</sub>" if detalhes else "")
 
     ms = info.get("ms")
     detalhes = f"{disponibilidade(info)}%"
@@ -132,6 +158,8 @@ def celula_status(api: dict, status: dict) -> str:
         detalhes += " · ⚠️ certificado SSL"
     elif info.get("aviso"):
         detalhes += " · ⚠️ TLS antigo"
+    if situacao == "documentacao" and info.get("openapi"):
+        detalhes += " · OpenAPI confirmado"
     if info.get("sem_chave"):
         detalhes += " · 🔑 testada sem chave"
     if brasil:
@@ -171,6 +199,9 @@ def gerar_tabelas(dados: dict, status: dict) -> tuple[str, str]:
         apis.sort(key=lambda a: unicodedata.normalize("NFKD", a["nome"].lower()))
         titulo = categoria["nome"]
         resumo = resumo_curto(contar(apis, status))
+        n_brasil = sum(1 for api in apis if so_do_brasil_status(api, status))
+        if n_brasil:
+            resumo += f" (🇧🇷 {n_brasil} só do Brasil)"
         indice.append(f"- [{titulo}](#{ancora(titulo)}) ({len(apis)}) — {resumo}")
 
         linhas = [
@@ -231,6 +262,8 @@ def main() -> None:
     indice, tabelas = gerar_tabelas(dados, status)
     contagem_geral = contar(dados["apis"], status)
     resumo = linha_resumo(contagem_geral) + "\n\n" + tabela_resumo(contagem_geral, total)
+    if linha_brasil(dados["apis"], status):
+        resumo += "\n\n" + linha_brasil(dados["apis"], status)
     badges = " ".join([badge("APIs", str(total), "009c3b"), *badges_status])
 
     conteudo = MODELO.read_text(encoding="utf-8")
