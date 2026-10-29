@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "regions": ["gru1"],
+  "functions": {
+    "api/verificar.py": {
+      "maxDuration": 60,
+      "includeFiles": "scripts/verificacao.py"
+    }
+  },
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- api scripts/verificacao.py vercel.json"
+}

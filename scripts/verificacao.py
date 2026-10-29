@@ -3,9 +3,9 @@
 Este arquivo é usado em dois lugares:
   1. Pelo robô do GitHub (scripts/check.py), para as APIs comuns.
   2. Por uma função na nuvem, em São Paulo, para as APIs que bloqueiam acessos
-     de fora do Brasil. Para isso, o conteúdo deste arquivo é copiado para a
-     função: no Google Cloud (veja google/LEIA-ME.md) ou na AWS Lambda (veja
-     aws/LEIA-ME.md). Ele usa só a biblioteca padrão do Python.
+     de fora do Brasil: na Vercel (api/verificar.py usa este arquivo direto; veja
+     vercel/LEIA-ME.md), no Google Cloud (veja google/LEIA-ME.md) ou na AWS
+     Lambda (veja aws/LEIA-ME.md). Ele usa só a biblioteca padrão do Python.
 """
 
 from __future__ import annotations
@@ -55,7 +55,7 @@ def _contexto(modo: str) -> ssl.SSLContext | None:
     return None
 
 
-def requisitar(url: str, modo: str = "normal") -> dict:
+def requisitar(url: str, modo: str = "normal", tempo_limite: float = TEMPO_LIMITE) -> dict:
     """Faz um GET e devolve o resultado. modo: normal, sem_certificado ou tls_antigo."""
     pedido = urllib.request.Request(
         url,
@@ -67,7 +67,7 @@ def requisitar(url: str, modo: str = "normal") -> dict:
     )
     inicio = time.monotonic()
     try:
-        with urllib.request.urlopen(pedido, timeout=TEMPO_LIMITE, context=_contexto(modo)) as resposta:
+        with urllib.request.urlopen(pedido, timeout=tempo_limite, context=_contexto(modo)) as resposta:
             resposta.read(65536)  # basta confirmar que o corpo começa a chegar
             codigo = resposta.status
             cabecalhos = resposta.headers
@@ -102,23 +102,25 @@ def requisitar(url: str, modo: str = "normal") -> dict:
     }
 
 
-def verificar_url(url: str) -> dict:
+def verificar_url(
+    url: str, tempo_limite: float = TEMPO_LIMITE, espera: float = ESPERA_ANTES_DE_REPETIR
+) -> dict:
     """Testa uma URL, repetindo uma vez em caso de falha e contornando problemas de TLS."""
-    resultado = requisitar(url)
+    resultado = requisitar(url, tempo_limite=tempo_limite)
     if not resultado["ok"]:
-        time.sleep(ESPERA_ANTES_DE_REPETIR)
-        resultado = requisitar(url)
+        time.sleep(espera)
+        resultado = requisitar(url, tempo_limite=tempo_limite)
 
     # Alguns servidores públicos enviam a cadeia de certificados incompleta: o navegador
     # aceita, mas clientes como Python e Node recusam. Testa de novo sem verificar o
     # certificado, só para saber se a API está no ar, e registra o aviso.
     if not resultado["ok"] and resultado.get("certificado_invalido"):
-        resultado = requisitar(url, modo="sem_certificado")
+        resultado = requisitar(url, modo="sem_certificado", tempo_limite=tempo_limite)
         resultado["aviso"] = AVISO_CERTIFICADO
 
     # Outros usam configurações de TLS antigas que o Python recusa por padrão.
     if not resultado["ok"] and resultado.get("tls_antigo"):
-        resultado = requisitar(url, modo="tls_antigo")
+        resultado = requisitar(url, modo="tls_antigo", tempo_limite=tempo_limite)
         resultado["aviso"] = AVISO_TLS_ANTIGO
 
     resultado.pop("certificado_invalido", None)
@@ -126,30 +128,47 @@ def verificar_url(url: str) -> dict:
     return resultado
 
 
-def verificar_lista(apis: dict[str, str], paralelo: int = 8) -> dict[str, dict]:
+def verificar_lista(
+    apis: dict[str, str],
+    paralelo: int = 8,
+    tempo_limite: float = TEMPO_LIMITE,
+    espera: float = ESPERA_ANTES_DE_REPETIR,
+) -> dict[str, dict]:
     """Recebe {nome: url} e devolve {nome: resultado}."""
     nomes = list(apis)
     with ThreadPoolExecutor(max_workers=paralelo) as executor:
-        resultados = list(executor.map(lambda nome: verificar_url(apis[nome]), nomes))
+        resultados = list(
+            executor.map(lambda nome: verificar_url(apis[nome], tempo_limite, espera), nomes)
+        )
     return dict(zip(nomes, resultados))
 
 
-def verificar_http(request):
-    """Ponto de entrada da função no Google Cloud (Cloud Run functions).
+def processar_pedido(
+    autorizacao: str,
+    dados,
+    tempo_limite: float = TEMPO_LIMITE,
+    espera: float = ESPERA_ANTES_DE_REPETIR,
+) -> tuple[dict, int]:
+    """Valida a senha e o pedido de uma função HTTP e devolve (resposta, código HTTP).
 
-    Recebe um POST com {"apis": {nome: url}} e o cabeçalho
-    "Authorization: Bearer <token>". O token precisa ser igual à variável de
-    ambiente TOKEN_VERIFICADOR configurada na função; sem isso, recusa.
+    O pedido deve ser {"apis": {nome: url}} com o cabeçalho "Authorization: Bearer <token>".
+    O token precisa ser igual à variável de ambiente TOKEN_VERIFICADOR da função.
     """
     esperado = os.environ.get("TOKEN_VERIFICADOR", "")
-    recebido = request.headers.get("Authorization", "")
-    if not esperado or not hmac.compare_digest(recebido, f"Bearer {esperado}"):
+    if not esperado or not hmac.compare_digest(autorizacao or "", f"Bearer {esperado}"):
         return {"erro": "não autorizado"}, 401
-    dados = request.get_json(silent=True) or {}
-    apis = dados.get("apis")
-    if not isinstance(apis, dict) or len(apis) > 50:
-        return {"erro": "envie {\"apis\": {nome: url}} com até 50 APIs"}, 400
-    return {"resultados": verificar_lista(apis, paralelo=16)}
+    apis = (dados or {}).get("apis") if isinstance(dados, dict) else None
+    validas = isinstance(apis, dict) and 0 < len(apis) <= 50 and all(
+        isinstance(url, str) and url.startswith(("https://", "http://")) for url in apis.values()
+    )
+    if not validas:
+        return {"erro": "envie {\"apis\": {nome: url}} com 1 a 50 URLs http(s)"}, 400
+    return {"resultados": verificar_lista(apis, 16, tempo_limite, espera)}, 200
+
+
+def verificar_http(request):
+    """Ponto de entrada da função no Google Cloud (Cloud Run functions)."""
+    return processar_pedido(request.headers.get("Authorization", ""), request.get_json(silent=True))
 
 
 def lambda_handler(event, context):

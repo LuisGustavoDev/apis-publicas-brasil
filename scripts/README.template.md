@@ -62,7 +62,7 @@ data/apis.yaml ──► scripts/check.py ──► data/status.json ──► s
    (você edita)      (testa as APIs)       (resultados)          (monta as tabelas)
 ```
 
-Um [GitHub Action](.github/workflows/verificar.yml) roda esse fluxo todo dia e sempre que o `apis.yaml` muda na branch principal. As APIs que bloqueiam acessos de fora do Brasil são testadas por uma função na nuvem em São Paulo, no [Google Cloud](google/LEIA-ME.md) ou na [AWS](aws/LEIA-ME.md). Para rodar localmente:
+Um [GitHub Action](.github/workflows/verificar.yml) roda esse fluxo todo dia e sempre que o `apis.yaml` muda na branch principal. As APIs que bloqueiam acessos de fora do Brasil são testadas por uma [função na Vercel em São Paulo](vercel/LEIA-ME.md) (também há guias para [Google Cloud](google/LEIA-ME.md) e [AWS](aws/LEIA-ME.md)). Para rodar localmente:
 
 ```bash
 pip install -r requirements.txt
