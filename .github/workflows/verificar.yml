@@ -20,6 +20,7 @@ concurrency:
 jobs:
   verificar:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
@@ -36,6 +37,11 @@ jobs:
 
       - name: Testar as APIs
         run: python scripts/check.py
+        env:
+          # Opcional: credenciais da função na AWS que testa as APIs só acessíveis do Brasil.
+          # Sem elas, essas APIs ficam sem teste. Veja aws/LEIA-ME.md.
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
       - name: Gerar README
         run: python scripts/build_readme.py

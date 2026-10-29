@@ -36,9 +36,9 @@ São **{{TOTAL}} APIs** em **{{TOTAL_CATEGORIAS}} categorias**: CEP, CNPJ, banco
 |---|---|
 | **Autenticação** | **Não**: é só chamar · **Opcional**: funciona sem chave, mas uma chave grátis aumenta os limites · **Chave grátis / Token grátis**: exige cadastro gratuito · **Chave pública**: a chave é divulgada publicamente pelo órgão |
 | **CORS** | **Sim**: pode ser chamada direto do navegador (front-end) · **Não**: chame pelo seu servidor · **?**: ainda não verificado |
-| **Status** | 🟢 online · 🟡 lenta (acima de 3 s) ou instável (disponibilidade abaixo de 95% nos últimos 30 dias) · 🔴 fora do ar na última verificação · 🔑 requer chave, por isso não é testada automaticamente · ⚪ aguardando a primeira verificação |
+| **Status** | 🟢 online · 🟡 lenta (acima de 3 s) ou instável (disponibilidade abaixo de 95% nos últimos 30 dias) · 🔴 fora do ar na última verificação · 🔑 requer chave, por isso não é testada automaticamente · 🇧🇷 só do Brasil: a API bloqueia acessos de fora do país e é testada a partir de São Paulo · ⚪ aguardando a primeira verificação |
 
-A porcentagem mostra a disponibilidade nos últimos 30 dias de verificação. O aviso **⚠️ certificado SSL** indica que o servidor envia um certificado incompleto: abre normalmente no navegador, mas pode dar erro de certificado em Python, Node e outros clientes de back-end.
+A porcentagem mostra a disponibilidade nos últimos 30 dias de verificação. O aviso **⚠️ certificado SSL** indica que o servidor envia um certificado incompleto: abre normalmente no navegador, mas pode dar erro de certificado em Python, Node e outros clientes de back-end. O aviso **⚠️ TLS antigo** indica um servidor com configuração de segurança antiga, que alguns clientes recusam por padrão. APIs marcadas com **🇧🇷 só do Brasil** não funcionam em servidores hospedados fora do país (por exemplo, nos EUA).
 
 ## Como contribuir
 
@@ -62,7 +62,7 @@ data/apis.yaml ──► scripts/check.py ──► data/status.json ──► s
    (você edita)      (testa as APIs)       (resultados)          (monta as tabelas)
 ```
 
-Um [GitHub Action](.github/workflows/verificar.yml) roda esse fluxo todo dia e sempre que o `apis.yaml` muda na branch principal. Para rodar localmente:
+Um [GitHub Action](.github/workflows/verificar.yml) roda esse fluxo todo dia e sempre que o `apis.yaml` muda na branch principal. As APIs que bloqueiam acessos de fora do Brasil são testadas por uma [função na AWS em São Paulo](aws/LEIA-ME.md). Para rodar localmente:
 
 ```bash
 pip install -r requirements.txt

@@ -32,6 +32,7 @@ Sem tempo para isso? [Sugira a API em uma issue](../../issues/new?template=suger
 | `autenticacao` | sim | `nenhuma`, `opcional`, `chave`, `chave-publica` ou `token`. |
 | `limite` | não | Limite de uso conhecido, ex.: `3 req/min por IP`. |
 | `exemplo` | sim | Uma URL GET que funciona de verdade e retorna dados. É ela que o robô testa todo dia. |
+| `acesso` | não | Use `acesso: brasil` quando a API bloqueia acessos de fora do Brasil (abre no seu navegador, mas falha no robô do GitHub). Ela passa a ser testada a partir de São Paulo. |
 | `teste` | não | Use `teste: false` quando a API exige chave ou não aceita um GET simples. Nesse caso, coloque em `exemplo` o link da documentação. |
 
 ## O que entra na lista

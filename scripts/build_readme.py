@@ -11,7 +11,7 @@ from datetime import datetime
 from pathlib import Path
 from urllib.parse import quote
 
-from common import AUTENTICACOES, RAIZ, carregar_dados, carregar_status, deve_testar
+from common import AUTENTICACOES, RAIZ, carregar_dados, carregar_status, deve_testar, so_do_brasil
 
 MODELO = Path(__file__).resolve().parent / "README.template.md"
 SAIDA = RAIZ / "README.md"
@@ -34,10 +34,11 @@ def celula_status(api: dict, status: dict) -> str:
     if not deve_testar(api):
         return "🔑 requer chave"
     info = status.get(api["nome"])
+    brasil = so_do_brasil(api)
     if not info:
-        return "⚪ aguardando"
+        return "🇧🇷 só do Brasil" if brasil else "⚪ aguardando"
     if not info["ok"]:
-        return "🔴 fora do ar"
+        return "🔴 fora do ar" + ("<br><sub>🇧🇷 só do Brasil</sub>" if brasil else "")
 
     historico = info.get("historico") or [1]
     disponibilidade = round(100 * sum(historico) / len(historico))
@@ -53,8 +54,12 @@ def celula_status(api: dict, status: dict) -> str:
     detalhes = f"{disponibilidade}%"
     if ms:
         detalhes += f" · {ms} ms"
-    if info.get("aviso"):
+    if info.get("aviso") == "certificado SSL inválido ou incompleto":
         detalhes += " · ⚠️ certificado SSL"
+    elif info.get("aviso"):
+        detalhes += " · ⚠️ TLS antigo"
+    if brasil:
+        detalhes += " · 🇧🇷 só do Brasil"
     return f"{rotulo}<br><sub>{detalhes}</sub>"
 
 

@@ -8,10 +8,10 @@ from __future__ import annotations
 
 import sys
 
-from common import AUTENTICACOES, carregar_dados
+from common import ACESSOS, AUTENTICACOES, carregar_dados
 
 CAMPOS_OBRIGATORIOS = ("nome", "categoria", "descricao", "docs", "autenticacao", "exemplo")
-CAMPOS_PERMITIDOS = set(CAMPOS_OBRIGATORIOS) | {"limite", "teste"}
+CAMPOS_PERMITIDOS = set(CAMPOS_OBRIGATORIOS) | {"limite", "teste", "acesso"}
 TAMANHO_MAXIMO_DESCRICAO = 120
 
 
@@ -71,6 +71,10 @@ def validar(dados: dict) -> list[str]:
                 f"{rotulo}: descrição com {len(descricao)} caracteres "
                 f"(máximo {TAMANHO_MAXIMO_DESCRICAO})."
             )
+
+        acesso = api.get("acesso")
+        if acesso is not None and acesso not in ACESSOS:
+            erros.append(f"{rotulo}: acesso '{acesso}' inválido. Use: {', '.join(ACESSOS)}.")
 
         teste = api.get("teste", True)
         if not isinstance(teste, bool):

@@ -25,8 +25,15 @@ def carregar_dados() -> dict:
         return yaml.safe_load(f)
 
 
+ACESSOS = {"brasil": "só acessível do Brasil"}
+
+
 def deve_testar(api: dict) -> bool:
     return api.get("teste", True) is not False
+
+
+def so_do_brasil(api: dict) -> bool:
+    return api.get("acesso") == "brasil"
 
 
 def carregar_status() -> dict:

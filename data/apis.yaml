@@ -10,6 +10,7 @@
 #   autenticacao  nenhuma | opcional | chave | chave-publica | token
 #   limite        (opcional) Limite de uso conhecido, ex.: "3 req/min"
 #   exemplo       URL de exemplo que funciona de verdade (GET)
+#   acesso        (opcional) brasil quando a API bloqueia acessos de fora do Brasil
 #   teste         (opcional) false para não verificar automaticamente
 #                 (use quando a API exige chave ou não aceita GET simples)
 
@@ -227,6 +228,7 @@ apis:
     docs: https://servicodados.ibge.gov.br/api/docs/localidades
     autenticacao: nenhuma
     exemplo: https://servicodados.ibge.gov.br/api/v1/localidades/estados
+    acesso: brasil
 
   - nome: IBGE Nomes
     categoria: ibge
@@ -234,6 +236,7 @@ apis:
     docs: https://servicodados.ibge.gov.br/api/docs/nomes?versao=2
     autenticacao: nenhuma
     exemplo: https://servicodados.ibge.gov.br/api/v2/censos/nomes/maria
+    acesso: brasil
 
   - nome: IBGE Agregados (SIDRA)
     categoria: ibge
@@ -241,6 +244,7 @@ apis:
     docs: https://servicodados.ibge.gov.br/api/docs/agregados?versao=3
     autenticacao: nenhuma
     exemplo: https://servicodados.ibge.gov.br/api/v3/agregados
+    acesso: brasil
 
   - nome: IBGE Malhas
     categoria: ibge
@@ -248,6 +252,7 @@ apis:
     docs: https://servicodados.ibge.gov.br/api/docs/malhas?versao=3
     autenticacao: nenhuma
     exemplo: https://servicodados.ibge.gov.br/api/v3/malhas/estados/SP?formato=application/vnd.geo+json
+    acesso: brasil
 
   - nome: IBGE Notícias
     categoria: ibge
@@ -255,6 +260,7 @@ apis:
     docs: https://servicodados.ibge.gov.br/api/docs/noticias?versao=3
     autenticacao: nenhuma
     exemplo: https://servicodados.ibge.gov.br/api/v3/noticias/?qtd=1
+    acesso: brasil
 
   - nome: IBGE Países
     categoria: ibge
@@ -262,6 +268,7 @@ apis:
     docs: https://servicodados.ibge.gov.br/api/docs/paises
     autenticacao: nenhuma
     exemplo: https://servicodados.ibge.gov.br/api/v1/paises/BR
+    acesso: brasil
 
   # ---------- Calendário e Feriados ----------
   - nome: BrasilAPI Feriados
@@ -474,6 +481,7 @@ apis:
     docs: https://dadosabertos.compras.gov.br/swagger-ui/index.html
     autenticacao: nenhuma
     exemplo: https://dadosabertos.compras.gov.br/swagger-ui/index.html
+    teste: false
 
   - nome: PNCP (Portal Nacional de Contratações Públicas)
     categoria: governo
@@ -526,6 +534,7 @@ apis:
     docs: https://servicodados.ibge.gov.br/api/docs/cnae?versao=2
     autenticacao: nenhuma
     exemplo: https://servicodados.ibge.gov.br/api/v2/cnae/secoes
+    acesso: brasil
 
   - nome: IBGE Calendário
     categoria: ibge
@@ -533,6 +542,7 @@ apis:
     docs: https://servicodados.ibge.gov.br/api/docs/calendario?versao=3
     autenticacao: nenhuma
     exemplo: https://servicodados.ibge.gov.br/api/v3/calendario/?qtd=1
+    acesso: brasil
 
   # ---------- Clima e Tempo ----------
   - nome: CPTEC/INPE (XML)
@@ -722,6 +732,7 @@ apis:
     docs: https://dados.recife.pe.gov.br
     autenticacao: nenhuma
     exemplo: https://dados.recife.pe.gov.br/api/3/action/status_show
+    acesso: brasil
 
   - nome: Prefeitura de Porto Alegre Dados Abertos
     categoria: portais
@@ -737,12 +748,6 @@ apis:
     autenticacao: nenhuma
     exemplo: https://dados.fortaleza.ce.gov.br/api/3/action/status_show
 
-  - nome: Distrito Federal Dados Abertos
-    categoria: portais
-    descricao: Dados abertos do Governo do Distrito Federal
-    docs: https://dados.df.gov.br
-    autenticacao: nenhuma
-    exemplo: https://dados.df.gov.br/api/3/action/status_show
 
   # ---------- Internacionais com Dados do Brasil ----------
   - nome: Open-Meteo
