@@ -2,13 +2,16 @@
 
 Este arquivo é usado em dois lugares:
   1. Pelo robô do GitHub (scripts/check.py), para as APIs comuns.
-  2. Pela função na AWS, em São Paulo, para as APIs que bloqueiam acessos de
-     fora do Brasil. Para isso, o conteúdo deste arquivo é copiado para a função
-     Lambda (veja aws/LEIA-ME.md). Ele usa só a biblioteca padrão do Python.
+  2. Por uma função na nuvem, em São Paulo, para as APIs que bloqueiam acessos
+     de fora do Brasil. Para isso, o conteúdo deste arquivo é copiado para a
+     função: no Google Cloud (veja google/LEIA-ME.md) ou na AWS Lambda (veja
+     aws/LEIA-ME.md). Ele usa só a biblioteca padrão do Python.
 """
 
 from __future__ import annotations
 
+import hmac
+import os
 import ssl
 import time
 import urllib.error
@@ -129,6 +132,24 @@ def verificar_lista(apis: dict[str, str], paralelo: int = 8) -> dict[str, dict]:
     with ThreadPoolExecutor(max_workers=paralelo) as executor:
         resultados = list(executor.map(lambda nome: verificar_url(apis[nome]), nomes))
     return dict(zip(nomes, resultados))
+
+
+def verificar_http(request):
+    """Ponto de entrada da função no Google Cloud (Cloud Run functions).
+
+    Recebe um POST com {"apis": {nome: url}} e o cabeçalho
+    "Authorization: Bearer <token>". O token precisa ser igual à variável de
+    ambiente TOKEN_VERIFICADOR configurada na função; sem isso, recusa.
+    """
+    esperado = os.environ.get("TOKEN_VERIFICADOR", "")
+    recebido = request.headers.get("Authorization", "")
+    if not esperado or not hmac.compare_digest(recebido, f"Bearer {esperado}"):
+        return {"erro": "não autorizado"}, 401
+    dados = request.get_json(silent=True) or {}
+    apis = dados.get("apis")
+    if not isinstance(apis, dict) or len(apis) > 50:
+        return {"erro": "envie {\"apis\": {nome: url}} com até 50 APIs"}, 400
+    return {"resultados": verificar_lista(apis, paralelo=16)}
 
 
 def lambda_handler(event, context):

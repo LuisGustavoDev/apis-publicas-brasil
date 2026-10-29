@@ -38,8 +38,11 @@ jobs:
       - name: Testar as APIs
         run: python scripts/check.py
         env:
-          # Opcional: credenciais da função na AWS que testa as APIs só acessíveis do Brasil.
-          # Sem elas, essas APIs ficam sem teste. Veja aws/LEIA-ME.md.
+          # Opcional: função em São Paulo que testa as APIs só acessíveis do Brasil.
+          # Use o Google Cloud (google/LEIA-ME.md) ou a AWS (aws/LEIA-ME.md).
+          # Sem nenhuma das duas, essas APIs ficam sem teste.
+          GCP_VERIFICADOR_URL: ${{ secrets.GCP_VERIFICADOR_URL }}
+          GCP_VERIFICADOR_TOKEN: ${{ secrets.GCP_VERIFICADOR_TOKEN }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
