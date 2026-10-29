@@ -1,0 +1,53 @@
+name: Verificar APIs
+
+on:
+  schedule:
+    - cron: "17 9 * * *" # todo dia às 06:17 (horário de Brasília)
+  push:
+    branches: [main]
+    paths:
+      - "data/apis.yaml"
+      - "scripts/**"
+  workflow_dispatch: # permite rodar manualmente pela aba Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: verificar-apis
+  cancel-in-progress: false
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Validar apis.yaml
+        run: python scripts/validate.py
+
+      - name: Testar as APIs
+        run: python scripts/check.py
+
+      - name: Gerar README
+        run: python scripts/build_readme.py
+
+      - name: Salvar resultados
+        run: |
+          if [ -z "$(git status --porcelain -- README.md data/status.json)" ]; then
+            echo "Nada mudou."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md data/status.json
+          git commit -m "chore: verificação automática das APIs"
+          git push

@@ -1,0 +1,43 @@
+name: Sugerir uma API
+description: Indique uma API pública brasileira para entrar na lista
+title: "[Sugestão] "
+labels: ["nova api"]
+body:
+  - type: input
+    id: nome
+    attributes:
+      label: Nome da API
+      placeholder: "ex.: ViaCEP"
+    validations:
+      required: true
+  - type: input
+    id: docs
+    attributes:
+      label: Link da documentação
+      placeholder: "https://"
+    validations:
+      required: true
+  - type: textarea
+    id: descricao
+    attributes:
+      label: O que ela faz?
+      description: Uma ou duas frases.
+    validations:
+      required: true
+  - type: dropdown
+    id: autenticacao
+    attributes:
+      label: Precisa de chave ou cadastro?
+      options:
+        - Não precisa
+        - Opcional (funciona sem, mas com chave tem mais limite)
+        - Sim, cadastro gratuito
+        - Chave pública divulgada pelo órgão
+        - Não sei
+    validations:
+      required: true
+  - type: input
+    id: exemplo
+    attributes:
+      label: URL de exemplo (se souber)
+      placeholder: "https://"

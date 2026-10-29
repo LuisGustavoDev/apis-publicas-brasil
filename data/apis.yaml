@@ -1,0 +1,360 @@
+# Fonte única de dados do repositório.
+# O README é gerado a partir deste arquivo: não edite as tabelas do README à mão.
+# Veja como adicionar uma API em CONTRIBUTING.md.
+#
+# Campos de cada API:
+#   nome          Nome da API (único)
+#   categoria     Um dos ids listados em "categorias"
+#   descricao     Uma frase curta, sem ponto final
+#   docs          Link da documentação oficial (https)
+#   autenticacao  nenhuma | opcional | chave | chave-publica | token
+#   limite        (opcional) Limite de uso conhecido, ex.: "3 req/min"
+#   exemplo       URL de exemplo que funciona de verdade (GET)
+#   teste         (opcional) false para não verificar automaticamente
+#                 (use quando a API exige chave ou não aceita GET simples)
+
+categorias:
+  - id: cep
+    nome: CEP e Endereços
+  - id: empresas
+    nome: CNPJ e Empresas
+  - id: bancos
+    nome: Bancos e Pagamentos
+  - id: economia
+    nome: Economia e Mercado Financeiro
+  - id: governo
+    nome: Governo, Legislativo e Justiça
+  - id: ibge
+    nome: IBGE e Geografia
+  - id: calendario
+    nome: Calendário e Feriados
+  - id: clima
+    nome: Clima e Tempo
+  - id: veiculos
+    nome: Veículos
+  - id: transporte
+    nome: Transporte
+  - id: saude
+    nome: Saúde
+  - id: comercio
+    nome: Comércio e Tributos
+  - id: internet
+    nome: Internet, Telefonia e Domínios
+  - id: livros
+    nome: Livros
+  - id: esportes
+    nome: Esportes
+
+apis:
+  # ---------- CEP e Endereços ----------
+  - nome: ViaCEP
+    categoria: cep
+    descricao: Consulta de endereço por CEP e busca de CEP por endereço
+    docs: https://viacep.com.br
+    autenticacao: nenhuma
+    exemplo: https://viacep.com.br/ws/01001000/json/
+
+  - nome: BrasilAPI CEP v2
+    categoria: cep
+    descricao: CEP com coordenadas geográficas, consultando vários provedores com fallback
+    docs: https://brasilapi.com.br/docs
+    autenticacao: nenhuma
+    exemplo: https://brasilapi.com.br/api/cep/v2/01001000
+
+  - nome: AwesomeAPI CEP
+    categoria: cep
+    descricao: Endereço por CEP com latitude, longitude e código IBGE
+    docs: https://docs.awesomeapi.com.br
+    autenticacao: opcional
+    exemplo: https://cep.awesomeapi.com.br/json/01001000
+
+  # ---------- CNPJ e Empresas ----------
+  - nome: BrasilAPI CNPJ
+    categoria: empresas
+    descricao: Dados cadastrais de empresas pela base pública da Receita Federal
+    docs: https://brasilapi.com.br/docs
+    autenticacao: nenhuma
+    exemplo: https://brasilapi.com.br/api/cnpj/v1/19131243000197
+
+  - nome: CNPJá Open
+    categoria: empresas
+    descricao: Dados cadastrais de estabelecimentos, sócios e atividades por CNPJ
+    docs: https://cnpja.com/api/open
+    autenticacao: nenhuma
+    limite: 5 req/min por IP
+    exemplo: https://open.cnpja.com/office/19131243000197
+
+  - nome: CNPJ.ws Pública
+    categoria: empresas
+    descricao: Consulta de CNPJ com dados de sócios, atividades e inscrições estaduais
+    docs: https://docs.cnpj.ws/referencia-de-api/api-publica
+    autenticacao: nenhuma
+    limite: 3 req/min por IP
+    exemplo: https://publica.cnpj.ws/cnpj/19131243000197
+
+  - nome: ReceitaWS
+    categoria: empresas
+    descricao: Consulta de CNPJ com situação cadastral e quadro de sócios
+    docs: https://developers.receitaws.com.br
+    autenticacao: nenhuma
+    limite: 3 req/min no plano gratuito
+    exemplo: https://receitaws.com.br/v1/cnpj/19131243000197
+
+  - nome: BrasilAPI Corretoras
+    categoria: empresas
+    descricao: Corretoras de valores registradas na CVM
+    docs: https://brasilapi.com.br/docs
+    autenticacao: nenhuma
+    exemplo: https://brasilapi.com.br/api/cvm/corretoras/v1
+
+  # ---------- Bancos e Pagamentos ----------
+  - nome: BrasilAPI Bancos
+    categoria: bancos
+    descricao: Lista de bancos com código de compensação e ISPB
+    docs: https://brasilapi.com.br/docs
+    autenticacao: nenhuma
+    exemplo: https://brasilapi.com.br/api/banks/v1
+
+  - nome: BrasilAPI Participantes do Pix
+    categoria: bancos
+    descricao: Instituições participantes do Pix, com modalidade e início da operação
+    docs: https://brasilapi.com.br/docs
+    autenticacao: nenhuma
+    exemplo: https://brasilapi.com.br/api/pix/v1/participants
+
+  # ---------- Economia e Mercado Financeiro ----------
+  - nome: Banco Central SGS
+    categoria: economia
+    descricao: Séries temporais do Banco Central, como Selic, IPCA e CDI
+    docs: https://dadosabertos.bcb.gov.br
+    autenticacao: nenhuma
+    exemplo: https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados/ultimos/1?formato=json
+
+  - nome: Banco Central PTAX
+    categoria: economia
+    descricao: Cotações oficiais PTAX de moedas estrangeiras
+    docs: https://dadosabertos.bcb.gov.br
+    autenticacao: nenhuma
+    exemplo: https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/Moedas?$format=json
+
+  - nome: AwesomeAPI Moedas
+    categoria: economia
+    descricao: Cotação de moedas e criptomoedas em tempo real e histórico
+    docs: https://docs.awesomeapi.com.br
+    autenticacao: opcional
+    limite: 100 mil req/mês grátis com chave
+    exemplo: https://economia.awesomeapi.com.br/json/last/USD-BRL
+
+  - nome: BrasilAPI Taxas
+    categoria: economia
+    descricao: Valores atuais de Selic, CDI e IPCA
+    docs: https://brasilapi.com.br/docs
+    autenticacao: nenhuma
+    exemplo: https://brasilapi.com.br/api/taxas/v1
+
+  - nome: BrasilAPI Câmbio
+    categoria: economia
+    descricao: Moedas disponíveis e cotações de câmbio por data
+    docs: https://brasilapi.com.br/docs
+    autenticacao: nenhuma
+    exemplo: https://brasilapi.com.br/api/cambio/v1/moedas
+
+  - nome: brapi
+    categoria: economia
+    descricao: Cotações, histórico e dividendos de ações, FIIs e BDRs da B3
+    docs: https://brapi.dev/docs
+    autenticacao: chave
+    limite: PETR4, MGLU3, VALE3 e ITUB4 funcionam sem chave
+    exemplo: https://brapi.dev/api/quote/PETR4
+
+  # ---------- Governo, Legislativo e Justiça ----------
+  - nome: Câmara dos Deputados
+    categoria: governo
+    descricao: Deputados, proposições, votações, despesas e eventos da Câmara
+    docs: https://dadosabertos.camara.leg.br/swagger/api.html
+    autenticacao: nenhuma
+    exemplo: https://dadosabertos.camara.leg.br/api/v2/deputados?itens=5
+
+  - nome: Senado Federal
+    categoria: governo
+    descricao: Senadores, matérias, votações e comissões do Senado
+    docs: https://legis.senado.leg.br/dadosabertos/docs/
+    autenticacao: nenhuma
+    exemplo: https://legis.senado.leg.br/dadosabertos/senador/lista/atual.json
+
+  - nome: Querido Diário
+    categoria: governo
+    descricao: Busca textual em diários oficiais de municípios brasileiros
+    docs: https://docs.queridodiario.ok.org.br/en/latest/using/public-api.html
+    autenticacao: nenhuma
+    limite: Recomenda até 60 req/min
+    exemplo: https://api.queridodiario.ok.org.br/gazettes?querystring=educacao&size=1
+
+  - nome: Portal da Transparência
+    categoria: governo
+    descricao: Gastos, contratos, servidores e benefícios do governo federal
+    docs: https://portaldatransparencia.gov.br/api-de-dados
+    autenticacao: chave
+    exemplo: https://api.portaldatransparencia.gov.br/swagger-ui/index.html
+    teste: false
+
+  - nome: DataJud
+    categoria: governo
+    descricao: Metadados de processos judiciais de todos os tribunais do país (CNJ)
+    docs: https://datajud-wiki.cnj.jus.br/api-publica/
+    autenticacao: chave-publica
+    exemplo: https://datajud-wiki.cnj.jus.br/api-publica/
+    teste: false
+
+  # ---------- IBGE e Geografia ----------
+  - nome: IBGE Localidades
+    categoria: ibge
+    descricao: Regiões, estados, municípios e distritos com códigos oficiais
+    docs: https://servicodados.ibge.gov.br/api/docs/localidades
+    autenticacao: nenhuma
+    exemplo: https://servicodados.ibge.gov.br/api/v1/localidades/estados
+
+  - nome: IBGE Nomes
+    categoria: ibge
+    descricao: Frequência e ranking de nomes por década, segundo o Censo
+    docs: https://servicodados.ibge.gov.br/api/docs/nomes?versao=2
+    autenticacao: nenhuma
+    exemplo: https://servicodados.ibge.gov.br/api/v2/censos/nomes/maria
+
+  - nome: IBGE Agregados (SIDRA)
+    categoria: ibge
+    descricao: Tabelas de pesquisas do IBGE, como PNAD, Censo e PIB
+    docs: https://servicodados.ibge.gov.br/api/docs/agregados?versao=3
+    autenticacao: nenhuma
+    exemplo: https://servicodados.ibge.gov.br/api/v3/agregados
+
+  - nome: IBGE Malhas
+    categoria: ibge
+    descricao: Contornos geográficos de estados e municípios em GeoJSON ou SVG
+    docs: https://servicodados.ibge.gov.br/api/docs/malhas?versao=3
+    autenticacao: nenhuma
+    exemplo: https://servicodados.ibge.gov.br/api/v3/malhas/estados/SP?formato=application/vnd.geo+json
+
+  - nome: IBGE Notícias
+    categoria: ibge
+    descricao: Notícias e releases publicados pela Agência IBGE
+    docs: https://servicodados.ibge.gov.br/api/docs/noticias?versao=3
+    autenticacao: nenhuma
+    exemplo: https://servicodados.ibge.gov.br/api/v3/noticias/?qtd=1
+
+  - nome: IBGE Países
+    categoria: ibge
+    descricao: Indicadores, histórico e dados gerais de países
+    docs: https://servicodados.ibge.gov.br/api/docs/paises
+    autenticacao: nenhuma
+    exemplo: https://servicodados.ibge.gov.br/api/v1/paises/BR
+
+  # ---------- Calendário e Feriados ----------
+  - nome: BrasilAPI Feriados
+    categoria: calendario
+    descricao: Feriados nacionais de um ano, incluindo os móveis
+    docs: https://brasilapi.com.br/docs
+    autenticacao: nenhuma
+    exemplo: https://brasilapi.com.br/api/feriados/v1/2026
+
+  - nome: Nager.Date
+    categoria: calendario
+    descricao: Feriados públicos do Brasil e de outros 100+ países
+    docs: https://date.nager.at
+    autenticacao: nenhuma
+    exemplo: https://date.nager.at/api/v3/PublicHolidays/2026/BR
+
+  # ---------- Clima e Tempo ----------
+  - nome: BrasilAPI CPTEC
+    categoria: clima
+    descricao: Previsão do tempo, condições nas capitais e ondas, com dados do CPTEC/INPE
+    docs: https://brasilapi.com.br/docs
+    autenticacao: nenhuma
+    exemplo: https://brasilapi.com.br/api/cptec/v1/clima/capital
+
+  - nome: HG Brasil Weather
+    categoria: clima
+    descricao: Previsão do tempo para cidades brasileiras
+    docs: https://hgbrasil.com/docs
+    autenticacao: chave
+    exemplo: https://api.hgbrasil.com/weather?woeid=455827&key=SUA_CHAVE
+    teste: false
+
+  # ---------- Veículos ----------
+  - nome: FIPE (Parallelum)
+    categoria: veiculos
+    descricao: Marcas, modelos, anos e preços da Tabela FIPE
+    docs: https://github.com/deividfortuna/fipe
+    autenticacao: opcional
+    exemplo: https://parallelum.com.br/fipe/api/v2/cars/brands
+
+  - nome: BrasilAPI FIPE
+    categoria: veiculos
+    descricao: Marcas, veículos, preços e tabelas de referência da FIPE
+    docs: https://brasilapi.com.br/docs
+    autenticacao: nenhuma
+    exemplo: https://brasilapi.com.br/api/fipe/marcas/v1/carros
+
+  # ---------- Transporte ----------
+  - nome: SPTrans Olho Vivo
+    categoria: transporte
+    descricao: Posição dos ônibus, linhas, paradas e previsão de chegada em São Paulo
+    docs: https://www.sptrans.com.br/desenvolvedores/api-do-olho-vivo-guia-de-referencia/documentacao-api/
+    autenticacao: token
+    exemplo: https://api.olhovivo.sptrans.com.br/v2.1
+    teste: false
+
+  # ---------- Saúde ----------
+  - nome: OpenDataSUS
+    categoria: saude
+    descricao: Catálogo de dados abertos do Ministério da Saúde (API CKAN)
+    docs: https://opendatasus.saude.gov.br
+    autenticacao: nenhuma
+    exemplo: https://opendatasus.saude.gov.br/api/3/action/package_list
+
+  # ---------- Comércio e Tributos ----------
+  - nome: BrasilAPI NCM
+    categoria: comercio
+    descricao: Busca na Nomenclatura Comum do Mercosul usada em notas fiscais
+    docs: https://brasilapi.com.br/docs
+    autenticacao: nenhuma
+    exemplo: https://brasilapi.com.br/api/ncm/v1?search=3305
+
+  # ---------- Internet, Telefonia e Domínios ----------
+  - nome: BrasilAPI DDD
+    categoria: internet
+    descricao: Estado e cidades atendidos por um DDD
+    docs: https://brasilapi.com.br/docs
+    autenticacao: nenhuma
+    exemplo: https://brasilapi.com.br/api/ddd/v1/11
+
+  - nome: BrasilAPI Registro.br
+    categoria: internet
+    descricao: Situação e disponibilidade de domínios .br
+    docs: https://brasilapi.com.br/docs
+    autenticacao: nenhuma
+    exemplo: https://brasilapi.com.br/api/registrobr/v1/brasilapi.com.br
+
+  - nome: Registro.br RDAP
+    categoria: internet
+    descricao: Dados públicos de registro de domínios .br no padrão RDAP
+    docs: https://rdap.registro.br
+    autenticacao: nenhuma
+    exemplo: https://rdap.registro.br/domain/registro.br
+
+  # ---------- Livros ----------
+  - nome: BrasilAPI ISBN
+    categoria: livros
+    descricao: Dados de livros por ISBN, consultando várias fontes
+    docs: https://brasilapi.com.br/docs
+    autenticacao: nenhuma
+    exemplo: https://brasilapi.com.br/api/isbn/v1/9788545702870
+
+  # ---------- Esportes ----------
+  - nome: API-Futebol
+    categoria: esportes
+    descricao: Campeonatos, tabelas, rodadas e partidas do futebol brasileiro
+    docs: https://www.api-futebol.com.br
+    autenticacao: chave
+    exemplo: https://www.api-futebol.com.br
+    teste: false
