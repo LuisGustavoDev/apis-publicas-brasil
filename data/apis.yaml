@@ -6,7 +6,7 @@
 #   nome          Nome da API (único)
 #   categoria     Um dos ids listados em "categorias"
 #   descricao     Uma frase curta, sem ponto final
-#   docs          Link da documentação oficial (https)
+#   docs          Link da documentação oficial (ou da melhor documentação disponível)
 #   autenticacao  nenhuma | opcional | chave | chave-publica | token
 #   limite        (opcional) Limite de uso conhecido, ex.: "3 req/min"
 #   exemplo       URL de exemplo que funciona de verdade (GET)
@@ -41,9 +41,23 @@ categorias:
   - id: internet
     nome: Internet, Telefonia e Domínios
   - id: livros
-    nome: Livros
+    nome: Livros, Cultura e Língua
+  - id: ciencia
+    nome: Ciência e Educação
+  - id: meio-ambiente
+    nome: Meio Ambiente
+  - id: agro
+    nome: Agropecuária
+  - id: seguranca
+    nome: Segurança Pública
   - id: esportes
-    nome: Esportes
+    nome: Esportes e Loterias
+  - id: utilidades
+    nome: Utilidades
+  - id: portais
+    nome: Portais de Dados Abertos (CKAN)
+  - id: internacional
+    nome: Internacionais com Dados do Brasil
 
 apis:
   # ---------- CEP e Endereços ----------
@@ -358,3 +372,417 @@ apis:
     autenticacao: chave
     exemplo: https://www.api-futebol.com.br
     teste: false
+
+  # =====================================================================
+  # Ampliação da lista
+  # =====================================================================
+
+  # ---------- CEP e Endereços ----------
+  - nome: OpenCEP
+    categoria: cep
+    descricao: Consulta de endereço por CEP, gratuita e sem cadastro
+    docs: https://opencep.com
+    autenticacao: nenhuma
+    exemplo: https://opencep.com/v1/01001000
+
+  - nome: ApiCEP
+    categoria: cep
+    descricao: Endereço por CEP servido como arquivo JSON estático em CDN
+    docs: https://apicep.com
+    autenticacao: nenhuma
+    exemplo: https://cdn.apicep.com/file/apicep/01001-000.json
+
+  - nome: CEP Aberto
+    categoria: cep
+    descricao: CEP, busca por coordenadas e listagem de cidades por estado
+    docs: https://www.cepaberto.com/api_key
+    autenticacao: chave
+    exemplo: https://www.cepaberto.com/api/v3/cep?cep=01001000
+    teste: false
+
+  - nome: Brasil Aberto
+    categoria: cep
+    descricao: CEP, cidades, bairros, ruas, CNPJ e rastreio de encomendas
+    docs: https://docs.brasilaberto.com
+    autenticacao: chave
+    exemplo: https://brasilaberto.com/api/v1/zipcode/01001000
+    teste: false
+
+  # ---------- CNPJ e Empresas ----------
+  - nome: Minha Receita
+    categoria: empresas
+    descricao: Dados públicos de CNPJ da Receita Federal, projeto de código aberto
+    docs: https://docs.minhareceita.org
+    autenticacao: nenhuma
+    exemplo: https://minhareceita.org/19131243000197
+
+  - nome: OpenCNPJ
+    categoria: empresas
+    descricao: Consulta de CNPJ com base nos dados públicos da Receita Federal
+    docs: https://opencnpj.org
+    autenticacao: nenhuma
+    exemplo: https://api.opencnpj.org/19131243000197
+
+  # ---------- Bancos e Pagamentos ----------
+  - nome: Banco Central Estatísticas do Pix
+    categoria: bancos
+    descricao: Chaves cadastradas, transações por município e estatísticas de fraudes do Pix
+    docs: https://dadosabertos.bcb.gov.br/dataset/pix
+    autenticacao: nenhuma
+    exemplo: https://olinda.bcb.gov.br/olinda/servico/Pix_DadosAbertos/versao/v1/odata/
+
+  - nome: Banco Central Postos de Atendimento
+    categoria: bancos
+    descricao: Postos de atendimento eletrônico de instituições financeiras
+    docs: https://olinda.bcb.gov.br/olinda/servico/Informes_PostosDeAtendimentoEletronico/versao/v1/swagger-ui3
+    autenticacao: nenhuma
+    exemplo: https://olinda.bcb.gov.br/olinda/servico/Informes_PostosDeAtendimentoEletronico/versao/v1/odata/
+
+  # ---------- Economia e Mercado Financeiro ----------
+  - nome: Banco Central Focus (Expectativas)
+    categoria: economia
+    descricao: Expectativas do mercado para inflação, Selic, PIB e câmbio (Boletim Focus)
+    docs: https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/documentacao
+    autenticacao: nenhuma
+    exemplo: https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/ExpectativasMercadoAnuais?$top=5&$format=json
+
+  - nome: Ipeadata
+    categoria: economia
+    descricao: Milhares de séries econômicas, sociais e regionais do Ipea
+    docs: http://www.ipeadata.gov.br/api/
+    autenticacao: nenhuma
+    exemplo: http://www.ipeadata.gov.br/api/odata4/Temas/
+
+  - nome: SICONFI (Tesouro Nacional)
+    categoria: economia
+    descricao: Relatórios fiscais e contábeis de estados e municípios (RREO, RGF, DCA)
+    docs: https://apidatalake.tesouro.gov.br/docs/siconfi/
+    autenticacao: nenhuma
+    exemplo: https://apidatalake.tesouro.gov.br/ords/siconfi/tt/entes
+
+  - nome: Mercado Bitcoin
+    categoria: economia
+    descricao: Pares negociados, cotações, livro de ofertas e candles de criptomoedas em reais
+    docs: https://api.mercadobitcoin.net/api/v4/docs
+    autenticacao: nenhuma
+    exemplo: https://api.mercadobitcoin.net/api/v4/symbols
+
+  # ---------- Governo, Legislativo e Justiça ----------
+  - nome: Compras.gov.br Dados Abertos
+    categoria: governo
+    descricao: Licitações, contratos, materiais, serviços e fornecedores do governo federal
+    docs: https://dadosabertos.compras.gov.br/swagger-ui/index.html
+    autenticacao: nenhuma
+    exemplo: https://dadosabertos.compras.gov.br/swagger-ui/index.html
+
+  - nome: PNCP (Portal Nacional de Contratações Públicas)
+    categoria: governo
+    descricao: Contratações, atas e contratos de todos os entes públicos do país
+    docs: https://pncp.gov.br/api/consulta/swagger-ui/index.html
+    autenticacao: nenhuma
+    exemplo: https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?dataInicial=20260101&dataFinal=20260102&codigoModalidadeContratacao=8&pagina=1
+
+  - nome: Transferegov
+    categoria: governo
+    descricao: Transferências da União, emendas especiais, fundo a fundo e parcerias
+    docs: https://api-publica.transferegov.gestao.gov.br/ted/docs
+    autenticacao: nenhuma
+    exemplo: https://api-publica.transferegov.gestao.gov.br/ted/docs
+
+  - nome: LexML
+    categoria: governo
+    descricao: Busca em leis, decretos, jurisprudência e proposições de todo o país (SRU, XML)
+    docs: https://www12.senado.leg.br/dados-abertos/legislativo/legislacao/acervo-do-portal-lexml
+    autenticacao: nenhuma
+    exemplo: https://www.lexml.gov.br/busca/SRU?operation=searchRetrieve&query=urn+any+lei&maximumRecords=1
+
+  - nome: Portal Brasileiro de Dados Abertos
+    categoria: governo
+    descricao: Catálogo nacional de conjuntos de dados abertos do governo (dados.gov.br)
+    docs: https://www.gov.br/conecta/catalogo/apis/api-portal-de-dados-abertos
+    autenticacao: chave
+    exemplo: https://dados.gov.br
+    teste: false
+
+  - nome: Brasil.IO
+    categoria: governo
+    descricao: Dados públicos tratados, como sócios de empresas, eleições e gastos
+    docs: https://blog.brasil.io/2020/10/10/como-acessar-os-dados-do-brasil-io/
+    autenticacao: chave
+    exemplo: https://brasil.io/datasets/
+    teste: false
+
+  # ---------- IBGE e Geografia ----------
+  - nome: IBGE SIDRA
+    categoria: ibge
+    descricao: Valores das tabelas do SIDRA, como IPCA, PNAD, PIB e Censo
+    docs: https://apisidra.ibge.gov.br/home/ajuda
+    autenticacao: nenhuma
+    exemplo: https://apisidra.ibge.gov.br/values/t/7060/n1/all/v/63/p/last/c315/7169
+
+  - nome: IBGE CNAE
+    categoria: ibge
+    descricao: Classificação Nacional de Atividades Econômicas (seções, classes e subclasses)
+    docs: https://servicodados.ibge.gov.br/api/docs/cnae?versao=2
+    autenticacao: nenhuma
+    exemplo: https://servicodados.ibge.gov.br/api/v2/cnae/secoes
+
+  - nome: IBGE Calendário
+    categoria: ibge
+    descricao: Calendário de divulgações de pesquisas e eventos do IBGE
+    docs: https://servicodados.ibge.gov.br/api/docs/calendario?versao=3
+    autenticacao: nenhuma
+    exemplo: https://servicodados.ibge.gov.br/api/v3/calendario/?qtd=1
+
+  # ---------- Clima e Tempo ----------
+  - nome: CPTEC/INPE (XML)
+    categoria: clima
+    descricao: Previsão de 7 dias por cidade direto do serviço oficial do CPTEC, em XML
+    docs: http://servicos.cptec.inpe.br/XML/
+    autenticacao: nenhuma
+    exemplo: http://servicos.cptec.inpe.br/XML/cidade/7dias/241/previsao.xml
+
+  - nome: INMET Estações
+    categoria: clima
+    descricao: Dados horários e diários das estações meteorológicas automáticas e convencionais
+    docs: https://portal.inmet.gov.br/manual/manual-de-uso-da-api-esta%C3%A7%C3%B5es
+    autenticacao: token
+    limite: Até cerca de 6 meses por consulta
+    exemplo: https://portal.inmet.gov.br/manual/manual-de-uso-da-api-esta%C3%A7%C3%B5es
+    teste: false
+
+  - nome: INMET Alertas
+    categoria: clima
+    descricao: Avisos meteorológicos oficiais em feed RSS
+    docs: https://portal.inmet.gov.br/noticias/saiba-como-acessar-os-dados-meteorol%C3%B3gicos-dispon%C3%ADveis-no-site-do-inmet
+    autenticacao: nenhuma
+    exemplo: https://apiprevmet3.inmet.gov.br/avisos/rss
+
+  # ---------- Meio Ambiente ----------
+  - nome: TerraBrasilis (INPE)
+    categoria: meio-ambiente
+    descricao: Desmatamento PRODES e alertas DETER via GeoServer (WFS/WMS)
+    docs: https://terrabrasilis.dpi.inpe.br/about/
+    autenticacao: nenhuma
+    exemplo: https://terrabrasilis.dpi.inpe.br/geoserver/ows?service=WFS&version=2.0.0&request=GetCapabilities
+
+  # ---------- Agropecuária ----------
+  - nome: Embrapa AgroAPI
+    categoria: agro
+    descricao: APIs da Embrapa de clima agrícola, solos, cultivares, agrotóxicos e satélite
+    docs: https://www.agroapi.cnptia.embrapa.br/portal/
+    autenticacao: chave
+    exemplo: https://www.agroapi.cnptia.embrapa.br/portal/
+    teste: false
+
+  # ---------- Segurança Pública ----------
+  - nome: Fogo Cruzado
+    categoria: seguranca
+    descricao: Tiroteios registrados nas regiões metropolitanas de Rio, Recife, Salvador e Belém
+    docs: https://api.fogocruzado.org.br
+    autenticacao: chave
+    exemplo: https://api.fogocruzado.org.br
+    teste: false
+
+  # ---------- Comércio e Tributos ----------
+  - nome: SI5 Global
+    categoria: comercio
+    descricao: Dados de produto, NCM e CEST a partir do código de barras (GTIN/EAN)
+    docs: https://global.si5.com.br/documentacao
+    autenticacao: chave
+    limite: 100 consultas/dia no plano gratuito
+    exemplo: https://global.si5.com.br/api-em-1-minuto
+    teste: false
+
+  - nome: Cosmos Bluesoft
+    categoria: comercio
+    descricao: Catálogo de produtos por GTIN/EAN e produtos por NCM
+    docs: https://cosmos.bluesoft.com.br
+    autenticacao: chave
+    exemplo: https://cosmos.bluesoft.com.br
+    teste: false
+
+  # ---------- Livros, Cultura e Língua ----------
+  - nome: A Bíblia Digital
+    categoria: livros
+    descricao: Livros, capítulos e versículos da Bíblia em várias versões em português
+    docs: https://github.com/omarciovsena/abibliadigital/blob/master/DOCUMENTATION.md
+    autenticacao: opcional
+    limite: 20 req/hora por endpoint sem token
+    exemplo: https://www.abibliadigital.com.br/api/books
+
+  - nome: Vagalume
+    categoria: livros
+    descricao: Letras, traduções, artistas e discografias de músicas
+    docs: https://api.vagalume.com.br/docs/
+    autenticacao: chave
+    exemplo: https://api.vagalume.com.br/docs/
+    teste: false
+
+  - nome: Dicionário Aberto
+    categoria: livros
+    descricao: Dicionário da língua portuguesa com definições e busca por prefixo e sufixo
+    docs: https://api.dicionario-aberto.net/index.html
+    autenticacao: nenhuma
+    exemplo: https://api.dicionario-aberto.net/word/casa
+
+  # ---------- Ciência e Educação ----------
+  - nome: SciELO ArticleMeta
+    categoria: ciencia
+    descricao: Metadados de periódicos e artigos científicos da rede SciELO
+    docs: http://articlemeta.scielo.org
+    autenticacao: nenhuma
+    exemplo: http://articlemeta.scielo.org/api/v1/journal/identifiers/?collection=scl&limit=1
+
+  # ---------- Internet, Telefonia e Domínios ----------
+  - nome: TabNews
+    categoria: internet
+    descricao: Publicações e comentários da comunidade TabNews (leitura sem login)
+    docs: https://www.tabnews.com.br/GabrielSozinho/documentacao-da-api-do-tabnews
+    autenticacao: nenhuma
+    exemplo: https://www.tabnews.com.br/api/v1/contents?per_page=1
+
+  # ---------- Esportes e Loterias ----------
+  - nome: Cartola FC
+    categoria: esportes
+    descricao: Status do mercado, atletas, clubes e partidas do fantasy game da Globo (API não oficial)
+    docs: https://github.com/giovanigenerali/cartrolandofc/blob/master/nova-api.md
+    autenticacao: nenhuma
+    exemplo: https://api.cartola.globo.com/mercado/status
+
+  - nome: Loterias Caixa API
+    categoria: esportes
+    descricao: Resultados da Mega-Sena, Lotofácil, Quina e demais loterias da Caixa
+    docs: https://github.com/guto-alves/loterias-api
+    autenticacao: nenhuma
+    exemplo: https://loteriascaixa-api.herokuapp.com/api/megasena/latest
+
+  - nome: Resultado Mega
+    categoria: esportes
+    descricao: Todos os concursos da Mega-Sena desde 1996, próximo concurso e estatísticas
+    docs: https://resultadomega.com.br/api/
+    autenticacao: nenhuma
+    exemplo: https://resultadomega.com.br/api/ultimo.json
+
+  # ---------- Utilidades ----------
+  - nome: Invertexto
+    categoria: utilidades
+    descricao: Utilidades para devs brasileiros, como CEP, CNPJ, feriados e validação de documentos
+    docs: https://api.invertexto.com
+    autenticacao: chave
+    exemplo: https://api.invertexto.com
+    teste: false
+
+  # ---------- Portais de Dados Abertos (CKAN) ----------
+  - nome: TSE Dados Abertos
+    categoria: portais
+    descricao: Resultados eleitorais, candidatos, eleitorado e prestação de contas
+    docs: https://dadosabertos.tse.jus.br
+    autenticacao: nenhuma
+    exemplo: https://dadosabertos.tse.jus.br/api/3/action/status_show
+
+  - nome: CVM Dados Abertos
+    categoria: portais
+    descricao: Fundos de investimento, companhias abertas e intermediários do mercado de capitais
+    docs: https://dados.cvm.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dados.cvm.gov.br/api/3/action/status_show
+
+  - nome: CAPES Dados Abertos
+    categoria: portais
+    descricao: Pós-graduação, bolsas, teses, dissertações e avaliação de programas
+    docs: https://dadosabertos.capes.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dadosabertos.capes.gov.br/api/3/action/status_show
+
+  - nome: CCEE Dados Abertos
+    categoria: portais
+    descricao: Preços, geração, consumo e contratos do mercado de energia elétrica
+    docs: https://dadosabertos.ccee.org.br
+    autenticacao: nenhuma
+    exemplo: https://dadosabertos.ccee.org.br/api/3/action/status_show
+
+  - nome: ANTT Dados Abertos
+    categoria: portais
+    descricao: Rodovias concedidas, pedágios, ferrovias e transporte de passageiros
+    docs: https://dados.antt.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dados.antt.gov.br/api/3/action/status_show
+
+  - nome: Prefeitura de São Paulo Dados Abertos
+    categoria: portais
+    descricao: Dados abertos da cidade de São Paulo
+    docs: https://dados.prefeitura.sp.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dados.prefeitura.sp.gov.br/api/3/action/status_show
+
+  - nome: Prefeitura do Recife Dados Abertos
+    categoria: portais
+    descricao: Dados abertos da cidade do Recife
+    docs: https://dados.recife.pe.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dados.recife.pe.gov.br/api/3/action/status_show
+
+  - nome: Prefeitura de Porto Alegre Dados Abertos
+    categoria: portais
+    descricao: Dados abertos da cidade de Porto Alegre
+    docs: https://dadosabertos.poa.br
+    autenticacao: nenhuma
+    exemplo: https://dadosabertos.poa.br/api/3/action/status_show
+
+  - nome: Prefeitura de Fortaleza Dados Abertos
+    categoria: portais
+    descricao: Dados abertos da cidade de Fortaleza
+    docs: https://dados.fortaleza.ce.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dados.fortaleza.ce.gov.br/api/3/action/status_show
+
+  - nome: Distrito Federal Dados Abertos
+    categoria: portais
+    descricao: Dados abertos do Governo do Distrito Federal
+    docs: https://dados.df.gov.br
+    autenticacao: nenhuma
+    exemplo: https://dados.df.gov.br/api/3/action/status_show
+
+  # ---------- Internacionais com Dados do Brasil ----------
+  - nome: Open-Meteo
+    categoria: internacional
+    descricao: Previsão do tempo e histórico climático para qualquer coordenada do Brasil
+    docs: https://open-meteo.com/en/docs
+    autenticacao: nenhuma
+    exemplo: https://api.open-meteo.com/v1/forecast?latitude=-23.55&longitude=-46.63&current_weather=true
+
+  - nome: REST Countries
+    categoria: internacional
+    descricao: Dados gerais de países, como população, moeda, idiomas e fronteiras
+    docs: https://restcountries.com
+    autenticacao: nenhuma
+    exemplo: https://restcountries.com/v3.1/alpha/br
+
+  - nome: Banco Mundial
+    categoria: internacional
+    descricao: Indicadores econômicos e sociais do Brasil, como PIB, pobreza e educação
+    docs: https://datahelpdesk.worldbank.org/knowledgebase/articles/889392
+    autenticacao: nenhuma
+    exemplo: https://api.worldbank.org/v2/country/BR/indicator/NY.GDP.MKTP.CD?format=json&per_page=1
+
+  - nome: Wikipédia em Português
+    categoria: internacional
+    descricao: Resumos, conteúdo e mídias de artigos da Wikipédia lusófona
+    docs: https://pt.wikipedia.org/api/rest_v1/
+    autenticacao: nenhuma
+    exemplo: https://pt.wikipedia.org/api/rest_v1/page/summary/Brasil
+
+  - nome: CoinGecko
+    categoria: internacional
+    descricao: Cotação de criptomoedas em reais e outras moedas
+    docs: https://www.coingecko.com/pt/api/documentation
+    autenticacao: opcional
+    exemplo: https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=brl
+
+  - nome: Frankfurter
+    categoria: internacional
+    descricao: Câmbio do real e de outras moedas com base nas taxas do Banco Central Europeu
+    docs: https://frankfurter.dev
+    autenticacao: nenhuma
+    exemplo: https://api.frankfurter.app/latest?from=BRL

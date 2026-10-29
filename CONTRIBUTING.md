@@ -28,7 +28,7 @@ Sem tempo para isso? [Sugira a API em uma issue](../../issues/new?template=suger
 | `nome` | sim | Nome pelo qual a API é conhecida. Precisa ser único na lista. |
 | `categoria` | sim | Um dos `id` listados no topo do arquivo, em `categorias`. Para criar uma categoria nova, adicione-a lá também. |
 | `descricao` | sim | Uma frase curta (até 120 caracteres), em português, sem ponto final. |
-| `docs` | sim | Link da documentação oficial, com `https://`. |
+| `docs` | sim | Link da documentação oficial (ou da melhor documentação disponível). Prefira `https://`. |
 | `autenticacao` | sim | `nenhuma`, `opcional`, `chave`, `chave-publica` ou `token`. |
 | `limite` | não | Limite de uso conhecido, ex.: `3 req/min por IP`. |
 | `exemplo` | sim | Uma URL GET que funciona de verdade e retorna dados. É ela que o robô testa todo dia. |

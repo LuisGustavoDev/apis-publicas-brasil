@@ -59,8 +59,9 @@ def validar(dados: dict) -> list[str]:
 
         for campo in ("docs", "exemplo"):
             valor = str(api.get(campo, ""))
-            if valor and not valor.startswith("https://"):
-                erros.append(f"{rotulo}: '{campo}' precisa começar com https://.")
+            # Prefira https://. http:// é aceito para serviços oficiais que só respondem em HTTP.
+            if valor and not valor.startswith(("https://", "http://")):
+                erros.append(f"{rotulo}: '{campo}' precisa ser uma URL começando com https://.")
 
         descricao = str(api.get("descricao", ""))
         if descricao.endswith("."):
