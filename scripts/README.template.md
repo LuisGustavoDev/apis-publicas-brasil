@@ -16,6 +16,22 @@ São **{{TOTAL}} APIs** em **{{TOTAL_CATEGORIAS}} categorias**: CEP, CNPJ, banco
 
 > Achou útil? Deixe uma ⭐ para ajudar mais gente a encontrar a lista.
 
+## ⚠️ Antes de usar em produção
+
+As APIs desta lista são de terceiros, gratuitas e, na maioria, sem garantia de funcionamento. O status mostrado é o da última verificação diária: uma API marcada como online pode cair, mudar o formato da resposta ou passar a exigir cadastro a qualquer momento, sem aviso.
+
+Alguns cuidados ajudam a evitar surpresas:
+
+- **Tenha um plano B.** Em funções importantes, como consulta de CEP ou CNPJ, use mais de uma API e troque automaticamente quando a principal falhar.
+- **Respeite os limites e os termos de uso.** Muitas limitam o número de chamadas por minuto e bloqueiam o IP de quem passa do limite. Guarde em cache o que não muda com frequência.
+- **Não confie cegamente nos dados.** Nem toda fonte é oficial ou está atualizada. Valide a resposta antes de usar e prefira a fonte oficial quando o dado for crítico.
+- **Cuidado com dados pessoais.** Consultas de CNPJ podem trazer nomes de sócios, e dados de endereço podem identificar pessoas. Guardar ou repassar essas informações traz obrigações da LGPD.
+- **Proteja suas chaves.** APIs que exigem chave não devem ser chamadas direto do navegador: a chave fica visível para qualquer pessoa. Faça a chamada pelo seu servidor.
+- **Atenção à localização.** As APIs marcadas com 🇧🇷 recusam chamadas de servidores fora do Brasil, então podem falhar se o seu projeto rodar na Vercel, na AWS ou em outro serviço no exterior.
+
+Esta lista é um ponto de partida. A responsabilidade pelo uso de cada API, e pelo cumprimento dos termos de cada provedor, é de quem a integra.
+
+
 ## Por que mais uma lista?
 
 - **Status de verdade:** listas de APIs costumam acumular links quebrados. Aqui, cada API é testada diariamente e quem está fora do ar aparece marcado.
