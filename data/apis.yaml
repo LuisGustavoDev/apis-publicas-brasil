@@ -185,6 +185,15 @@ apis:
     limite: PETR4, MGLU3, VALE3 e ITUB4 funcionam sem chave
     exemplo: https://brapi.dev/api/quote/PETR4
 
+  - nome: SLDX
+    categoria: economia
+    descricao: Cotações, dividendos e fundamentos de ações e FIIs da B3, fundos CVM, câmbio e Selic/IPCA
+    docs: https://api.sldx.com.br/docs/
+    autenticacao: chave
+    exemplo: https://api.sldx.com.br/stock-price/petr4
+    teste_sem_chave: https://api.sldx.com.br/stock-price/petr4
+    teste: false
+
   # ---------- Governo, Legislativo e Justiça ----------
   - nome: Câmara dos Deputados
     categoria: governo
