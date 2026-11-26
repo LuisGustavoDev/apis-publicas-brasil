@@ -40,7 +40,7 @@
         0
       ],
       "http": 503,
-      "ms": 345,
+      "ms": 351,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -51,9 +51,9 @@
       "aviso": null,
       "bloqueado": false,
       "cors": true,
-      "erro": "TimeoutError: The read operation timed out",
-      "formato": null,
-      "funciona_do_exterior": false,
+      "erro": null,
+      "formato": "documentacao",
+      "funciona_do_exterior": true,
       "historico": [
         1,
         1,
@@ -62,7 +62,6 @@
         1,
         1,
         1,
-        1,
         0,
         1,
         0,
@@ -84,12 +83,13 @@
         1,
         1,
         1,
-        0
+        0,
+        1
       ],
-      "http": null,
-      "ms": null,
-      "ok": false,
-      "openapi": null,
+      "http": 200,
+      "ms": 64,
+      "ok": true,
+      "openapi": false,
       "sem_chave": false,
       "so_do_brasil": false,
       "testada_de": "brasil"
@@ -116,8 +116,8 @@
         1,
         1,
         1,
-        1,
         0,
+        1,
         1,
         1,
         1,
@@ -134,7 +134,7 @@
         1
       ],
       "http": 200,
-      "ms": 101,
+      "ms": 1064,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -154,7 +154,6 @@
         0,
         0,
         0,
-        0,
         1,
         1,
         1,
@@ -178,6 +177,7 @@
         1,
         1,
         1,
+        0,
         0
       ],
       "http": null,
@@ -228,7 +228,7 @@
         1
       ],
       "http": 401,
-      "ms": 83,
+      "ms": 92,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -275,7 +275,7 @@
         1
       ],
       "http": 200,
-      "ms": 329,
+      "ms": 266,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -369,7 +369,7 @@
         1
       ],
       "http": 200,
-      "ms": 50,
+      "ms": 288,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -416,7 +416,7 @@
         1
       ],
       "http": 200,
-      "ms": 688,
+      "ms": 695,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -433,7 +433,6 @@
       "historico": [
         1,
         1,
-        1,
         0,
         0,
         1,
@@ -457,13 +456,14 @@
         1,
         0,
         0,
+        1,
         1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 1233,
+      "ms": 2281,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -510,7 +510,7 @@
         1
       ],
       "http": 429,
-      "ms": 217,
+      "ms": 158,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -557,7 +557,7 @@
         1
       ],
       "http": 429,
-      "ms": 84,
+      "ms": 41,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -574,7 +574,6 @@
       "historico": [
         1,
         1,
-        1,
         0,
         0,
         0,
@@ -598,13 +597,14 @@
         1,
         0,
         0,
+        1,
         1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 148,
+      "ms": 256,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -651,7 +651,7 @@
         1
       ],
       "http": 200,
-      "ms": 247,
+      "ms": 83,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -664,7 +664,7 @@
       "cors": false,
       "erro": null,
       "formato": "json",
-      "funciona_do_exterior": true,
+      "funciona_do_exterior": false,
       "historico": [
         1,
         1,
@@ -672,7 +672,6 @@
         1,
         1,
         1,
-        1,
         0,
         1,
         1,
@@ -695,14 +694,15 @@
         0,
         1,
         0,
+        1,
         1
       ],
       "http": 200,
-      "ms": 313,
+      "ms": 256,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
-      "so_do_brasil": false,
+      "so_do_brasil": true,
       "testada_de": "brasil"
     },
     "Banco Central Agências": {
@@ -745,7 +745,7 @@
         1
       ],
       "http": 200,
-      "ms": 635,
+      "ms": 3583,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -792,7 +792,7 @@
         1
       ],
       "http": 200,
-      "ms": 75,
+      "ms": 131,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -839,7 +839,7 @@
         1
       ],
       "http": 200,
-      "ms": 530,
+      "ms": 113,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -886,7 +886,7 @@
         1
       ],
       "http": 200,
-      "ms": 150,
+      "ms": 100,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -933,7 +933,7 @@
         1
       ],
       "http": 200,
-      "ms": 74,
+      "ms": 3718,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -965,7 +965,6 @@
         1,
         1,
         1,
-        1,
         0,
         0,
         1,
@@ -977,10 +976,11 @@
         1,
         1,
         0,
+        1,
         1
       ],
       "http": 200,
-      "ms": 137,
+      "ms": 101,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1027,7 +1027,7 @@
         1
       ],
       "http": 200,
-      "ms": 243,
+      "ms": 710,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1074,7 +1074,7 @@
         1
       ],
       "http": 200,
-      "ms": 207,
+      "ms": 108,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1121,7 +1121,7 @@
         1
       ],
       "http": 200,
-      "ms": 244,
+      "ms": 2462,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1145,7 +1145,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -1168,7 +1168,7 @@
         0
       ],
       "http": 404,
-      "ms": 353,
+      "ms": 380,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -1215,7 +1215,7 @@
         1
       ],
       "http": 200,
-      "ms": 191,
+      "ms": 99,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -1262,7 +1262,7 @@
         1
       ],
       "http": 401,
-      "ms": 573,
+      "ms": 557,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -1309,7 +1309,7 @@
         1
       ],
       "http": 200,
-      "ms": 258,
+      "ms": 97,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1356,7 +1356,7 @@
         1
       ],
       "http": 200,
-      "ms": 242,
+      "ms": 138,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1403,7 +1403,7 @@
         1
       ],
       "http": 200,
-      "ms": 198,
+      "ms": 165,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1450,7 +1450,7 @@
         0
       ],
       "http": 500,
-      "ms": 780,
+      "ms": 784,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -1497,7 +1497,7 @@
         1
       ],
       "http": 200,
-      "ms": 776,
+      "ms": 61,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1544,7 +1544,7 @@
         1
       ],
       "http": 200,
-      "ms": 79,
+      "ms": 455,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1591,7 +1591,7 @@
         1
       ],
       "http": 200,
-      "ms": 36,
+      "ms": 40,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1638,7 +1638,7 @@
         1
       ],
       "http": 200,
-      "ms": 136,
+      "ms": 127,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1685,7 +1685,7 @@
         1
       ],
       "http": 200,
-      "ms": 27,
+      "ms": 53,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1732,7 +1732,7 @@
         1
       ],
       "http": 200,
-      "ms": 30,
+      "ms": 65,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1779,7 +1779,7 @@
         1
       ],
       "http": 200,
-      "ms": 36,
+      "ms": 441,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1826,7 +1826,7 @@
         1
       ],
       "http": 200,
-      "ms": 1512,
+      "ms": 1559,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1873,7 +1873,7 @@
         1
       ],
       "http": 200,
-      "ms": 215,
+      "ms": 81,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1920,7 +1920,7 @@
         1
       ],
       "http": 200,
-      "ms": 822,
+      "ms": 433,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1967,7 +1967,7 @@
         1
       ],
       "http": 200,
-      "ms": 60,
+      "ms": 42,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1978,13 +1978,12 @@
       "aviso": null,
       "bloqueado": false,
       "cors": false,
-      "erro": null,
-      "formato": "json",
-      "funciona_do_exterior": true,
+      "erro": "TimeoutError: The read operation timed out",
+      "formato": null,
+      "funciona_do_exterior": false,
       "historico": [
         1,
         1,
-        1,
         0,
         1,
         1,
@@ -2011,11 +2010,12 @@
         1,
         1,
         0,
-        1
+        1,
+        0
       ],
-      "http": 200,
-      "ms": 112,
-      "ok": true,
+      "http": null,
+      "ms": null,
+      "ok": false,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
@@ -2061,7 +2061,7 @@
         0
       ],
       "http": 403,
-      "ms": 74,
+      "ms": 47,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -2108,7 +2108,7 @@
         1
       ],
       "http": 401,
-      "ms": 555,
+      "ms": 1182,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -2141,8 +2141,8 @@
         1,
         1,
         1,
-        1,
         0,
+        1,
         1,
         1,
         1,
@@ -2155,7 +2155,7 @@
         1
       ],
       "http": 200,
-      "ms": 543,
+      "ms": 371,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2202,7 +2202,7 @@
         1
       ],
       "http": 200,
-      "ms": 345,
+      "ms": 279,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2249,7 +2249,7 @@
         1
       ],
       "http": 200,
-      "ms": 80,
+      "ms": 125,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2296,7 +2296,7 @@
         1
       ],
       "http": 200,
-      "ms": 44,
+      "ms": 65,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2343,7 +2343,7 @@
         1
       ],
       "http": 401,
-      "ms": 459,
+      "ms": 497,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -2390,7 +2390,7 @@
         1
       ],
       "http": 200,
-      "ms": 43,
+      "ms": 66,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2408,7 +2408,6 @@
         1,
         1,
         1,
-        1,
         0,
         1,
         0,
@@ -2417,6 +2416,7 @@
         1,
         1,
         0,
+        1,
         1,
         1,
         1,
@@ -2437,7 +2437,7 @@
         1
       ],
       "http": 400,
-      "ms": 376,
+      "ms": 168,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -2484,7 +2484,7 @@
         1
       ],
       "http": 200,
-      "ms": 186,
+      "ms": 191,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2531,7 +2531,7 @@
         1
       ],
       "http": 200,
-      "ms": 196,
+      "ms": 202,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2578,7 +2578,7 @@
         1
       ],
       "http": 401,
-      "ms": 490,
+      "ms": 410,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -2625,7 +2625,7 @@
         1
       ],
       "http": 200,
-      "ms": 420,
+      "ms": 380,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2672,7 +2672,7 @@
         1
       ],
       "http": 200,
-      "ms": 39,
+      "ms": 53,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2689,7 +2689,6 @@
       "historico": [
         1,
         1,
-        1,
         0,
         0,
         1,
@@ -2697,6 +2696,7 @@
         1,
         1,
         0,
+        1,
         1,
         1,
         1,
@@ -2719,7 +2719,7 @@
         1
       ],
       "http": 200,
-      "ms": 223,
+      "ms": 3138,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2747,8 +2747,8 @@
         1,
         1,
         1,
-        1,
         0,
+        1,
         1,
         1,
         1,
@@ -2766,7 +2766,7 @@
         1
       ],
       "http": 200,
-      "ms": 273,
+      "ms": 345,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2813,7 +2813,7 @@
         1
       ],
       "http": 401,
-      "ms": 92,
+      "ms": 131,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -2860,7 +2860,7 @@
         1
       ],
       "http": 200,
-      "ms": 427,
+      "ms": 419,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2907,7 +2907,7 @@
         1
       ],
       "http": 200,
-      "ms": 904,
+      "ms": 896,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2954,7 +2954,7 @@
         1
       ],
       "http": 401,
-      "ms": 675,
+      "ms": 165,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -3001,7 +3001,7 @@
         1
       ],
       "http": 200,
-      "ms": 233,
+      "ms": 216,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3012,8 +3012,8 @@
       "aviso": null,
       "bloqueado": false,
       "cors": true,
-      "erro": null,
-      "formato": "json",
+      "erro": "TimeoutError: The read operation timed out",
+      "formato": null,
       "funciona_do_exterior": true,
       "historico": [
         1,
@@ -3037,7 +3037,6 @@
         1,
         1,
         1,
-        1,
         0,
         1,
         0,
@@ -3045,11 +3044,12 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ],
-      "http": 200,
-      "ms": 15638,
-      "ok": true,
+      "http": null,
+      "ms": null,
+      "ok": false,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
@@ -3095,7 +3095,7 @@
         1
       ],
       "http": 200,
-      "ms": 319,
+      "ms": 404,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3110,7 +3110,6 @@
       "formato": "json",
       "funciona_do_exterior": true,
       "historico": [
-        1,
         1,
         1,
         1,
@@ -3139,10 +3138,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 141,
+      "ms": 161,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3179,9 +3179,9 @@
         1,
         1,
         1,
+        0,
+        0,
         1,
-        0,
-        0,
         1,
         1,
         1,
@@ -3189,7 +3189,7 @@
         1
       ],
       "http": 200,
-      "ms": 488,
+      "ms": 485,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3236,7 +3236,7 @@
         0
       ],
       "http": 403,
-      "ms": 146,
+      "ms": 153,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -3283,7 +3283,7 @@
         1
       ],
       "http": 401,
-      "ms": 547,
+      "ms": 288,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -3330,7 +3330,7 @@
         1
       ],
       "http": 200,
-      "ms": 214,
+      "ms": 359,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3377,7 +3377,7 @@
         1
       ],
       "http": 200,
-      "ms": 720,
+      "ms": 794,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3424,7 +3424,7 @@
         0
       ],
       "http": 403,
-      "ms": 920,
+      "ms": 1110,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -3471,7 +3471,7 @@
         1
       ],
       "http": 200,
-      "ms": 673,
+      "ms": 703,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3518,7 +3518,7 @@
         1
       ],
       "http": 400,
-      "ms": 413,
+      "ms": 369,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -3565,7 +3565,7 @@
         1
       ],
       "http": 200,
-      "ms": 714,
+      "ms": 1013,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -3612,7 +3612,7 @@
         0
       ],
       "http": 403,
-      "ms": 203,
+      "ms": 194,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -3659,7 +3659,7 @@
         1
       ],
       "http": 429,
-      "ms": 1086,
+      "ms": 1135,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3674,10 +3674,10 @@
       "formato": "json",
       "funciona_do_exterior": true,
       "historico": [
-        0,
         1,
         1,
         0,
+        1,
         1,
         1,
         1,
@@ -3706,7 +3706,7 @@
         1
       ],
       "http": 200,
-      "ms": 35,
+      "ms": 39,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3721,7 +3721,6 @@
       "formato": null,
       "funciona_do_exterior": false,
       "historico": [
-        0,
         1,
         1,
         0,
@@ -3748,6 +3747,7 @@
         0,
         0,
         1,
+        0,
         0,
         0,
         0
@@ -3800,7 +3800,7 @@
         1
       ],
       "http": 200,
-      "ms": 119,
+      "ms": 133,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -3847,7 +3847,7 @@
         1
       ],
       "http": 200,
-      "ms": 263,
+      "ms": 365,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -3894,7 +3894,7 @@
         1
       ],
       "http": 200,
-      "ms": 49,
+      "ms": 81,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3941,7 +3941,7 @@
         1
       ],
       "http": 200,
-      "ms": 147,
+      "ms": 79,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3988,7 +3988,7 @@
         1
       ],
       "http": 200,
-      "ms": 48,
+      "ms": 67,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4035,7 +4035,7 @@
         1
       ],
       "http": 200,
-      "ms": 41,
+      "ms": 60,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4082,7 +4082,7 @@
         1
       ],
       "http": 200,
-      "ms": 21041,
+      "ms": 884,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4129,7 +4129,7 @@
         1
       ],
       "http": 200,
-      "ms": 56,
+      "ms": 62,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4176,7 +4176,7 @@
         1
       ],
       "http": 200,
-      "ms": 55,
+      "ms": 56,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4223,7 +4223,7 @@
         1
       ],
       "http": 200,
-      "ms": 131,
+      "ms": 120,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4270,7 +4270,7 @@
         1
       ],
       "http": 200,
-      "ms": 34,
+      "ms": 72,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4317,7 +4317,7 @@
         1
       ],
       "http": 200,
-      "ms": 56,
+      "ms": 53,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4350,7 +4350,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1,
         1,
@@ -4364,7 +4364,7 @@
         1
       ],
       "http": 200,
-      "ms": 281,
+      "ms": 425,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4411,7 +4411,7 @@
         0
       ],
       "http": 404,
-      "ms": 501,
+      "ms": 219,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -4458,7 +4458,7 @@
         1
       ],
       "http": 200,
-      "ms": 53,
+      "ms": 56,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4505,7 +4505,7 @@
         1
       ],
       "http": 200,
-      "ms": 1172,
+      "ms": 1522,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4552,7 +4552,7 @@
         0
       ],
       "http": 502,
-      "ms": 1072,
+      "ms": 1068,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -4599,7 +4599,7 @@
         1
       ],
       "http": 200,
-      "ms": 287,
+      "ms": 295,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4646,7 +4646,7 @@
         1
       ],
       "http": 200,
-      "ms": 794,
+      "ms": 823,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4693,7 +4693,7 @@
         1
       ],
       "http": 401,
-      "ms": 350,
+      "ms": 454,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -4740,7 +4740,7 @@
         1
       ],
       "http": 200,
-      "ms": 167,
+      "ms": 1484,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4787,7 +4787,7 @@
         1
       ],
       "http": 200,
-      "ms": 543,
+      "ms": 544,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4834,7 +4834,7 @@
         1
       ],
       "http": 200,
-      "ms": 643,
+      "ms": 607,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4881,7 +4881,7 @@
         1
       ],
       "http": 200,
-      "ms": 300,
+      "ms": 174,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4928,7 +4928,7 @@
         1
       ],
       "http": 200,
-      "ms": 464,
+      "ms": 463,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4975,7 +4975,7 @@
         1
       ],
       "http": 200,
-      "ms": 1977,
+      "ms": 1979,
       "ok": true,
       "openapi": false,
       "sem_chave": false,
@@ -4994,7 +4994,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -5022,7 +5022,7 @@
         0
       ],
       "http": 403,
-      "ms": 34,
+      "ms": 38,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -5069,7 +5069,7 @@
         1
       ],
       "http": 403,
-      "ms": 97,
+      "ms": 108,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -5116,7 +5116,7 @@
         1
       ],
       "http": 200,
-      "ms": 55,
+      "ms": 60,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5149,7 +5149,6 @@
         1,
         1,
         1,
-        1,
         0,
         1,
         1,
@@ -5158,12 +5157,13 @@
         1,
         1,
         0,
+        1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 333,
+      "ms": 75,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5190,7 +5190,6 @@
         1,
         1,
         1,
-        1,
         0,
         1,
         1,
@@ -5207,10 +5206,11 @@
         1,
         0,
         1,
+        0,
         0
       ],
       "http": 503,
-      "ms": 530,
+      "ms": 527,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -5257,7 +5257,7 @@
         1
       ],
       "http": 200,
-      "ms": 656,
+      "ms": 666,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5304,7 +5304,7 @@
         1
       ],
       "http": 200,
-      "ms": 650,
+      "ms": 637,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5351,7 +5351,7 @@
         1
       ],
       "http": 200,
-      "ms": 36,
+      "ms": 396,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5398,7 +5398,7 @@
         1
       ],
       "http": 401,
-      "ms": 217,
+      "ms": 238,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -5445,7 +5445,7 @@
         1
       ],
       "http": 200,
-      "ms": 834,
+      "ms": 547,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5467,7 +5467,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1,
         1,
@@ -5492,7 +5492,7 @@
         1
       ],
       "http": 200,
-      "ms": 179,
+      "ms": 691,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5539,7 +5539,7 @@
         1
       ],
       "http": 200,
-      "ms": 399,
+      "ms": 357,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5586,7 +5586,7 @@
         1
       ],
       "http": 200,
-      "ms": 975,
+      "ms": 972,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5633,7 +5633,7 @@
         1
       ],
       "http": 200,
-      "ms": 593,
+      "ms": 470,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5650,7 +5650,6 @@
       "historico": [
         1,
         1,
-        1,
         0,
         0,
         1,
@@ -5673,6 +5672,7 @@
         1,
         1,
         0,
+        1,
         1,
         1,
         1,
@@ -5680,7 +5680,7 @@
         1
       ],
       "http": 200,
-      "ms": 5855,
+      "ms": 200,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5727,7 +5727,7 @@
         1
       ],
       "http": 200,
-      "ms": 686,
+      "ms": 994,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5766,15 +5766,15 @@
         1,
         1,
         1,
-        1,
         0,
+        1,
         1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 1031,
+      "ms": 2795,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5821,7 +5821,7 @@
         1
       ],
       "http": 200,
-      "ms": 453,
+      "ms": 544,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5863,12 +5863,12 @@
         1,
         1,
         1,
-        1,
         0,
+        1,
         1
       ],
       "http": 200,
-      "ms": 396,
+      "ms": 397,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5915,7 +5915,7 @@
         1
       ],
       "http": 200,
-      "ms": 905,
+      "ms": 892,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5962,7 +5962,7 @@
         1
       ],
       "http": 200,
-      "ms": 706,
+      "ms": 700,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5992,12 +5992,12 @@
         1,
         1,
         1,
-        1,
         0,
         0,
         1,
         1,
         0,
+        1,
         1,
         1,
         1,
@@ -6009,7 +6009,7 @@
         1
       ],
       "http": 200,
-      "ms": 67,
+      "ms": 103,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6056,7 +6056,7 @@
         1
       ],
       "http": 200,
-      "ms": 880,
+      "ms": 877,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6103,7 +6103,7 @@
         1
       ],
       "http": 200,
-      "ms": 455,
+      "ms": 633,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6150,7 +6150,7 @@
         1
       ],
       "http": 200,
-      "ms": 707,
+      "ms": 703,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6244,7 +6244,7 @@
         1
       ],
       "http": 200,
-      "ms": 905,
+      "ms": 877,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6291,7 +6291,7 @@
         1
       ],
       "http": 401,
-      "ms": 70,
+      "ms": 292,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -6338,7 +6338,7 @@
         1
       ],
       "http": 200,
-      "ms": 1012,
+      "ms": 874,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6385,7 +6385,7 @@
         1
       ],
       "http": 200,
-      "ms": 50,
+      "ms": 42,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6414,11 +6414,11 @@
         1,
         1,
         1,
+        0,
+        0,
+        0,
+        0,
         1,
-        0,
-        0,
-        0,
-        0,
         1,
         1,
         1,
@@ -6432,7 +6432,7 @@
         1
       ],
       "http": 200,
-      "ms": 34,
+      "ms": 59,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6479,7 +6479,7 @@
         1
       ],
       "http": 200,
-      "ms": 559,
+      "ms": 647,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6573,7 +6573,7 @@
         1
       ],
       "http": 401,
-      "ms": 351,
+      "ms": 350,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -6584,12 +6584,11 @@
       "aviso": null,
       "bloqueado": false,
       "cors": true,
-      "erro": "HTTP 502",
+      "erro": "TimeoutError: The read operation timed out",
       "formato": null,
       "funciona_do_exterior": false,
       "historico": [
         1,
-        1,
         0,
         1,
         0,
@@ -6614,13 +6613,14 @@
         0,
         0,
         1,
+        0,
         0,
         0,
         0,
         0
       ],
-      "http": 502,
-      "ms": 307,
+      "http": null,
+      "ms": null,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -6631,8 +6631,8 @@
       "aviso": null,
       "bloqueado": false,
       "cors": true,
-      "erro": null,
-      "formato": "json",
+      "erro": "TimeoutError: The read operation timed out",
+      "formato": null,
       "funciona_do_exterior": true,
       "historico": [
         1,
@@ -6664,11 +6664,11 @@
         1,
         1,
         1,
-        1
+        0
       ],
-      "http": 200,
-      "ms": 5752,
-      "ok": true,
+      "http": null,
+      "ms": null,
+      "ok": false,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
@@ -6678,11 +6678,10 @@
       "aviso": null,
       "bloqueado": false,
       "cors": false,
-      "erro": null,
-      "formato": "json",
+      "erro": "TimeoutError: The read operation timed out",
+      "formato": null,
       "funciona_do_exterior": true,
       "historico": [
-        1,
         1,
         1,
         1,
@@ -6711,11 +6710,12 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ],
-      "http": 200,
-      "ms": 246,
-      "ok": true,
+      "http": null,
+      "ms": null,
+      "ok": false,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
@@ -6743,8 +6743,8 @@
         1,
         1,
         1,
-        1,
         0,
+        1,
         1,
         1,
         1,
@@ -6761,7 +6761,7 @@
         1
       ],
       "http": 200,
-      "ms": 1123,
+      "ms": 900,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6808,7 +6808,7 @@
         1
       ],
       "http": 403,
-      "ms": 88,
+      "ms": 52,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -6855,7 +6855,7 @@
         1
       ],
       "http": 401,
-      "ms": 26,
+      "ms": 60,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -6902,7 +6902,7 @@
         1
       ],
       "http": 200,
-      "ms": 850,
+      "ms": 790,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6949,7 +6949,7 @@
         1
       ],
       "http": 200,
-      "ms": 237,
+      "ms": 281,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6983,8 +6983,8 @@
         1,
         1,
         1,
-        1,
         0,
+        1,
         1,
         1,
         1,
@@ -6996,7 +6996,7 @@
         1
       ],
       "http": 200,
-      "ms": 166,
+      "ms": 360,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7043,7 +7043,7 @@
         1
       ],
       "http": 200,
-      "ms": 53,
+      "ms": 69,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7090,7 +7090,7 @@
         1
       ],
       "http": 200,
-      "ms": 9300,
+      "ms": 280,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7137,7 +7137,7 @@
         1
       ],
       "http": 200,
-      "ms": 555,
+      "ms": 584,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7231,7 +7231,7 @@
         1
       ],
       "http": 401,
-      "ms": 394,
+      "ms": 147,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -7278,7 +7278,7 @@
         1
       ],
       "http": 200,
-      "ms": 263,
+      "ms": 501,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7325,7 +7325,7 @@
         1
       ],
       "http": 200,
-      "ms": 769,
+      "ms": 775,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7341,8 +7341,8 @@
       "funciona_do_exterior": true,
       "historico": [
         1,
-        1,
         0,
+        1,
         1,
         1,
         1,
@@ -7372,7 +7372,7 @@
         1
       ],
       "http": 200,
-      "ms": 590,
+      "ms": 809,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7419,7 +7419,7 @@
         1
       ],
       "http": 200,
-      "ms": 352,
+      "ms": 203,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7434,7 +7434,6 @@
       "formato": "json",
       "funciona_do_exterior": true,
       "historico": [
-        1,
         1,
         1,
         1,
@@ -7463,10 +7462,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 38,
+      "ms": 58,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7513,7 +7513,7 @@
         0
       ],
       "http": 403,
-      "ms": 129,
+      "ms": 288,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -7560,7 +7560,7 @@
         1
       ],
       "http": 200,
-      "ms": 98,
+      "ms": 110,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7575,7 +7575,6 @@
       "formato": "json",
       "funciona_do_exterior": true,
       "historico": [
-        1,
         1,
         1,
         1,
@@ -7604,10 +7603,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 144,
+      "ms": 149,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7638,7 +7638,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -7654,7 +7654,7 @@
         0
       ],
       "http": 500,
-      "ms": 577,
+      "ms": 752,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -7701,7 +7701,7 @@
         1
       ],
       "http": 401,
-      "ms": 324,
+      "ms": 316,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -7748,7 +7748,7 @@
         1
       ],
       "http": 200,
-      "ms": 547,
+      "ms": 66,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7786,16 +7786,16 @@
         1,
         1,
         1,
+        0,
+        0,
+        0,
         1,
-        0,
-        0,
-        0,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 89,
+      "ms": 98,
       "ok": true,
       "openapi": false,
       "sem_chave": false,
@@ -7810,10 +7810,11 @@
       "formato": null,
       "funciona_do_exterior": true,
       "historico": [
+        1,
         1
       ],
       "http": 401,
-      "ms": 408,
+      "ms": 816,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -7860,7 +7861,7 @@
         1
       ],
       "http": 401,
-      "ms": 202,
+      "ms": 176,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -7907,7 +7908,7 @@
         1
       ],
       "http": 200,
-      "ms": 664,
+      "ms": 495,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7954,7 +7955,7 @@
         1
       ],
       "http": 200,
-      "ms": 94,
+      "ms": 98,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8001,7 +8002,7 @@
         1
       ],
       "http": 200,
-      "ms": 162,
+      "ms": 236,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8048,7 +8049,7 @@
         1
       ],
       "http": 429,
-      "ms": 606,
+      "ms": 607,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8095,7 +8096,7 @@
         1
       ],
       "http": 200,
-      "ms": 278,
+      "ms": 212,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8142,7 +8143,7 @@
         1
       ],
       "http": 200,
-      "ms": 234,
+      "ms": 236,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8189,7 +8190,7 @@
         1
       ],
       "http": 200,
-      "ms": 128,
+      "ms": 84,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8236,7 +8237,7 @@
         1
       ],
       "http": 200,
-      "ms": 625,
+      "ms": 583,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8283,7 +8284,7 @@
         1
       ],
       "http": 200,
-      "ms": 2309,
+      "ms": 2090,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8294,9 +8295,9 @@
       "aviso": null,
       "bloqueado": false,
       "cors": false,
-      "erro": null,
-      "formato": "json",
-      "funciona_do_exterior": true,
+      "erro": "TimeoutError: The read operation timed out",
+      "formato": null,
+      "funciona_do_exterior": false,
       "historico": [
         0,
         0,
@@ -8313,7 +8314,6 @@
         0,
         0,
         0,
-        0,
         1,
         1,
         0,
@@ -8327,11 +8327,12 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ],
-      "http": 200,
-      "ms": 997,
-      "ok": true,
+      "http": null,
+      "ms": null,
+      "ok": false,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
@@ -8424,7 +8425,7 @@
         1
       ],
       "http": 200,
-      "ms": 58,
+      "ms": 541,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8471,7 +8472,7 @@
         1
       ],
       "http": 401,
-      "ms": 361,
+      "ms": 383,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -8518,7 +8519,7 @@
         0
       ],
       "http": 200,
-      "ms": 830,
+      "ms": 1017,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -8565,7 +8566,7 @@
         1
       ],
       "http": 200,
-      "ms": 508,
+      "ms": 78,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8612,7 +8613,7 @@
         0
       ],
       "http": 403,
-      "ms": 154,
+      "ms": 69,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -8659,7 +8660,7 @@
         1
       ],
       "http": 200,
-      "ms": 71,
+      "ms": 418,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8675,8 +8676,8 @@
       "funciona_do_exterior": true,
       "historico": [
         1,
-        1,
         0,
+        1,
         1,
         1,
         1,
@@ -8706,7 +8707,7 @@
         1
       ],
       "http": 200,
-      "ms": 323,
+      "ms": 391,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8753,7 +8754,7 @@
         1
       ],
       "http": 200,
-      "ms": 1688,
+      "ms": 805,
       "ok": true,
       "openapi": false,
       "sem_chave": false,
@@ -8800,7 +8801,7 @@
         1
       ],
       "http": 200,
-      "ms": 862,
+      "ms": 790,
       "ok": true,
       "openapi": false,
       "sem_chave": false,
@@ -8847,7 +8848,7 @@
         0
       ],
       "http": 403,
-      "ms": 541,
+      "ms": 627,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -8894,7 +8895,7 @@
         1
       ],
       "http": 200,
-      "ms": 306,
+      "ms": 244,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8941,7 +8942,7 @@
         1
       ],
       "http": 200,
-      "ms": 7726,
+      "ms": 1630,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8965,7 +8966,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1,
         1,
@@ -8988,7 +8989,7 @@
         1
       ],
       "http": 200,
-      "ms": 74,
+      "ms": 53,
       "ok": true,
       "openapi": true,
       "sem_chave": false,
@@ -9082,7 +9083,7 @@
         1
       ],
       "http": 200,
-      "ms": 664,
+      "ms": 472,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9129,7 +9130,7 @@
         0
       ],
       "http": 503,
-      "ms": 453,
+      "ms": 459,
       "ok": false,
       "openapi": null,
       "sem_chave": true,
@@ -9176,7 +9177,7 @@
         1
       ],
       "http": 200,
-      "ms": 569,
+      "ms": 425,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9223,7 +9224,7 @@
         1
       ],
       "http": 200,
-      "ms": 342,
+      "ms": 172,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9270,7 +9271,7 @@
         1
       ],
       "http": 200,
-      "ms": 679,
+      "ms": 720,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9317,7 +9318,7 @@
         1
       ],
       "http": 200,
-      "ms": 806,
+      "ms": 349,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9364,7 +9365,7 @@
         1
       ],
       "http": 200,
-      "ms": 984,
+      "ms": 826,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9411,7 +9412,7 @@
         1
       ],
       "http": 200,
-      "ms": 567,
+      "ms": 653,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9458,7 +9459,7 @@
         1
       ],
       "http": 200,
-      "ms": 22,
+      "ms": 142,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9505,7 +9506,7 @@
         1
       ],
       "http": 200,
-      "ms": 311,
+      "ms": 294,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9552,7 +9553,7 @@
         1
       ],
       "http": 200,
-      "ms": 378,
+      "ms": 372,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9599,7 +9600,7 @@
         1
       ],
       "http": 200,
-      "ms": 116,
+      "ms": 118,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9646,7 +9647,7 @@
         1
       ],
       "http": 200,
-      "ms": 159,
+      "ms": 171,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9693,7 +9694,7 @@
         1
       ],
       "http": 403,
-      "ms": 862,
+      "ms": 593,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -9740,7 +9741,7 @@
         1
       ],
       "http": 200,
-      "ms": 1328,
+      "ms": 1274,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9748,5 +9749,5 @@
       "testada_de": "brasil"
     }
   },
-  "verificado_em": "2026-11-26T14:22:42Z"
+  "verificado_em": "2026-11-26T19:02:01Z"
 }
