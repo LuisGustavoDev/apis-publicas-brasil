@@ -40,7 +40,7 @@
         0
       ],
       "http": 503,
-      "ms": 344,
+      "ms": 345,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -51,11 +51,10 @@
       "aviso": null,
       "bloqueado": false,
       "cors": true,
-      "erro": null,
-      "formato": "documentacao",
-      "funciona_do_exterior": true,
+      "erro": "TimeoutError: The read operation timed out",
+      "formato": null,
+      "funciona_do_exterior": false,
       "historico": [
-        0,
         1,
         1,
         1,
@@ -84,12 +83,13 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ],
-      "http": 200,
-      "ms": 9843,
-      "ok": true,
-      "openapi": false,
+      "http": null,
+      "ms": null,
+      "ok": false,
+      "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
       "testada_de": "brasil"
@@ -117,8 +117,8 @@
         1,
         1,
         1,
-        1,
         0,
+        1,
         1,
         1,
         1,
@@ -134,7 +134,7 @@
         1
       ],
       "http": 200,
-      "ms": 297,
+      "ms": 101,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -145,9 +145,9 @@
       "aviso": null,
       "bloqueado": false,
       "cors": false,
-      "erro": null,
-      "formato": "json",
-      "funciona_do_exterior": true,
+      "erro": "TimeoutError: The read operation timed out",
+      "formato": null,
+      "funciona_do_exterior": false,
       "historico": [
         0,
         0,
@@ -155,7 +155,6 @@
         0,
         0,
         0,
-        0,
         1,
         1,
         1,
@@ -178,11 +177,12 @@
         0,
         1,
         1,
-        1
+        1,
+        0
       ],
-      "http": 200,
-      "ms": 138,
-      "ok": true,
+      "http": null,
+      "ms": null,
+      "ok": false,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
@@ -228,7 +228,7 @@
         1
       ],
       "http": 401,
-      "ms": 57,
+      "ms": 83,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -275,12 +275,12 @@
         1
       ],
       "http": 200,
-      "ms": 1324,
+      "ms": 329,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "Alagoas Dados Abertos": {
       "aviso": null,
@@ -369,7 +369,7 @@
         1
       ],
       "http": 200,
-      "ms": 256,
+      "ms": 50,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -416,7 +416,7 @@
         1
       ],
       "http": 200,
-      "ms": 500,
+      "ms": 688,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -434,7 +434,6 @@
         1,
         1,
         1,
-        1,
         0,
         0,
         1,
@@ -458,12 +457,13 @@
         1,
         0,
         0,
+        1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 1631,
+      "ms": 1233,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -510,12 +510,12 @@
         1
       ],
       "http": 429,
-      "ms": 254,
+      "ms": 217,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "AwesomeAPI Moedas": {
       "aviso": null,
@@ -557,12 +557,12 @@
         1
       ],
       "http": 429,
-      "ms": 78,
+      "ms": 84,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "BDTD (IBICT)": {
       "aviso": null,
@@ -575,7 +575,6 @@
         1,
         1,
         1,
-        1,
         0,
         0,
         0,
@@ -599,12 +598,13 @@
         1,
         0,
         0,
+        1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 189,
+      "ms": 148,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -651,7 +651,7 @@
         1
       ],
       "http": 200,
-      "ms": 81,
+      "ms": 247,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -662,9 +662,9 @@
       "aviso": "certificado SSL inválido ou incompleto",
       "bloqueado": false,
       "cors": false,
-      "erro": "TimeoutError: The read operation timed out",
-      "formato": null,
-      "funciona_do_exterior": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
         1,
         1,
@@ -673,7 +673,6 @@
         1,
         1,
         1,
-        1,
         0,
         1,
         1,
@@ -695,11 +694,12 @@
         1,
         0,
         1,
-        0
+        0,
+        1
       ],
-      "http": null,
-      "ms": null,
-      "ok": false,
+      "http": 200,
+      "ms": 313,
+      "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
@@ -745,7 +745,7 @@
         1
       ],
       "http": 200,
-      "ms": 835,
+      "ms": 635,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -792,7 +792,7 @@
         1
       ],
       "http": 200,
-      "ms": 132,
+      "ms": 75,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -839,7 +839,7 @@
         1
       ],
       "http": 200,
-      "ms": 84,
+      "ms": 530,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -886,12 +886,12 @@
         1
       ],
       "http": 200,
-      "ms": 362,
+      "ms": 150,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "Banco Central Postos de Atendimento": {
       "aviso": null,
@@ -933,7 +933,7 @@
         1
       ],
       "http": 200,
-      "ms": 3427,
+      "ms": 74,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -944,9 +944,9 @@
       "aviso": null,
       "bloqueado": false,
       "cors": true,
-      "erro": "HTTP 304",
-      "formato": null,
-      "funciona_do_exterior": false,
+      "erro": null,
+      "formato": "json",
+      "funciona_do_exterior": true,
       "historico": [
         1,
         1,
@@ -966,7 +966,6 @@
         1,
         1,
         1,
-        1,
         0,
         0,
         1,
@@ -977,15 +976,16 @@
         1,
         1,
         1,
-        0
+        0,
+        1
       ],
-      "http": 304,
-      "ms": 191,
-      "ok": false,
+      "http": 200,
+      "ms": 137,
+      "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "Banco Central Taxas de Juros": {
       "aviso": null,
@@ -1027,7 +1027,7 @@
         1
       ],
       "http": 200,
-      "ms": 799,
+      "ms": 243,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1074,7 +1074,7 @@
         1
       ],
       "http": 200,
-      "ms": 211,
+      "ms": 207,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1121,7 +1121,7 @@
         1
       ],
       "http": 200,
-      "ms": 219,
+      "ms": 244,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1146,7 +1146,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -1168,7 +1168,7 @@
         0
       ],
       "http": 404,
-      "ms": 393,
+      "ms": 353,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -1215,7 +1215,7 @@
         1
       ],
       "http": 200,
-      "ms": 186,
+      "ms": 191,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -1262,7 +1262,7 @@
         1
       ],
       "http": 401,
-      "ms": 582,
+      "ms": 573,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -1309,12 +1309,12 @@
         1
       ],
       "http": 200,
-      "ms": 85,
+      "ms": 258,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "BrasilAPI CEP v2": {
       "aviso": null,
@@ -1356,12 +1356,12 @@
         1
       ],
       "http": 200,
-      "ms": 260,
+      "ms": 242,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "BrasilAPI CNPJ": {
       "aviso": null,
@@ -1403,12 +1403,12 @@
         1
       ],
       "http": 200,
-      "ms": 283,
+      "ms": 198,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "BrasilAPI CPTEC": {
       "aviso": null,
@@ -1450,12 +1450,12 @@
         0
       ],
       "http": 500,
-      "ms": 1051,
+      "ms": 780,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "BrasilAPI Corretoras": {
       "aviso": null,
@@ -1497,12 +1497,12 @@
         1
       ],
       "http": 200,
-      "ms": 364,
+      "ms": 776,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "BrasilAPI Câmbio": {
       "aviso": null,
@@ -1544,12 +1544,12 @@
         1
       ],
       "http": 200,
-      "ms": 862,
+      "ms": 79,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "BrasilAPI DDD": {
       "aviso": null,
@@ -1591,7 +1591,7 @@
         1
       ],
       "http": 200,
-      "ms": 123,
+      "ms": 36,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1638,7 +1638,7 @@
         1
       ],
       "http": 200,
-      "ms": 115,
+      "ms": 136,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1685,12 +1685,12 @@
         1
       ],
       "http": 200,
-      "ms": 84,
+      "ms": 27,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "BrasilAPI IBGE": {
       "aviso": null,
@@ -1732,7 +1732,7 @@
         1
       ],
       "http": 200,
-      "ms": 52,
+      "ms": 30,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1779,7 +1779,7 @@
         1
       ],
       "http": 200,
-      "ms": 274,
+      "ms": 36,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1826,7 +1826,7 @@
         1
       ],
       "http": 200,
-      "ms": 1609,
+      "ms": 1512,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1873,12 +1873,12 @@
         1
       ],
       "http": 200,
-      "ms": 108,
+      "ms": 215,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "BrasilAPI Registro.br": {
       "aviso": null,
@@ -1920,7 +1920,7 @@
         1
       ],
       "http": 200,
-      "ms": 974,
+      "ms": 822,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -1967,22 +1967,21 @@
         1
       ],
       "http": 200,
-      "ms": 89,
+      "ms": 60,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "CAPES Dados Abertos": {
       "aviso": null,
       "bloqueado": false,
       "cors": false,
-      "erro": "TimeoutError: The read operation timed out",
-      "formato": null,
+      "erro": null,
+      "formato": "json",
       "funciona_do_exterior": true,
       "historico": [
-        0,
         1,
         1,
         1,
@@ -2011,11 +2010,12 @@
         1,
         1,
         1,
-        0
+        0,
+        1
       ],
-      "http": null,
-      "ms": null,
-      "ok": false,
+      "http": 200,
+      "ms": 112,
+      "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
@@ -2061,7 +2061,7 @@
         0
       ],
       "http": 403,
-      "ms": 183,
+      "ms": 74,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -2108,7 +2108,7 @@
         1
       ],
       "http": 401,
-      "ms": 1006,
+      "ms": 555,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -2142,8 +2142,8 @@
         1,
         1,
         1,
-        1,
         0,
+        1,
         1,
         1,
         1,
@@ -2155,12 +2155,12 @@
         1
       ],
       "http": 200,
-      "ms": 1511,
+      "ms": 543,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "CNPJá Open": {
       "aviso": null,
@@ -2202,12 +2202,12 @@
         1
       ],
       "http": 200,
-      "ms": 183,
+      "ms": 345,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "CPTEC/INPE (XML)": {
       "aviso": null,
@@ -2249,7 +2249,7 @@
         1
       ],
       "http": 200,
-      "ms": 66,
+      "ms": 80,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2296,7 +2296,7 @@
         1
       ],
       "http": 200,
-      "ms": 60,
+      "ms": 44,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2343,7 +2343,7 @@
         1
       ],
       "http": 401,
-      "ms": 303,
+      "ms": 459,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -2390,7 +2390,7 @@
         1
       ],
       "http": 200,
-      "ms": 40,
+      "ms": 43,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2409,7 +2409,6 @@
         1,
         1,
         1,
-        1,
         0,
         1,
         0,
@@ -2418,6 +2417,7 @@
         1,
         1,
         0,
+        1,
         1,
         1,
         1,
@@ -2437,7 +2437,7 @@
         1
       ],
       "http": 400,
-      "ms": 350,
+      "ms": 376,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -2484,7 +2484,7 @@
         1
       ],
       "http": 200,
-      "ms": 289,
+      "ms": 186,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2531,7 +2531,7 @@
         1
       ],
       "http": 200,
-      "ms": 461,
+      "ms": 196,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2578,7 +2578,7 @@
         1
       ],
       "http": 401,
-      "ms": 433,
+      "ms": 490,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -2625,7 +2625,7 @@
         1
       ],
       "http": 200,
-      "ms": 408,
+      "ms": 420,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2672,7 +2672,7 @@
         1
       ],
       "http": 200,
-      "ms": 70,
+      "ms": 39,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2690,7 +2690,6 @@
         1,
         1,
         1,
-        1,
         0,
         0,
         1,
@@ -2698,6 +2697,7 @@
         1,
         1,
         0,
+        1,
         1,
         1,
         1,
@@ -2719,12 +2719,12 @@
         1
       ],
       "http": 200,
-      "ms": 1197,
+      "ms": 223,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "DOAJ": {
       "aviso": null,
@@ -2748,8 +2748,8 @@
         1,
         1,
         1,
-        1,
         0,
+        1,
         1,
         1,
         1,
@@ -2766,7 +2766,7 @@
         1
       ],
       "http": 200,
-      "ms": 227,
+      "ms": 273,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2813,12 +2813,12 @@
         1
       ],
       "http": 401,
-      "ms": 1049,
+      "ms": 92,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "Deezer": {
       "aviso": null,
@@ -2860,7 +2860,7 @@
         1
       ],
       "http": 200,
-      "ms": 397,
+      "ms": 427,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2907,7 +2907,7 @@
         1
       ],
       "http": 200,
-      "ms": 903,
+      "ms": 904,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -2954,7 +2954,7 @@
         1
       ],
       "http": 401,
-      "ms": 194,
+      "ms": 675,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -3001,7 +3001,7 @@
         1
       ],
       "http": 200,
-      "ms": 128,
+      "ms": 233,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3038,17 +3038,17 @@
         1,
         1,
         1,
-        1,
         0,
         1,
         0,
         0,
+        1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 2214,
+      "ms": 15638,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3095,7 +3095,7 @@
         1
       ],
       "http": 200,
-      "ms": 150,
+      "ms": 319,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3110,7 +3110,6 @@
       "formato": "json",
       "funciona_do_exterior": true,
       "historico": [
-        1,
         1,
         1,
         1,
@@ -3139,10 +3138,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 170,
+      "ms": 141,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3180,16 +3180,16 @@
         1,
         1,
         1,
+        0,
+        0,
         1,
-        0,
-        0,
         1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 402,
+      "ms": 488,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3236,7 +3236,7 @@
         0
       ],
       "http": 403,
-      "ms": 149,
+      "ms": 146,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -3283,7 +3283,7 @@
         1
       ],
       "http": 401,
-      "ms": 302,
+      "ms": 547,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -3330,7 +3330,7 @@
         1
       ],
       "http": 200,
-      "ms": 481,
+      "ms": 214,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3377,7 +3377,7 @@
         1
       ],
       "http": 200,
-      "ms": 572,
+      "ms": 720,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3424,7 +3424,7 @@
         0
       ],
       "http": 403,
-      "ms": 1256,
+      "ms": 920,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -3471,7 +3471,7 @@
         1
       ],
       "http": 200,
-      "ms": 725,
+      "ms": 673,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3518,7 +3518,7 @@
         1
       ],
       "http": 400,
-      "ms": 347,
+      "ms": 413,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -3565,7 +3565,7 @@
         1
       ],
       "http": 200,
-      "ms": 3195,
+      "ms": 714,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -3612,7 +3612,7 @@
         0
       ],
       "http": 403,
-      "ms": 234,
+      "ms": 203,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -3659,7 +3659,7 @@
         1
       ],
       "http": 429,
-      "ms": 1093,
+      "ms": 1086,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3674,11 +3674,11 @@
       "formato": "json",
       "funciona_do_exterior": true,
       "historico": [
-        1,
         0,
         1,
         1,
         0,
+        1,
         1,
         1,
         1,
@@ -3706,7 +3706,7 @@
         1
       ],
       "http": 200,
-      "ms": 24,
+      "ms": 35,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3721,7 +3721,6 @@
       "formato": null,
       "funciona_do_exterior": false,
       "historico": [
-        1,
         0,
         1,
         1,
@@ -3749,6 +3748,7 @@
         0,
         0,
         1,
+        0,
         0,
         0
       ],
@@ -3800,7 +3800,7 @@
         1
       ],
       "http": 200,
-      "ms": 714,
+      "ms": 119,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -3847,7 +3847,7 @@
         1
       ],
       "http": 200,
-      "ms": 1100,
+      "ms": 263,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -3894,7 +3894,7 @@
         1
       ],
       "http": 200,
-      "ms": 114,
+      "ms": 49,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -3941,12 +3941,12 @@
         1
       ],
       "http": 200,
-      "ms": 286,
+      "ms": 147,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "IBGE CNAE": {
       "aviso": null,
@@ -3988,7 +3988,7 @@
         1
       ],
       "http": 200,
-      "ms": 641,
+      "ms": 48,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4035,7 +4035,7 @@
         1
       ],
       "http": 200,
-      "ms": 52,
+      "ms": 41,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4082,7 +4082,7 @@
         1
       ],
       "http": 200,
-      "ms": 789,
+      "ms": 21041,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4129,12 +4129,12 @@
         1
       ],
       "http": 200,
-      "ms": 270,
+      "ms": 56,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "IBGE Malhas": {
       "aviso": null,
@@ -4176,12 +4176,12 @@
         1
       ],
       "http": 200,
-      "ms": 264,
+      "ms": 55,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "IBGE Nomes": {
       "aviso": null,
@@ -4223,12 +4223,12 @@
         1
       ],
       "http": 200,
-      "ms": 852,
+      "ms": 131,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "IBGE Notícias": {
       "aviso": null,
@@ -4270,12 +4270,12 @@
         1
       ],
       "http": 200,
-      "ms": 1860,
+      "ms": 34,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "IBGE Países": {
       "aviso": null,
@@ -4317,12 +4317,12 @@
         1
       ],
       "http": 200,
-      "ms": 290,
+      "ms": 56,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "IBGE Pesquisas": {
       "aviso": null,
@@ -4351,7 +4351,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1,
         1,
@@ -4364,7 +4364,7 @@
         1
       ],
       "http": 200,
-      "ms": 258,
+      "ms": 281,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4411,7 +4411,7 @@
         0
       ],
       "http": 404,
-      "ms": 265,
+      "ms": 501,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -4458,7 +4458,7 @@
         1
       ],
       "http": 200,
-      "ms": 91,
+      "ms": 53,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4505,7 +4505,7 @@
         1
       ],
       "http": 200,
-      "ms": 1608,
+      "ms": 1172,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4552,7 +4552,7 @@
         0
       ],
       "http": 502,
-      "ms": 1074,
+      "ms": 1072,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -4599,7 +4599,7 @@
         1
       ],
       "http": 200,
-      "ms": 297,
+      "ms": 287,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4646,7 +4646,7 @@
         1
       ],
       "http": 200,
-      "ms": 599,
+      "ms": 794,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4693,7 +4693,7 @@
         1
       ],
       "http": 401,
-      "ms": 470,
+      "ms": 350,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -4740,7 +4740,7 @@
         1
       ],
       "http": 200,
-      "ms": 15085,
+      "ms": 167,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4787,7 +4787,7 @@
         1
       ],
       "http": 200,
-      "ms": 512,
+      "ms": 543,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4834,7 +4834,7 @@
         1
       ],
       "http": 200,
-      "ms": 609,
+      "ms": 643,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4881,7 +4881,7 @@
         1
       ],
       "http": 200,
-      "ms": 222,
+      "ms": 300,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4928,7 +4928,7 @@
         1
       ],
       "http": 200,
-      "ms": 363,
+      "ms": 464,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -4975,7 +4975,7 @@
         1
       ],
       "http": 200,
-      "ms": 1913,
+      "ms": 1977,
       "ok": true,
       "openapi": false,
       "sem_chave": false,
@@ -4995,7 +4995,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -5022,7 +5022,7 @@
         0
       ],
       "http": 403,
-      "ms": 35,
+      "ms": 34,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -5069,7 +5069,7 @@
         1
       ],
       "http": 403,
-      "ms": 75,
+      "ms": 97,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -5116,7 +5116,7 @@
         1
       ],
       "http": 200,
-      "ms": 59,
+      "ms": 55,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5150,7 +5150,6 @@
         1,
         1,
         1,
-        1,
         0,
         1,
         1,
@@ -5159,11 +5158,12 @@
         1,
         1,
         0,
+        1,
         1,
         1
       ],
       "http": 200,
-      "ms": 34,
+      "ms": 333,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5174,11 +5174,10 @@
       "aviso": null,
       "bloqueado": false,
       "cors": true,
-      "erro": null,
-      "formato": "json",
+      "erro": "HTTP 503",
+      "formato": null,
       "funciona_do_exterior": true,
       "historico": [
-        0,
         1,
         1,
         1,
@@ -5207,11 +5206,12 @@
         0,
         1,
         0,
-        1
+        1,
+        0
       ],
-      "http": 200,
-      "ms": 707,
-      "ok": true,
+      "http": 503,
+      "ms": 530,
+      "ok": false,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
@@ -5257,7 +5257,7 @@
         1
       ],
       "http": 200,
-      "ms": 2998,
+      "ms": 656,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5304,7 +5304,7 @@
         1
       ],
       "http": 200,
-      "ms": 302,
+      "ms": 650,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5351,12 +5351,12 @@
         1
       ],
       "http": 200,
-      "ms": 364,
+      "ms": 36,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "NewsAPI": {
       "aviso": null,
@@ -5398,7 +5398,7 @@
         1
       ],
       "http": 401,
-      "ms": 208,
+      "ms": 217,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -5445,7 +5445,7 @@
         1
       ],
       "http": 200,
-      "ms": 659,
+      "ms": 834,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5468,7 +5468,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1,
         1,
@@ -5492,7 +5492,7 @@
         1
       ],
       "http": 200,
-      "ms": 766,
+      "ms": 179,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5539,7 +5539,7 @@
         1
       ],
       "http": 200,
-      "ms": 343,
+      "ms": 399,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5586,7 +5586,7 @@
         1
       ],
       "http": 200,
-      "ms": 986,
+      "ms": 975,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5633,7 +5633,7 @@
         1
       ],
       "http": 200,
-      "ms": 524,
+      "ms": 593,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5651,7 +5651,6 @@
         1,
         1,
         1,
-        1,
         0,
         0,
         1,
@@ -5674,13 +5673,14 @@
         1,
         1,
         0,
+        1,
         1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 129,
+      "ms": 5855,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5727,7 +5727,7 @@
         1
       ],
       "http": 200,
-      "ms": 1476,
+      "ms": 686,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5767,14 +5767,14 @@
         1,
         1,
         1,
-        1,
         0,
+        1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 1037,
+      "ms": 1031,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5821,7 +5821,7 @@
         1
       ],
       "http": 200,
-      "ms": 438,
+      "ms": 453,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5832,8 +5832,8 @@
       "aviso": null,
       "bloqueado": false,
       "cors": true,
-      "erro": "HTTP 503",
-      "formato": null,
+      "erro": null,
+      "formato": "json",
       "funciona_do_exterior": true,
       "historico": [
         1,
@@ -5864,12 +5864,12 @@
         1,
         1,
         1,
-        1,
-        0
+        0,
+        1
       ],
-      "http": 503,
-      "ms": 390,
-      "ok": false,
+      "http": 200,
+      "ms": 396,
+      "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
@@ -5915,7 +5915,7 @@
         1
       ],
       "http": 200,
-      "ms": 883,
+      "ms": 905,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5962,7 +5962,7 @@
         1
       ],
       "http": 200,
-      "ms": 716,
+      "ms": 706,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -5993,12 +5993,12 @@
         1,
         1,
         1,
-        1,
         0,
         0,
         1,
         1,
         0,
+        1,
         1,
         1,
         1,
@@ -6009,7 +6009,7 @@
         1
       ],
       "http": 200,
-      "ms": 252,
+      "ms": 67,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6056,7 +6056,7 @@
         1
       ],
       "http": 200,
-      "ms": 873,
+      "ms": 880,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6103,7 +6103,7 @@
         1
       ],
       "http": 200,
-      "ms": 685,
+      "ms": 455,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6150,7 +6150,7 @@
         1
       ],
       "http": 200,
-      "ms": 714,
+      "ms": 707,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6197,7 +6197,7 @@
         1
       ],
       "http": 200,
-      "ms": 900,
+      "ms": 877,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6244,7 +6244,7 @@
         1
       ],
       "http": 200,
-      "ms": 898,
+      "ms": 905,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6291,7 +6291,7 @@
         1
       ],
       "http": 401,
-      "ms": 76,
+      "ms": 70,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -6338,7 +6338,7 @@
         1
       ],
       "http": 200,
-      "ms": 877,
+      "ms": 1012,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6385,7 +6385,7 @@
         1
       ],
       "http": 200,
-      "ms": 39,
+      "ms": 50,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6415,11 +6415,11 @@
         1,
         1,
         1,
+        0,
+        0,
+        0,
+        0,
         1,
-        0,
-        0,
-        0,
-        0,
         1,
         1,
         1,
@@ -6432,7 +6432,7 @@
         1
       ],
       "http": 200,
-      "ms": 69,
+      "ms": 34,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6479,7 +6479,7 @@
         1
       ],
       "http": 200,
-      "ms": 583,
+      "ms": 559,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6573,7 +6573,7 @@
         1
       ],
       "http": 401,
-      "ms": 357,
+      "ms": 351,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -6584,11 +6584,10 @@
       "aviso": null,
       "bloqueado": false,
       "cors": true,
-      "erro": "TimeoutError: The read operation timed out",
+      "erro": "HTTP 502",
       "formato": null,
       "funciona_do_exterior": false,
       "historico": [
-        0,
         1,
         1,
         0,
@@ -6615,12 +6614,13 @@
         0,
         0,
         1,
+        0,
         0,
         0,
         0
       ],
-      "http": null,
-      "ms": null,
+      "http": 502,
+      "ms": 307,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -6667,7 +6667,7 @@
         1
       ],
       "http": 200,
-      "ms": 1862,
+      "ms": 5752,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6706,15 +6706,15 @@
         1,
         1,
         1,
-        1,
         0,
+        1,
         1,
         1,
         1,
         1
       ],
       "http": 200,
-      "ms": 249,
+      "ms": 246,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6744,8 +6744,8 @@
         1,
         1,
         1,
-        1,
         0,
+        1,
         1,
         1,
         1,
@@ -6761,7 +6761,7 @@
         1
       ],
       "http": 200,
-      "ms": 660,
+      "ms": 1123,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6808,7 +6808,7 @@
         1
       ],
       "http": 403,
-      "ms": 119,
+      "ms": 88,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -6855,12 +6855,12 @@
         1
       ],
       "http": 401,
-      "ms": 759,
+      "ms": 26,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "Prefeitura de Belo Horizonte Dados Abertos": {
       "aviso": null,
@@ -6902,7 +6902,7 @@
         1
       ],
       "http": 200,
-      "ms": 881,
+      "ms": 850,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6949,7 +6949,7 @@
         1
       ],
       "http": 200,
-      "ms": 225,
+      "ms": 237,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -6984,8 +6984,8 @@
         1,
         1,
         1,
-        1,
         0,
+        1,
         1,
         1,
         1,
@@ -6996,7 +6996,7 @@
         1
       ],
       "http": 200,
-      "ms": 157,
+      "ms": 166,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7043,7 +7043,7 @@
         1
       ],
       "http": 200,
-      "ms": 105,
+      "ms": 53,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7090,7 +7090,7 @@
         1
       ],
       "http": 200,
-      "ms": 350,
+      "ms": 9300,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7137,7 +7137,7 @@
         1
       ],
       "http": 200,
-      "ms": 524,
+      "ms": 555,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7189,7 +7189,7 @@
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "REDEMET (DECEA)": {
       "aviso": null,
@@ -7231,7 +7231,7 @@
         1
       ],
       "http": 401,
-      "ms": 57,
+      "ms": 394,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -7278,7 +7278,7 @@
         1
       ],
       "http": 200,
-      "ms": 232,
+      "ms": 263,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7325,7 +7325,7 @@
         1
       ],
       "http": 200,
-      "ms": 710,
+      "ms": 769,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7342,8 +7342,8 @@
       "historico": [
         1,
         1,
-        1,
         0,
+        1,
         1,
         1,
         1,
@@ -7419,12 +7419,12 @@
         1
       ],
       "http": 200,
-      "ms": 319,
+      "ms": 352,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "Registro.br RDAP": {
       "aviso": null,
@@ -7434,7 +7434,6 @@
       "formato": "json",
       "funciona_do_exterior": true,
       "historico": [
-        1,
         1,
         1,
         1,
@@ -7463,10 +7462,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 20,
+      "ms": 38,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7513,7 +7513,7 @@
         0
       ],
       "http": 403,
-      "ms": 80,
+      "ms": 129,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -7560,7 +7560,7 @@
         1
       ],
       "http": 200,
-      "ms": 78,
+      "ms": 98,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7575,7 +7575,6 @@
       "formato": "json",
       "funciona_do_exterior": true,
       "historico": [
-        1,
         1,
         1,
         1,
@@ -7604,10 +7603,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 119,
+      "ms": 144,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7639,7 +7639,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -7654,7 +7654,7 @@
         0
       ],
       "http": 500,
-      "ms": 738,
+      "ms": 577,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -7701,7 +7701,7 @@
         1
       ],
       "http": 401,
-      "ms": 331,
+      "ms": 324,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -7748,7 +7748,7 @@
         1
       ],
       "http": 200,
-      "ms": 57,
+      "ms": 547,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7787,18 +7787,36 @@
         1,
         1,
         1,
+        0,
+        0,
+        0,
         1,
-        0,
-        0,
-        0,
         1,
         1
       ],
       "http": 200,
-      "ms": 74,
+      "ms": 89,
       "ok": true,
       "openapi": false,
       "sem_chave": false,
+      "so_do_brasil": false,
+      "testada_de": "brasil"
+    },
+    "SLDX": {
+      "aviso": null,
+      "bloqueado": false,
+      "cors": null,
+      "erro": null,
+      "formato": null,
+      "funciona_do_exterior": true,
+      "historico": [
+        1
+      ],
+      "http": 401,
+      "ms": 408,
+      "ok": true,
+      "openapi": null,
+      "sem_chave": true,
       "so_do_brasil": false,
       "testada_de": "brasil"
     },
@@ -7842,7 +7860,7 @@
         1
       ],
       "http": 401,
-      "ms": 166,
+      "ms": 202,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -7889,7 +7907,7 @@
         1
       ],
       "http": 200,
-      "ms": 437,
+      "ms": 664,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7936,7 +7954,7 @@
         1
       ],
       "http": 200,
-      "ms": 109,
+      "ms": 94,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -7983,7 +8001,7 @@
         1
       ],
       "http": 200,
-      "ms": 238,
+      "ms": 162,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8030,7 +8048,7 @@
         1
       ],
       "http": 429,
-      "ms": 556,
+      "ms": 606,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8077,12 +8095,12 @@
         1
       ],
       "http": 200,
-      "ms": 2071,
+      "ms": 278,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "Sunrise-Sunset": {
       "aviso": null,
@@ -8124,7 +8142,7 @@
         1
       ],
       "http": 200,
-      "ms": 217,
+      "ms": 234,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8171,7 +8189,7 @@
         1
       ],
       "http": 200,
-      "ms": 160,
+      "ms": 128,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8218,7 +8236,7 @@
         1
       ],
       "http": 200,
-      "ms": 621,
+      "ms": 625,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8233,7 +8251,7 @@
       "formato": "html",
       "funciona_do_exterior": true,
       "historico": [
-        0,
+        1,
         1,
         1,
         1,
@@ -8265,7 +8283,7 @@
         1
       ],
       "http": 200,
-      "ms": 4081,
+      "ms": 2309,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8296,13 +8314,13 @@
         0,
         0,
         0,
-        0,
         1,
         1,
         0,
         1,
         1,
         0,
+        1,
         1,
         1,
         1,
@@ -8312,7 +8330,7 @@
         1
       ],
       "http": 200,
-      "ms": 891,
+      "ms": 997,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8406,7 +8424,7 @@
         1
       ],
       "http": 200,
-      "ms": 28,
+      "ms": 58,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8453,7 +8471,7 @@
         1
       ],
       "http": 401,
-      "ms": 353,
+      "ms": 361,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -8500,7 +8518,7 @@
         0
       ],
       "http": 200,
-      "ms": 987,
+      "ms": 830,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -8547,7 +8565,7 @@
         1
       ],
       "http": 200,
-      "ms": 350,
+      "ms": 508,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8594,7 +8612,7 @@
         0
       ],
       "http": 403,
-      "ms": 231,
+      "ms": 154,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -8641,7 +8659,7 @@
         1
       ],
       "http": 200,
-      "ms": 354,
+      "ms": 71,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8656,7 +8674,6 @@
       "formato": "xml",
       "funciona_do_exterior": true,
       "historico": [
-        1,
         1,
         1,
         0,
@@ -8685,10 +8702,11 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "http": 200,
-      "ms": 230,
+      "ms": 323,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8735,7 +8753,7 @@
         1
       ],
       "http": 200,
-      "ms": 854,
+      "ms": 1688,
       "ok": true,
       "openapi": false,
       "sem_chave": false,
@@ -8782,7 +8800,7 @@
         1
       ],
       "http": 200,
-      "ms": 1293,
+      "ms": 862,
       "ok": true,
       "openapi": false,
       "sem_chave": false,
@@ -8829,7 +8847,7 @@
         0
       ],
       "http": 403,
-      "ms": 943,
+      "ms": 541,
       "ok": false,
       "openapi": null,
       "sem_chave": false,
@@ -8876,7 +8894,7 @@
         1
       ],
       "http": 200,
-      "ms": 204,
+      "ms": 306,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8923,7 +8941,7 @@
         1
       ],
       "http": 200,
-      "ms": 2306,
+      "ms": 7726,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -8948,7 +8966,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1,
         1,
@@ -8970,7 +8988,7 @@
         1
       ],
       "http": 200,
-      "ms": 27,
+      "ms": 74,
       "ok": true,
       "openapi": true,
       "sem_chave": false,
@@ -9064,7 +9082,7 @@
         1
       ],
       "http": 200,
-      "ms": 431,
+      "ms": 664,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9111,7 +9129,7 @@
         0
       ],
       "http": 503,
-      "ms": 450,
+      "ms": 453,
       "ok": false,
       "openapi": null,
       "sem_chave": true,
@@ -9158,12 +9176,12 @@
         1
       ],
       "http": 200,
-      "ms": 710,
+      "ms": 569,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "Wikcionário em Português": {
       "aviso": null,
@@ -9205,7 +9223,7 @@
         1
       ],
       "http": 200,
-      "ms": 378,
+      "ms": 342,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9252,7 +9270,7 @@
         1
       ],
       "http": 200,
-      "ms": 732,
+      "ms": 679,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9299,7 +9317,7 @@
         1
       ],
       "http": 200,
-      "ms": 239,
+      "ms": 806,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9346,7 +9364,7 @@
         1
       ],
       "http": 200,
-      "ms": 768,
+      "ms": 984,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9393,7 +9411,7 @@
         1
       ],
       "http": 200,
-      "ms": 560,
+      "ms": 567,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9440,7 +9458,7 @@
         1
       ],
       "http": 200,
-      "ms": 54,
+      "ms": 22,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9487,7 +9505,7 @@
         1
       ],
       "http": 200,
-      "ms": 355,
+      "ms": 311,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9534,7 +9552,7 @@
         1
       ],
       "http": 200,
-      "ms": 420,
+      "ms": 378,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9581,12 +9599,12 @@
         1
       ],
       "http": 200,
-      "ms": 231,
+      "ms": 116,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "brasil"
+      "testada_de": "eua"
     },
     "brapi": {
       "aviso": null,
@@ -9628,12 +9646,12 @@
         1
       ],
       "http": 200,
-      "ms": 335,
+      "ms": 159,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
       "so_do_brasil": false,
-      "testada_de": "eua"
+      "testada_de": "brasil"
     },
     "football-data.org": {
       "aviso": null,
@@ -9675,7 +9693,7 @@
         1
       ],
       "http": 403,
-      "ms": 806,
+      "ms": 862,
       "ok": true,
       "openapi": null,
       "sem_chave": true,
@@ -9722,7 +9740,7 @@
         1
       ],
       "http": 200,
-      "ms": 1216,
+      "ms": 1328,
       "ok": true,
       "openapi": null,
       "sem_chave": false,
@@ -9730,5 +9748,5 @@
       "testada_de": "brasil"
     }
   },
-  "verificado_em": "2026-11-25T19:16:14Z"
+  "verificado_em": "2026-11-26T14:22:42Z"
 }
